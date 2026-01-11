@@ -51,19 +51,19 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
   // Calculate exam score
   const calculateExamScore = (examSlide) => {
     if (!examSlide.questions) return null;
-    
+
     let correctCount = 0;
     const totalQuestions = examSlide.questions.filter(q => q.type !== 'code').length; // Exclude code questions from auto-scoring
-    
+
     examSlide.questions.forEach(question => {
       if (question.type === 'code') return; // Skip code questions
-      
+
       const userAnswer = examAnswers[question.id];
       if (userAnswer !== undefined && userAnswer === question.correctAnswer) {
         correctCount++;
       }
     });
-    
+
     const percentage = totalQuestions > 0 ? Math.round((correctCount / totalQuestions) * 100) : 0;
     return { correctCount, totalQuestions, percentage };
   };
@@ -207,6 +207,35 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                 </div>
               )}
 
+              {slide.guidelines && (
+                <div className="mb-6">
+                  <h3 className={`text-2xl font-semibold mb-4 ${colors.text}`}>📋 Project Guidelines</h3>
+                  <ul className="space-y-3">
+                    {slide.guidelines.map((guideline, idx) => (
+                      <li key={idx} className="flex items-start gap-3 bg-purple-50 p-3 rounded-lg border-l-4 border-purple-500">
+                        <span className="text-purple-600 font-bold text-xl mt-1">•</span>
+                        <span className="text-gray-800">{guideline}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {slide.steps && (
+                <div className="mb-6">
+                  <h3 className={`text-2xl font-semibold mb-4 ${colors.text}`}>🚀 Implementation Steps</h3>
+                  <div className="space-y-3">
+                    {slide.steps.map((step, idx) => (
+                      <div key={idx} className="flex items-start gap-3 bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                        <span className="text-green-600 font-bold text-lg flex-shrink-0 bg-green-100 rounded-full w-8 h-8 flex items-center justify-center">
+                          {idx + 1}
+                        </span>
+                        <span className="text-gray-800 flex-1">{step}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
               {slide.code && (
                 <div className="relative">
                   <div className="bg-gray-900 rounded-lg p-6 overflow-x-auto">
@@ -254,7 +283,7 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
               {slide.content && (
                 <p className="text-xl text-gray-700 leading-relaxed mb-6">{slide.content}</p>
               )}
-              
+
               {slide.topics && (
                 <div className="grid md:grid-cols-2 gap-4">
                   {slide.topics.map((topic, idx) => (
@@ -292,11 +321,10 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
 
               {/* Exam Results */}
               {examSubmitted && examScore && (
-                <div className={`p-6 rounded-lg border-2 ${
-                  examScore.percentage >= slide.passingScore
+                <div className={`p-6 rounded-lg border-2 ${examScore.percentage >= slide.passingScore
                     ? 'bg-green-50 border-green-500'
                     : 'bg-red-50 border-red-500'
-                }`}>
+                  }`}>
                   <div className="flex items-center gap-3 mb-4">
                     {examScore.percentage >= slide.passingScore ? (
                       <CheckCircle2 className="text-green-600" size={32} />
@@ -304,30 +332,26 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                       <XCircle className="text-red-600" size={32} />
                     )}
                     <div>
-                      <h3 className={`text-2xl font-bold ${
-                        examScore.percentage >= slide.passingScore ? 'text-green-800' : 'text-red-800'
-                      }`}>
+                      <h3 className={`text-2xl font-bold ${examScore.percentage >= slide.passingScore ? 'text-green-800' : 'text-red-800'
+                        }`}>
                         {examScore.percentage >= slide.passingScore ? 'PASSED' : 'FAILED'}
                       </h3>
-                      <p className={`text-lg ${
-                        examScore.percentage >= slide.passingScore ? 'text-green-700' : 'text-red-700'
-                      }`}>
+                      <p className={`text-lg ${examScore.percentage >= slide.passingScore ? 'text-green-700' : 'text-red-700'
+                        }`}>
                         Your Score: {examScore.percentage}% ({examScore.correctCount} out of {examScore.totalQuestions} correct)
                       </p>
-                      <p className={`text-sm mt-1 ${
-                        examScore.percentage >= slide.passingScore ? 'text-green-600' : 'text-red-600'
-                      }`}>
+                      <p className={`text-sm mt-1 ${examScore.percentage >= slide.passingScore ? 'text-green-600' : 'text-red-600'
+                        }`}>
                         Passing Score: {slide.passingScore}%
                       </p>
                     </div>
                   </div>
                   <button
                     onClick={handleResetExam}
-                    className={`mt-4 px-4 py-2 bg-white border-2 ${
-                      examScore.percentage >= slide.passingScore
+                    className={`mt-4 px-4 py-2 bg-white border-2 ${examScore.percentage >= slide.passingScore
                         ? 'border-green-500 text-green-700 hover:bg-green-50'
                         : 'border-red-500 text-red-700 hover:bg-red-50'
-                    } rounded-lg font-medium transition-colors`}
+                      } rounded-lg font-medium transition-colors`}
                   >
                     Retake Exam
                   </button>
@@ -340,17 +364,16 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                     const userAnswer = examAnswers[q.id];
                     const isCorrect = examSubmitted && userAnswer !== undefined && userAnswer === q.correctAnswer;
                     const isIncorrect = examSubmitted && userAnswer !== undefined && userAnswer !== q.correctAnswer;
-                    
+
                     return (
-                      <div key={q.id || idx} className={`border-l-4 pl-6 py-4 rounded-r-lg ${
-                        examSubmitted
+                      <div key={q.id || idx} className={`border-l-4 pl-6 py-4 rounded-r-lg ${examSubmitted
                           ? isCorrect
                             ? 'border-green-500 bg-green-50'
                             : isIncorrect
-                            ? 'border-red-500 bg-red-50'
-                            : 'border-blue-500 bg-gray-50'
+                              ? 'border-red-500 bg-red-50'
+                              : 'border-blue-500 bg-gray-50'
                           : 'border-blue-500 bg-gray-50'
-                      }`}>
+                        }`}>
                         <div className="flex items-start gap-3 mb-4">
                           <span className={`${colors.text} font-bold text-xl flex-shrink-0`}>
                             Q{idx + 1}.
@@ -375,7 +398,7 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                               const isCorrectAnswer = q.correctAnswer === optIdx;
                               let borderColor = 'border-gray-200';
                               let bgColor = 'bg-white';
-                              
+
                               if (examSubmitted) {
                                 if (isCorrectAnswer) {
                                   borderColor = 'border-green-500';
@@ -388,25 +411,23 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                                 borderColor = 'border-blue-500';
                                 bgColor = 'bg-blue-50';
                               }
-                              
+
                               return (
                                 <button
                                   key={optIdx}
                                   onClick={() => handleExamAnswer(q.id, optIdx)}
                                   disabled={examSubmitted}
-                                  className={`w-full text-left p-3 rounded-lg border-2 ${borderColor} ${bgColor} transition-all ${
-                                    examSubmitted ? 'cursor-default' : 'cursor-pointer hover:border-blue-400 hover:shadow-sm'
-                                  }`}
+                                  className={`w-full text-left p-3 rounded-lg border-2 ${borderColor} ${bgColor} transition-all ${examSubmitted ? 'cursor-default' : 'cursor-pointer hover:border-blue-400 hover:shadow-sm'
+                                    }`}
                                 >
-                                  <span className={`font-medium ${
-                                    examSubmitted && isCorrectAnswer
+                                  <span className={`font-medium ${examSubmitted && isCorrectAnswer
                                       ? 'text-green-700'
                                       : examSubmitted && isSelected && !isCorrectAnswer
-                                      ? 'text-red-700'
-                                      : isSelected
-                                      ? colors.text
-                                      : 'text-gray-700'
-                                  }`}>
+                                        ? 'text-red-700'
+                                        : isSelected
+                                          ? colors.text
+                                          : 'text-gray-700'
+                                    }`}>
                                     {String.fromCharCode(65 + optIdx)}. {option}
                                     {examSubmitted && isCorrectAnswer && (
                                       <span className="ml-2 text-green-600">✓ Correct Answer</span>
@@ -432,7 +453,7 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                               const isCorrectAnswer = q.correctAnswer === value;
                               let borderColor = 'border-gray-200';
                               let bgColor = 'bg-white';
-                              
+
                               if (examSubmitted) {
                                 if (isCorrectAnswer) {
                                   borderColor = 'border-green-500';
@@ -445,25 +466,23 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
                                 borderColor = 'border-blue-500';
                                 bgColor = 'bg-blue-50';
                               }
-                              
+
                               return (
                                 <button
                                   key={value}
                                   onClick={() => handleExamAnswer(q.id, value)}
                                   disabled={examSubmitted}
-                                  className={`w-full text-left p-3 rounded-lg border-2 ${borderColor} ${bgColor} transition-all ${
-                                    examSubmitted ? 'cursor-default' : 'cursor-pointer hover:border-blue-400 hover:shadow-sm'
-                                  }`}
+                                  className={`w-full text-left p-3 rounded-lg border-2 ${borderColor} ${bgColor} transition-all ${examSubmitted ? 'cursor-default' : 'cursor-pointer hover:border-blue-400 hover:shadow-sm'
+                                    }`}
                                 >
-                                  <span className={`font-medium ${
-                                    examSubmitted && isCorrectAnswer
+                                  <span className={`font-medium ${examSubmitted && isCorrectAnswer
                                       ? 'text-green-700'
                                       : examSubmitted && isSelected && !isCorrectAnswer
-                                      ? 'text-red-700'
-                                      : isSelected
-                                      ? colors.text
-                                      : 'text-gray-700'
-                                  }`}>
+                                        ? 'text-red-700'
+                                        : isSelected
+                                          ? colors.text
+                                          : 'text-gray-700'
+                                    }`}>
                                     {value ? 'True' : 'False'}
                                     {examSubmitted && isCorrectAnswer && (
                                       <span className="ml-2 text-green-600">✓ Correct Answer</span>
@@ -535,11 +554,10 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
         <button
           onClick={goToPrevious}
           disabled={currentSlide === 0}
-          className={`px-6 py-2 rounded-lg flex items-center gap-2 transition-all ${
-            currentSlide === 0
+          className={`px-6 py-2 rounded-lg flex items-center gap-2 transition-all ${currentSlide === 0
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : `bg-gradient-to-r ${colors.card} text-white hover:opacity-90`
-          }`}
+            }`}
         >
           <ChevronLeft size={20} />
           Previous
@@ -551,11 +569,10 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
             <button
               key={idx}
               onClick={() => setCurrentSlide(idx)}
-              className={`h-2 rounded-full transition-all ${
-                idx === currentSlide
+              className={`h-2 rounded-full transition-all ${idx === currentSlide
                   ? `w-8 bg-gradient-to-r ${colors.card}`
                   : 'w-2 bg-gray-300 hover:bg-gray-400'
-              }`}
+                }`}
               title={`Go to slide ${idx + 1}`}
             />
           ))}
@@ -564,11 +581,10 @@ const SlidePresentation = ({ slides, courseColor, onClose, moduleTitle }) => {
         <button
           onClick={goToNext}
           disabled={currentSlide === slides.length - 1}
-          className={`px-6 py-2 rounded-lg flex items-center gap-2 transition-all ${
-            currentSlide === slides.length - 1
+          className={`px-6 py-2 rounded-lg flex items-center gap-2 transition-all ${currentSlide === slides.length - 1
               ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
               : `bg-gradient-to-r ${colors.card} text-white hover:opacity-90`
-          }`}
+            }`}
         >
           Next
           <ChevronRight size={20} />
