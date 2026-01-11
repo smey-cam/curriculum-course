@@ -2222,7 +2222,2067 @@ print(even_numbers2)`,
         ]
       }
     ]
+  },
+  // Module 1: Software Project Management
+  spm: {
+    1: [
+      {
+        type: 'overview',
+        title: 'Introduction to Software Project Management',
+        content:
+          'Software Project Management (SPM) is the application of knowledge, skills, tools, and techniques to software project activities in order to meet project requirements. It focuses on planning, organizing, leading, and controlling software projects while balancing scope, time, cost, and quality to ensure successful delivery and stakeholder satisfaction.',
+        topics: [
+          { title: 'Project Fundamentals', description: 'Basic concepts, characteristics, and constraints of projects' },
+          { title: 'Project Stakeholders & Risks', description: 'People involved in projects and potential uncertainties' },
+          { title: 'PM Roles & Responsibilities', description: 'Duties, skills, and authority of a Project Manager' },
+          { title: 'SDLC Overview & Models', description: 'Software development phases and common lifecycle models' },
+          { title: 'Module Exam', description: 'Auto-graded assessment of SPM concepts' }
+        ]
+      },
+
+      // ---------------- PROJECT FUNDAMENTALS (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Fundamentals',
+        content: [
+          'A project is a temporary endeavor undertaken to create a unique product, service, or result.',
+          'Software projects differ from operational work because they are goal-oriented and time-bound.',
+          'Each software project is created to solve a specific problem or meet a specific business need.',
+          'Project management provides a structured framework to manage complexity, uncertainty, and limited resources.'
+        ],
+        points: [
+          'Temporary with a clear start and finish',
+          'Produces a unique software solution',
+          'Has defined objectives and scope',
+          'Uses limited resources such as time, cost, and people',
+          'Involves uncertainty and risks'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Project Constraints (Triple Constraint)',
+        content: [
+          'All projects are limited by constraints that directly affect their success.',
+          'The Project Manager must balance these constraints throughout the project lifecycle.',
+          'Changing one constraint often impacts the others.'
+        ],
+        points: [
+          'Scope – features and functions to be delivered',
+          'Time – schedule, milestones, and deadlines',
+          'Cost – budget and financial resources',
+          'Quality – standards and customer expectations',
+          'Effective balance ensures project success'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Project Stakeholders',
+        content: [
+          'Stakeholders are individuals or groups that have an interest in the outcome of a project.',
+          'They can directly or indirectly influence project success.',
+          'Identifying stakeholders early improves communication and decision-making.'
+        ],
+        points: [
+          'Customers and clients',
+          'End users',
+          'Project sponsor',
+          'Project Manager',
+          'Software development team',
+          'Management and external partners'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Project Risks',
+        content: [
+          'Risk is the possibility that an uncertain event will negatively affect project objectives.',
+          'Software projects are especially vulnerable to technical and requirement-related risks.',
+          'Early risk identification helps reduce negative impacts.'
+        ],
+        points: [
+          'Technical risks – new or unstable technologies',
+          'Schedule risks – unrealistic deadlines',
+          'Cost risks – budget overruns',
+          'Resource risks – lack of skilled personnel',
+          'Requirement risks – frequent changes'
+        ]
+      },
+
+      // ---------------- PM ROLES & RESPONSIBILITIES (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Manager Roles & Responsibilities',
+        content: [
+          'The Project Manager (PM) is responsible for planning, executing, and closing the project.',
+          'The PM coordinates team members, manages resources, and communicates with stakeholders.',
+          'The PM ensures that project objectives are met within agreed constraints.'
+        ],
+        points: [
+          'Define project scope and objectives',
+          'Create project plans and schedules',
+          'Assign and monitor tasks',
+          'Manage communication with stakeholders',
+          'Identify and control project risks',
+          'Manage changes in project requirements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Project Manager Skills',
+        content: [
+          'A successful Project Manager requires a combination of technical knowledge and soft skills.',
+          'Strong interpersonal skills help manage teams and stakeholder expectations.'
+        ],
+        points: [
+          'Leadership and team management',
+          'Effective communication',
+          'Problem-solving and critical thinking',
+          'Decision-making ability',
+          'Time and priority management',
+          'Negotiation and conflict resolution'
+        ]
+      },
+
+      // ---------------- SDLC (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'SDLC Overview (Software Development Life Cycle)',
+        content: [
+          'The Software Development Life Cycle (SDLC) is a structured framework used to develop software systems.',
+          'It divides development work into phases to improve planning, control, and quality.',
+          'SDLC ensures that software meets user requirements and business goals.'
+        ],
+        points: [
+          'Requirement Analysis',
+          'System Design',
+          'Development',
+          'Testing',
+          'Deployment',
+          'Maintenance'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'SDLC Phases Explained',
+        content: [
+          'Each SDLC phase has a clear purpose and deliverables.',
+          'Skipping or poorly executing phases can result in software failure.'
+        ],
+        points: [
+          'Requirements – gather and document user needs',
+          'Design – define architecture and technical solutions',
+          'Development – implement the system',
+          'Testing – ensure quality and reliability',
+          'Deployment – release software to users',
+          'Maintenance – fix defects and add improvements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'SDLC Models',
+        content: [
+          'SDLC models describe how development phases are organized and executed.',
+          'Choosing the correct model depends on project size, complexity, and requirements.'
+        ],
+        points: [
+          'Waterfall – linear and sequential approach',
+          'Agile – iterative and flexible development',
+          'Spiral – risk-driven development model',
+          'Hybrid models are commonly used in practice'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Software Project Management',
+        description:
+          'This exam evaluates understanding of project fundamentals, stakeholder management, PM responsibilities, and SDLC concepts.',
+        duration: 40,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which of the following best defines a project?',
+            options: [
+              'An ongoing operational activity',
+              'A temporary effort with a unique outcome',
+              'A repetitive business process',
+              'An activity with unlimited resources'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which constraint is most affected when project requirements increase?',
+            options: ['Time', 'Scope', 'Cost', 'Quality'],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Who is primarily responsible for managing project risks?',
+            options: ['Developer', 'Client', 'Project Manager', 'Tester'],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Stakeholders can directly influence project outcomes.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'The SDLC helps improve software quality and project control.',
+            correctAnswer: true
+          }
+        ]
+      }
+    ],
+    // Module 2: Project Initiation & Planning (10 Hours)
+    2: [
+      {
+        type: 'overview',
+        title: 'Project Initiation & Planning',
+        content:
+          'Project Initiation and Planning are critical phases in software project management. This module focuses on defining the project formally, understanding and documenting requirements, managing project scope, and creating realistic schedules. Strong initiation and planning increase the likelihood of project success.',
+        topics: [
+          { title: 'Project Charter', description: 'Formally authorizing and defining the project' },
+          { title: 'Requirements Engineering', description: 'Eliciting, analyzing, and documenting requirements' },
+          { title: 'Scope Management', description: 'Defining and controlling what is included in the project' },
+          { title: 'Scheduling', description: 'Planning project activities and timelines' },
+          { title: 'Module Exam', description: 'Assess understanding of initiation and planning concepts' }
+        ]
+      },
+
+      // ---------------- PROJECT INITIATION (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Initiation',
+        content: [
+          'Project initiation is the first phase of the project lifecycle.',
+          'It defines the purpose, objectives, and feasibility of the project.',
+          'This phase ensures that the project aligns with business goals.'
+        ],
+        points: [
+          'Identify business need',
+          'Define high-level objectives',
+          'Assess feasibility',
+          'Identify key stakeholders',
+          'Authorize the project'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Project Charter',
+        content: [
+          'A project charter is a formal document that officially authorizes a project.',
+          'It gives the Project Manager authority to use organizational resources.',
+          'The charter acts as a reference throughout the project lifecycle.'
+        ],
+        points: [
+          'Project purpose and justification',
+          'High-level requirements',
+          'Project objectives and success criteria',
+          'High-level risks and assumptions',
+          'Stakeholders and sponsor',
+          'Assigned Project Manager'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Importance of the Project Charter',
+        content: [
+          'The project charter provides a shared understanding of the project.',
+          'It prevents confusion and scope misunderstandings.',
+          'It is approved by the project sponsor.'
+        ],
+        points: [
+          'Formally starts the project',
+          'Clarifies authority and responsibility',
+          'Aligns stakeholders',
+          'Acts as a baseline reference'
+        ]
+      },
+
+      // ---------------- REQUIREMENTS ENGINEERING (3 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Requirements Engineering Overview',
+        content: [
+          'Requirements engineering is the process of defining what the system should do.',
+          'Clear requirements are essential for project success.',
+          'Poor requirements are a major cause of project failure.'
+        ],
+        points: [
+          'Elicitation',
+          'Analysis',
+          'Specification',
+          'Validation',
+          'Requirements management'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Requirements Elicitation Techniques',
+        content: [
+          'Elicitation is the process of gathering requirements from stakeholders.',
+          'Different techniques are used depending on the project context.'
+        ],
+        points: [
+          'Interviews',
+          'Workshops',
+          'Questionnaires',
+          'Observation',
+          'Document analysis'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Types of Requirements',
+        content: [
+          'Requirements describe what the system must do and how it should perform.',
+          'They are typically classified into functional and non-functional requirements.'
+        ],
+        points: [
+          'Functional requirements',
+          'Non-functional requirements',
+          'Business requirements',
+          'User requirements',
+          'System requirements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Requirements Documentation',
+        content: [
+          'Requirements must be documented clearly and unambiguously.',
+          'Documentation serves as a contract between stakeholders and developers.'
+        ],
+        points: [
+          'Software Requirements Specification (SRS)',
+          'Use cases',
+          'User stories',
+          'Acceptance criteria'
+        ]
+      },
+
+      // ---------------- SCOPE MANAGEMENT (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Scope Management Overview',
+        content: [
+          'Scope management defines and controls what is included in the project.',
+          'It helps prevent unnecessary work and scope creep.'
+        ],
+        points: [
+          'Scope planning',
+          'Scope definition',
+          'Work Breakdown Structure (WBS)',
+          'Scope validation',
+          'Scope control'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Defining Project Scope',
+        content: [
+          'Project scope describes the work required to deliver the product.',
+          'Clear scope definition helps estimate time and cost accurately.'
+        ],
+        points: [
+          'In-scope items',
+          'Out-of-scope items',
+          'Deliverables',
+          'Acceptance criteria'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Work Breakdown Structure (WBS)',
+        content: [
+          'A WBS is a hierarchical decomposition of project work.',
+          'It breaks the project into manageable components.'
+        ],
+        points: [
+          'Top-down breakdown',
+          'Deliverable-oriented structure',
+          'Improves estimation accuracy',
+          'Foundation for scheduling'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scope Creep',
+        content: [
+          'Scope creep refers to uncontrolled changes in project scope.',
+          'It often occurs when requirements are not clearly defined.'
+        ],
+        points: [
+          'Causes of scope creep',
+          'Impact on time and cost',
+          'Importance of change control'
+        ]
+      },
+
+      // ---------------- SCHEDULING (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Scheduling Overview',
+        content: [
+          'Scheduling involves planning when project activities will occur.',
+          'A good schedule helps track progress and manage deadlines.'
+        ],
+        points: [
+          'Define activities',
+          'Sequence activities',
+          'Estimate durations',
+          'Develop schedule',
+          'Control schedule'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scheduling Techniques',
+        content: [
+          'Different techniques are used to create and manage schedules.',
+          'Scheduling tools help visualize timelines.'
+        ],
+        points: [
+          'Gantt charts',
+          'Milestones',
+          'Critical Path Method (CPM)',
+          'Dependencies between tasks'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Estimating Time and Effort',
+        content: [
+          'Estimation predicts how long tasks will take.',
+          'Accurate estimates improve planning and reduce delays.'
+        ],
+        points: [
+          'Expert judgment',
+          'Analogous estimation',
+          'Task-based estimation',
+          'Buffer time'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Project Initiation & Planning',
+        description:
+          'This exam evaluates understanding of project charter, requirements engineering, scope management, and scheduling.',
+        duration: 50, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is the main purpose of a project charter?',
+            options: [
+              'To schedule project activities',
+              'To formally authorize the project',
+              'To test the software',
+              'To close the project'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which activity focuses on gathering requirements from stakeholders?',
+            options: [
+              'Validation',
+              'Elicitation',
+              'Design',
+              'Testing'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which document clearly defines project scope and deliverables?',
+            options: [
+              'Project Charter',
+              'SRS',
+              'WBS',
+              'Test Plan'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Scope creep can negatively impact project cost and schedule.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Gantt charts are used for project scheduling.',
+            correctAnswer: true
+          }
+        ]
+      }
+    ],
+    // Module 3: Agile Project Management (12 Hours)
+    3: [
+      {
+        type: 'overview',
+        title: 'Agile Project Management',
+        content:
+          'Agile Project Management is an adaptive approach focused on delivering value through iterative development, collaboration, and continuous improvement. This module introduces Agile principles, Scrum and Kanban frameworks, and Agile estimation techniques used in modern software projects.',
+        topics: [
+          { title: 'Agile Principles', description: 'Values and mindset behind Agile development' },
+          { title: 'Scrum Framework', description: 'Roles, events, and artifacts in Scrum' },
+          { title: 'Kanban Method', description: 'Visual workflow management and continuous delivery' },
+          { title: 'Agile Estimation', description: 'Estimating effort and complexity in Agile projects' },
+          { title: 'Module Exam', description: 'Assess understanding of Agile concepts and practices' }
+        ]
+      },
+
+      // ---------------- AGILE OVERVIEW & PRINCIPLES (3 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Agile Project Management',
+        content: [
+          'Agile Project Management focuses on flexibility, customer collaboration, and rapid delivery.',
+          'It is widely used in software development where requirements change frequently.',
+          'Agile emphasizes people and interactions over rigid processes.'
+        ],
+        points: [
+          'Iterative and incremental development',
+          'Customer collaboration',
+          'Responding to change',
+          'Frequent delivery of working software'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Agile Manifesto',
+        content: [
+          'The Agile Manifesto defines the core values of Agile development.',
+          'It was created in 2001 by experienced software practitioners.'
+        ],
+        points: [
+          'Individuals and interactions over processes and tools',
+          'Working software over comprehensive documentation',
+          'Customer collaboration over contract negotiation',
+          'Responding to change over following a plan'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Agile Principles',
+        content: [
+          'Agile principles provide guidelines for implementing Agile values.',
+          'They focus on customer satisfaction and continuous improvement.'
+        ],
+        points: [
+          'Early and continuous delivery',
+          'Welcoming changing requirements',
+          'Frequent delivery of working software',
+          'Close collaboration between business and development',
+          'Sustainable development pace'
+        ]
+      },
+
+      // ---------------- SCRUM FRAMEWORK (4 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Scrum Framework Overview',
+        content: [
+          'Scrum is the most popular Agile framework.',
+          'It organizes work into short iterations called sprints.',
+          'Scrum promotes transparency, inspection, and adaptation.'
+        ],
+        points: [
+          'Time-boxed iterations',
+          'Cross-functional teams',
+          'Continuous feedback',
+          'Incremental delivery'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scrum Roles',
+        content: [
+          'Scrum defines clear roles to ensure accountability and collaboration.',
+          'Each role has specific responsibilities.'
+        ],
+        points: [
+          'Product Owner – manages product backlog and priorities',
+          'Scrum Master – facilitates Scrum process',
+          'Development Team – builds the product increment'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scrum Events',
+        content: [
+          'Scrum events structure the sprint cycle.',
+          'They provide opportunities for planning, review, and improvement.'
+        ],
+        points: [
+          'Sprint',
+          'Sprint Planning',
+          'Daily Scrum',
+          'Sprint Review',
+          'Sprint Retrospective'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scrum Artifacts',
+        content: [
+          'Scrum artifacts provide transparency and shared understanding.',
+          'They help track progress and outcomes.'
+        ],
+        points: [
+          'Product Backlog',
+          'Sprint Backlog',
+          'Increment',
+          'Definition of Done (DoD)'
+        ]
+      },
+
+      // ---------------- KANBAN METHOD (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Kanban Method Overview',
+        content: [
+          'Kanban is an Agile method focused on continuous flow.',
+          'It visualizes work and limits work in progress (WIP).'
+        ],
+        points: [
+          'Visual workflow',
+          'Continuous delivery',
+          'Pull-based system',
+          'WIP limits'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Kanban Board',
+        content: [
+          'A Kanban board visualizes work stages.',
+          'It helps teams identify bottlenecks.'
+        ],
+        points: [
+          'To Do',
+          'In Progress',
+          'Testing',
+          'Done',
+          'Custom workflow stages'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Scrum vs Kanban',
+        content: [
+          'Scrum and Kanban are both Agile approaches.',
+          'They differ in structure and flexibility.'
+        ],
+        points: [
+          'Iterations vs continuous flow',
+          'Defined roles vs flexible roles',
+          'Sprint planning vs pull-based work',
+          'Fixed scope vs flexible scope'
+        ]
+      },
+
+      // ---------------- AGILE ESTIMATION (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Agile Estimation Overview',
+        content: [
+          'Agile estimation focuses on relative effort rather than exact time.',
+          'It accepts uncertainty and change.'
+        ],
+        points: [
+          'Relative estimation',
+          'Team-based estimation',
+          'Continuous refinement'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Story Points',
+        content: [
+          'Story points measure effort, complexity, and risk.',
+          'They are not directly tied to hours.'
+        ],
+        points: [
+          'Relative sizing',
+          'Team-specific scale',
+          'Used for sprint planning'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Agile Estimation Techniques',
+        content: [
+          'Agile teams use collaborative estimation techniques.',
+          'These techniques improve accuracy and team alignment.'
+        ],
+        points: [
+          'Planning Poker',
+          'T-shirt sizing',
+          'Velocity',
+          'Backlog refinement'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Agile Project Management',
+        description:
+          'This exam assesses understanding of Agile principles, Scrum, Kanban, and Agile estimation techniques.',
+        duration: 60, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which value is part of the Agile Manifesto?',
+            options: [
+              'Processes over people',
+              'Working software over documentation',
+              'Strict planning over flexibility',
+              'Tools over interactions'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Who is responsible for maximizing product value in Scrum?',
+            options: [
+              'Scrum Master',
+              'Product Owner',
+              'Developer',
+              'Project Sponsor'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'What does Kanban primarily focus on?',
+            options: [
+              'Fixed-length sprints',
+              'Continuous flow',
+              'Heavy documentation',
+              'Strict roles'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Story points represent exact hours of work.',
+            correctAnswer: false
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Planning Poker is an Agile estimation technique.',
+            correctAnswer: true
+          }
+        ]
+      }
+    ],
+    // Module 4: Risk & Quality Management (8 Hours)
+    4: [
+      {
+        type: 'overview',
+        title: 'Risk & Quality Management',
+        content:
+          'Risk and Quality Management are critical for ensuring project success. This module covers identifying and mitigating project risks, maintaining high-quality standards, and implementing effective testing strategies.',
+        topics: [
+          { title: 'Risk Identification', description: 'Recognizing potential project issues before they occur' },
+          { title: 'Quality Assurance', description: 'Ensuring processes produce high-quality software' },
+          { title: 'Testing Strategies', description: 'Approaches to verify and validate software functionality' },
+          { title: 'Module Exam', description: 'Assess understanding of risk and quality management concepts' }
+        ]
+      },
+
+      // ---------------- RISK MANAGEMENT (3 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Risk Management',
+        content: [
+          'Risk management involves identifying, assessing, and mitigating project risks.',
+          'It helps minimize negative impacts on project objectives.',
+          'Proactive risk management increases the likelihood of project success.'
+        ],
+        points: [
+          'Identify potential risks early',
+          'Assess probability and impact',
+          'Plan responses to risks',
+          'Monitor and control risks continuously'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Types of Project Risks',
+        content: [
+          'Risks can affect different aspects of a project.',
+          'Understanding risk types helps prioritize and respond effectively.'
+        ],
+        points: [
+          'Technical risks – issues with technology or tools',
+          'Schedule risks – delays in timelines',
+          'Cost risks – budget overruns',
+          'Resource risks – lack of skilled personnel',
+          'Requirement risks – unclear or changing requirements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Risk Identification Techniques',
+        content: [
+          'Identifying risks early is critical.',
+          'Various techniques help uncover potential issues.'
+        ],
+        points: [
+          'Brainstorming',
+          'Checklists and templates',
+          'Interviews with stakeholders',
+          'SWOT analysis (Strengths, Weaknesses, Opportunities, Threats)',
+          'Lessons learned from previous projects'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Risk Assessment and Prioritization',
+        content: [
+          'Once risks are identified, they must be analyzed and prioritized.',
+          'Focus on high-impact, high-probability risks first.'
+        ],
+        points: [
+          'Qualitative assessment – high/medium/low',
+          'Quantitative assessment – numerical probability and impact',
+          'Risk matrix – visualize risk severity'
+        ]
+      },
+
+      // ---------------- QUALITY MANAGEMENT (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Quality Management',
+        content: [
+          'Quality management ensures software meets standards and satisfies stakeholder expectations.',
+          'It encompasses both processes and final products.'
+        ],
+        points: [
+          'Quality planning – define quality standards',
+          'Quality assurance – monitor processes',
+          'Quality control – verify product meets standards'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Quality Assurance (QA)',
+        content: [
+          'QA focuses on improving processes to prevent defects.',
+          'It is proactive and continuous throughout the project.'
+        ],
+        points: [
+          'Process standardization',
+          'Audits and reviews',
+          'Continuous improvement',
+          'Documentation and training'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Quality Control (QC)',
+        content: [
+          'QC focuses on identifying defects in the product.',
+          'It is reactive and performed during development and testing.'
+        ],
+        points: [
+          'Verification – “Are we building the product right?”',
+          'Validation – “Are we building the right product?”',
+          'Inspection and testing of deliverables'
+        ]
+      },
+
+      // ---------------- TESTING STRATEGIES (2.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Testing',
+        content: [
+          'Testing ensures the software functions correctly and meets requirements.',
+          'It is an essential part of quality assurance.'
+        ],
+        points: [
+          'Detect defects early',
+          'Verify functionality',
+          'Validate against requirements',
+          'Improve user satisfaction'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Types of Testing',
+        content: [
+          'Testing can be performed at different levels and approaches.'
+        ],
+        points: [
+          'Unit testing – individual components',
+          'Integration testing – combined components',
+          'System testing – complete system',
+          'Acceptance testing – meets user requirements',
+          'Regression testing – ensure changes do not break existing functionality'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Testing Strategies',
+        content: [
+          'Effective testing strategies help identify defects efficiently.',
+          'Selection depends on project size, complexity, and risk.'
+        ],
+        points: [
+          'Black-box testing – test functionality without knowing code',
+          'White-box testing – test internal logic and structure',
+          'Automated testing – tools for regression and performance testing',
+          'Manual testing – human evaluation of usability and correctness'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Risk & Quality Management',
+        description:
+          'This exam evaluates understanding of risk identification, quality assurance, and testing strategies.',
+        duration: 45, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which of the following is a technical risk?',
+            options: [
+              'Budget overrun',
+              'Requirement misunderstanding',
+              'Software tool failure',
+              'Team vacation schedule'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Quality assurance focuses on:',
+            options: [
+              'Finding defects in the final product',
+              'Improving processes to prevent defects',
+              'Testing the software manually',
+              'Assigning developers to tasks'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Acceptance testing verifies:',
+            options: [
+              'Code correctness only',
+              'Process compliance',
+              'System meets user requirements',
+              'Performance metrics'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Risk management is a continuous process throughout the project.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Unit testing checks the entire system at once.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 5: Team Management & Communication (6 Hours)
+    5: [
+      {
+        type: 'overview',
+        title: 'Team Management & Communication',
+        content:
+          'Effective team management and communication are critical for project success. This module covers team development, communication planning, and leadership skills necessary for managing high-performing software project teams.',
+        topics: [
+          { title: 'Team Development', description: 'Building and managing a high-performing project team' },
+          { title: 'Communication Planning', description: 'Planning and executing project communication strategies' },
+          { title: 'Leadership Skills', description: 'Skills needed to lead and motivate project teams' },
+          { title: 'Module Exam', description: 'Assess understanding of team management and communication concepts' }
+        ]
+      },
+
+      // ---------------- TEAM DEVELOPMENT (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Team Development',
+        content: [
+          'Teams are the foundation of successful software projects.',
+          'Team development involves forming, building trust, and establishing roles.',
+          'High-performing teams improve productivity and project outcomes.'
+        ],
+        points: [
+          'Forming, storming, norming, performing stages',
+          'Clear roles and responsibilities',
+          'Collaboration and trust building',
+          'Conflict resolution'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Building Effective Teams',
+        content: [
+          'Effective teams combine diverse skills and personalities to achieve goals.',
+          'Team cohesion is essential for communication and performance.'
+        ],
+        points: [
+          'Selecting the right team members',
+          'Defining clear roles',
+          'Encouraging collaboration',
+          'Providing training and mentoring'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Team Roles & Responsibilities',
+        content: [
+          'Each team member has a role contributing to project success.',
+          'Roles should be clearly defined to avoid confusion.'
+        ],
+        points: [
+          'Project Manager – overall coordination',
+          'Developers – build the software',
+          'Testers – ensure quality',
+          'Business Analysts – gather requirements',
+          'Designers – create UI/UX'
+        ]
+      },
+
+      // ---------------- COMMUNICATION PLANNING (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Importance of Communication',
+        content: [
+          'Effective communication ensures everyone understands project goals, progress, and changes.',
+          'Poor communication can lead to misunderstandings, delays, and errors.'
+        ],
+        points: [
+          'Clear messages and updates',
+          'Regular team meetings',
+          'Stakeholder engagement',
+          'Documentation and reporting'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Communication Planning',
+        content: [
+          'Communication planning determines who needs information, what information is needed, and how it will be delivered.',
+          'A well-defined plan improves project transparency and accountability.'
+        ],
+        points: [
+          'Identify stakeholders',
+          'Define communication methods (meetings, reports, dashboards)',
+          'Frequency and timing of updates',
+          'Responsible persons for communication',
+          'Feedback mechanisms'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Communication Channels & Tools',
+        content: [
+          'Choosing the right communication tools improves collaboration.',
+          'Both synchronous and asynchronous methods are useful.'
+        ],
+        points: [
+          'Email and messaging platforms',
+          'Video and audio calls',
+          'Project management tools (Jira, Trello, Asana)',
+          'Documentation (Wiki, shared drives)',
+          'Regular team meetings and stand-ups'
+        ]
+      },
+
+      // ---------------- LEADERSHIP SKILLS (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Leadership in Project Teams',
+        content: [
+          'Leadership is essential to motivate and guide the team.',
+          'Project leaders balance technical, interpersonal, and strategic skills.'
+        ],
+        points: [
+          'Motivating team members',
+          'Resolving conflicts',
+          'Decision making',
+          'Delegation and accountability'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Leadership Styles',
+        content: [
+          'Different projects require different leadership approaches.',
+          'Adapting leadership style improves team performance.'
+        ],
+        points: [
+          'Autocratic – centralized decision making',
+          'Democratic – collaborative decision making',
+          'Transformational – inspire and motivate',
+          'Servant leadership – focus on team needs'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Developing Leadership Skills',
+        content: [
+          'Project leaders can improve their effectiveness through continuous learning.',
+          'Leadership development benefits both the project and career growth.'
+        ],
+        points: [
+          'Effective communication',
+          'Emotional intelligence',
+          'Conflict management',
+          'Mentoring and coaching',
+          'Continuous feedback'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Team Management & Communication',
+        description:
+          'This exam evaluates understanding of team development, communication planning, and leadership skills.',
+        duration: 40, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which stage of team development involves members resolving conflicts and establishing norms?',
+            options: ['Forming', 'Storming', 'Norming', 'Performing'],
+            correctAnswer: 2
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which of the following is a key purpose of a communication plan?',
+            options: [
+              'Define project scope',
+              'Identify stakeholders and communication methods',
+              'Assign coding tasks',
+              'Monitor project risks'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Servant leadership focuses on:',
+            options: [
+              'Centralized decision making',
+              'Motivating only the leader',
+              'Serving team needs and supporting members',
+              'Strictly enforcing rules'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Regular team meetings improve communication and transparency.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Leadership skills are not important for project success.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 6: Cost & Resource Management (6 Hours)
+    6: [
+      {
+        type: 'overview',
+        title: 'Cost & Resource Management',
+        content:
+          'Cost and Resource Management ensures that software projects are delivered within budget and that resources are allocated efficiently. This module covers cost estimation, resource allocation, and Earned Value Management (EVM) for monitoring project performance.',
+        topics: [
+          { title: 'Cost Estimation', description: 'Estimating project costs accurately' },
+          { title: 'Resource Allocation', description: 'Assigning people, equipment, and materials efficiently' },
+          { title: 'Earned Value Management', description: 'Measuring project performance and progress' },
+          { title: 'Module Exam', description: 'Assess understanding of cost and resource management concepts' }
+        ]
+      },
+
+      // ---------------- COST ESTIMATION (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Cost Management',
+        content: [
+          'Cost management involves planning, estimating, budgeting, and controlling project costs.',
+          'Accurate cost estimation helps prevent overruns and ensures financial success.'
+        ],
+        points: [
+          'Cost planning and estimation',
+          'Budgeting and cost control',
+          'Monitoring and reporting',
+          'Adjusting for changes and risks'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Cost Estimation Techniques',
+        content: [
+          'Estimating costs helps determine the budget required for resources and activities.',
+          'Different techniques are used depending on the project context.'
+        ],
+        points: [
+          'Analogous estimation – using historical data',
+          'Parametric estimation – mathematical models',
+          'Bottom-up estimation – summing detailed estimates',
+          'Three-point estimation – optimistic, pessimistic, most likely'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Factors Affecting Cost Estimation',
+        content: [
+          'Several factors can influence cost estimates and accuracy.',
+          'Consider these factors when planning the budget.'
+        ],
+        points: [
+          'Project size and complexity',
+          'Team skill levels',
+          'Technology and tools',
+          'Schedule constraints',
+          'Market and resource availability'
+        ]
+      },
+
+      // ---------------- RESOURCE ALLOCATION (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Resource Management',
+        content: [
+          'Resource management ensures that project resources are available and used efficiently.',
+          'Resources include people, equipment, materials, and budget.'
+        ],
+        points: [
+          'Identify required resources',
+          'Assign resources to tasks',
+          'Balance workload and availability',
+          'Monitor resource utilization'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Resource Allocation Techniques',
+        content: [
+          'Proper allocation improves productivity and avoids delays.',
+          'Techniques depend on project complexity and team structure.'
+        ],
+        points: [
+          'Resource leveling – balance workload',
+          'Resource smoothing – adjust timing without changing scope',
+          'Critical resource identification',
+          'Prioritization based on dependencies'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Resource Management Tools',
+        content: [
+          'Tools help monitor and optimize resource usage.',
+          'Effective use of tools reduces bottlenecks and improves planning.'
+        ],
+        points: [
+          'MS Project / Primavera',
+          'Gantt charts for resource planning',
+          'Project management software (Jira, Asana, Trello)',
+          'Dashboards and reports'
+        ]
+      },
+
+      // ---------------- EARNED VALUE MANAGEMENT (2 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Earned Value Management (EVM)',
+        content: [
+          'EVM is a technique to measure project performance and progress.',
+          'It integrates cost, schedule, and scope metrics.'
+        ],
+        points: [
+          'Planned Value (PV)',
+          'Actual Cost (AC)',
+          'Earned Value (EV)',
+          'Cost Variance (CV)',
+          'Schedule Variance (SV)',
+          'Performance indices (CPI, SPI)'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'EVM Calculations and Analysis',
+        content: [
+          'EVM metrics help managers make informed decisions.',
+          'They identify whether a project is on budget and schedule.'
+        ],
+        points: [
+          'Cost Variance (CV = EV – AC)',
+          'Schedule Variance (SV = EV – PV)',
+          'Cost Performance Index (CPI = EV / AC)',
+          'Schedule Performance Index (SPI = EV / PV)',
+          'Forecasting completion costs and schedules'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Cost & Resource Management',
+        description:
+          'This exam evaluates understanding of cost estimation, resource allocation, and Earned Value Management.',
+        duration: 40, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which estimation technique uses historical project data?',
+            options: ['Analogous estimation', 'Bottom-up estimation', 'Three-point estimation', 'Parametric estimation'],
+            correctAnswer: 0
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Resource leveling aims to:',
+            options: [
+              'Balance resource workload',
+              'Increase project scope',
+              'Reduce budget only',
+              'Skip low-priority tasks'
+            ],
+            correctAnswer: 0
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'In EVM, Cost Performance Index (CPI) is calculated as:',
+            options: ['EV / AC', 'AC / EV', 'EV – AC', 'PV / EV'],
+            correctAnswer: 0
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Earned Value Management integrates cost, schedule, and scope metrics.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Resource allocation only considers human resources.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 7: Project Monitoring & Control (4 Hours)
+    7: [
+      {
+        type: 'overview',
+        title: 'Project Monitoring & Control',
+        content:
+          'Project Monitoring & Control ensures that a project stays on track in terms of scope, schedule, cost, and quality. This module covers progress tracking, change management, and performance metrics to help project managers make informed decisions.',
+        topics: [
+          { title: 'Progress Tracking', description: 'Monitoring project activities and milestones' },
+          { title: 'Change Management', description: 'Managing scope changes and their impact' },
+          { title: 'Performance Metrics', description: 'Measuring project performance using KPIs' },
+          { title: 'Module Exam', description: 'Assess understanding of monitoring and control processes' }
+        ]
+      },
+
+      // ---------------- PROGRESS TRACKING (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Progress Tracking',
+        content: [
+          'Progress tracking involves monitoring project activities to ensure that milestones are met.',
+          'It helps identify delays and take corrective actions in time.'
+        ],
+        points: [
+          'Tracking tasks against project plan',
+          'Identifying schedule deviations',
+          'Regular status reporting',
+          'Using visual tools like Gantt charts and dashboards'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Tools for Progress Tracking',
+        content: [
+          'Project managers use tools to track progress efficiently.',
+          'These tools improve transparency and decision-making.'
+        ],
+        points: [
+          'Gantt charts and timelines',
+          'Project management software (MS Project, Jira, Trello)',
+          'Dashboards and reports',
+          'Milestone tracking'
+        ]
+      },
+
+      // ---------------- CHANGE MANAGEMENT (1 Hour) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Change Management',
+        content: [
+          'Change management is the process of handling scope or requirement changes systematically.',
+          'It ensures that changes are evaluated and implemented without derailing the project.'
+        ],
+        points: [
+          'Change request submission and approval',
+          'Impact analysis on cost, schedule, and resources',
+          'Communication of changes to stakeholders',
+          'Documentation of changes and decisions'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Change Control Process',
+        content: [
+          'A structured change control process reduces risk and confusion.',
+          'All changes must be logged, reviewed, and approved.'
+        ],
+        points: [
+          'Submit change request',
+          'Analyze impact on project',
+          'Decision by Change Control Board (CCB)',
+          'Update project plans and communicate'
+        ]
+      },
+
+      // ---------------- PERFORMANCE METRICS (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Key Performance Metrics',
+        content: [
+          'Performance metrics help measure project success and identify areas for improvement.',
+          'They provide quantitative data for decision-making.'
+        ],
+        points: [
+          'Schedule Variance (SV) and Cost Variance (CV)',
+          'Cost Performance Index (CPI) and Schedule Performance Index (SPI)',
+          'Milestone completion rate',
+          'Quality metrics and defect rates',
+          'Resource utilization'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Monitoring & Reporting Techniques',
+        content: [
+          'Effective monitoring requires timely reporting and analysis of metrics.',
+          'Reports should be understandable and actionable.'
+        ],
+        points: [
+          'Weekly status reports',
+          'Dashboards with visual indicators',
+          'Variance analysis',
+          'Forecasting trends and corrective actions'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Project Monitoring & Control',
+        description:
+          'This exam evaluates understanding of progress tracking, change management, and performance metrics.',
+        duration: 30, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which tool is commonly used to visualize project progress?',
+            options: ['Gantt chart', 'Kanban board', 'Story points', 'Product backlog'],
+            correctAnswer: 0
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Change management ensures that:',
+            options: [
+              'All changes are ignored',
+              'Changes are evaluated and approved systematically',
+              'Project schedule is extended automatically',
+              'Stakeholders make all decisions individually'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Schedule Performance Index (SPI) measures:',
+            options: [
+              'Cost efficiency',
+              'Schedule efficiency',
+              'Quality compliance',
+              'Resource utilization'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Progress tracking helps identify delays early.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Performance metrics are only useful at the end of the project.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 8: Project Tools & Technologies (4 Hours)
+    8: [
+      {
+        type: 'overview',
+        title: 'Project Tools & Technologies',
+        content:
+          'Project Tools & Technologies enable teams to plan, track, collaborate, and manage software projects efficiently. This module covers popular project management tools, version control systems, and collaboration platforms.',
+        topics: [
+          { title: 'Project Management Tools', description: 'Using Jira, Trello, and MS Project to manage tasks and schedules' },
+          { title: 'Version Control', description: 'Tracking changes to code and documentation using Git and repositories' },
+          { title: 'Collaboration Tools', description: 'Enhancing team communication and document sharing' },
+          { title: 'Module Exam', description: 'Assess understanding of project tools and technologies' }
+        ]
+      },
+
+      // ---------------- PROJECT MANAGEMENT TOOLS (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Project Management Tools',
+        content: [
+          'Project management tools help teams plan, schedule, and track tasks efficiently.',
+          'Choosing the right tool improves productivity and transparency.'
+        ],
+        points: [
+          'Task and issue tracking',
+          'Scheduling and milestone management',
+          'Resource allocation',
+          'Reporting and dashboards'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Popular Project Management Tools',
+        content: [
+          'Several tools are widely used in software projects depending on team size and complexity.'
+        ],
+        points: [
+          'Jira – Agile project management and issue tracking',
+          'Trello – Visual Kanban boards for task management',
+          'MS Project – Gantt charts, scheduling, and resource planning',
+          'Choosing the right tool depends on project methodology and team needs'
+        ]
+      },
+
+      // ---------------- VERSION CONTROL (1 Hour) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Version Control',
+        content: [
+          'Version control systems track changes in code and documentation over time.',
+          'They allow multiple team members to work collaboratively without conflicts.'
+        ],
+        points: [
+          'Track modifications and history',
+          'Collaborate on code and documents',
+          'Revert changes if necessary',
+          'Manage branches for parallel development'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Popular Version Control Tools',
+        content: [
+          'Using version control effectively reduces errors and improves team collaboration.'
+        ],
+        points: [
+          'Git – distributed version control system',
+          'GitHub / GitLab / Bitbucket – hosting repositories',
+          'Pull requests and code reviews',
+          'Branching strategies (feature, develop, main)'
+        ]
+      },
+
+      // ---------------- COLLABORATION TOOLS (1.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Collaboration Tools Overview',
+        content: [
+          'Collaboration tools enhance communication and coordination among team members.',
+          'They support documentation, meetings, and instant communication.'
+        ],
+        points: [
+          'Slack / Microsoft Teams – messaging and notifications',
+          'Google Workspace / Office 365 – document sharing and collaboration',
+          'Confluence / Notion – knowledge management and documentation',
+          'Video conferencing tools – Zoom, Google Meet'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Best Practices for Using Tools',
+        content: [
+          'Tools are most effective when used consistently and according to best practices.'
+        ],
+        points: [
+          'Keep tasks updated and visible',
+          'Follow version control conventions',
+          'Communicate clearly through collaboration platforms',
+          'Document decisions and project updates'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Project Tools & Technologies',
+        description:
+          'This exam evaluates understanding of project management tools, version control, and collaboration platforms.',
+        duration: 30, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which tool is primarily used for Agile issue tracking?',
+            options: ['Trello', 'Jira', 'MS Project', 'Slack'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Version control allows teams to:',
+            options: [
+              'Track changes to code and collaborate',
+              'Plan milestones and tasks',
+              'Send instant messages',
+              'Create dashboards only'
+            ],
+            correctAnswer: 0
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'GitHub is used for:',
+            options: [
+              'Messaging and notifications',
+              'Hosting Git repositories',
+              'Project scheduling',
+              'Video conferencing'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Collaboration tools help improve team communication.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Version control is only necessary for large projects.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 9: Project Closure & Lessons Learned (2 Hours)
+    9: [
+      {
+        type: 'overview',
+        title: 'Project Closure & Lessons Learned',
+        content:
+          'Project closure ensures that all project activities are completed, deliverables are handed over, and lessons learned are documented for future projects. This module covers closure checklists, post-implementation reviews, and documentation best practices.',
+        topics: [
+          { title: 'Closure Checklist', description: 'Steps to formally close a project' },
+          { title: 'Post-Implementation Review', description: 'Evaluating project success and challenges' },
+          { title: 'Documentation', description: 'Capturing knowledge and lessons learned' },
+          { title: 'Module Exam', description: 'Assess understanding of project closure and lessons learned' }
+        ]
+      },
+
+      // ---------------- CLOSURE CHECKLIST (0.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Introduction to Project Closure',
+        content: [
+          'Project closure ensures that all deliverables are completed and accepted.',
+          'It formally ends the project and releases resources.'
+        ],
+        points: [
+          'Confirm completion of all tasks and deliverables',
+          'Obtain formal acceptance from stakeholders',
+          'Release project resources (team, budget, tools)',
+          'Close contracts and financial accounts'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Closure Checklist Items',
+        content: [
+          'A structured checklist ensures nothing is overlooked during project closure.'
+        ],
+        points: [
+          'Deliverables verification and acceptance',
+          'Final project report',
+          'Financial closure (budget reconciliation)',
+          'Contract closure',
+          'Archiving project documentation'
+        ]
+      },
+
+      // ---------------- POST-IMPLEMENTATION REVIEW (0.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Post-Implementation Review',
+        content: [
+          'A review after project completion identifies successes and areas for improvement.',
+          'It ensures lessons are captured for future projects.'
+        ],
+        points: [
+          'Evaluate project objectives vs. outcomes',
+          'Identify what went well and what didn’t',
+          'Document lessons learned and best practices',
+          'Share feedback with team and stakeholders'
+        ]
+      },
+
+      // ---------------- DOCUMENTATION (1 HOUR) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Documentation',
+        content: [
+          'Proper documentation ensures knowledge is retained and accessible.',
+          'It supports accountability and continuous improvement.'
+        ],
+        points: [
+          'Final project report',
+          'Lessons learned repository',
+          'Technical documentation and user manuals',
+          'Project metrics and performance reports',
+          'Archiving for future reference'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Best Practices in Documentation',
+        content: [
+          'Effective documentation should be accurate, organized, and accessible.'
+        ],
+        points: [
+          'Keep records up to date throughout the project',
+          'Use templates and standardized formats',
+          'Store documents in a central repository',
+          'Ensure accessibility to stakeholders and future teams'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE EXAM ----------------
+      {
+        type: 'exam',
+        title: 'Module Exam: Project Closure & Lessons Learned',
+        description:
+          'This exam evaluates understanding of project closure steps, post-implementation review, and documentation best practices.',
+        duration: 20, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which step ensures project deliverables are formally accepted?',
+            options: ['Post-implementation review', 'Closure checklist', 'Documentation', 'Lessons learned session'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Post-implementation review primarily aims to:',
+            options: [
+              'Verify financial accounts',
+              'Evaluate project success and identify lessons',
+              'Assign new tasks',
+              'Close contracts only'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which documentation is important for future projects?',
+            options: [
+              'Lessons learned repository',
+              'Only financial reports',
+              'Temporary task notes',
+              'None of the above'
+            ],
+            correctAnswer: 0
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Project closure releases all project resources.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Documentation is optional during project closure.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ],
+    // Module 10: Case Studies & Practical Exercises (2 Hours)
+    10: [
+      {
+        type: 'overview',
+        title: 'Case Studies & Practical Exercises',
+        content:
+          'This module provides hands-on learning through real-world case studies and practical exercises. It focuses on applying project management concepts to solve problems, identify best practices, and discuss lessons learned.',
+        topics: [
+          { title: 'Real-World Cases', description: 'Analyze completed software projects to learn key insights' },
+          { title: 'Best Practices', description: 'Identify techniques and strategies that improve project success' },
+          { title: 'Group Discussions', description: 'Engage with peers to share ideas and experiences' },
+          { title: 'Module Quiz', description: 'Assess understanding of practical applications in project management' }
+        ]
+      },
+
+      // ---------------- REAL-WORLD CASE STUDIES (0.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Analyzing Real-World Cases',
+        content: [
+          'Case studies provide insights into project successes and failures.',
+          'They help students understand practical challenges and solutions.'
+        ],
+        points: [
+          'Identify project objectives and constraints',
+          'Analyze planning, execution, and monitoring strategies',
+          'Understand risk management decisions',
+          'Evaluate stakeholder communication'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Lessons from Successful Projects',
+        content: [
+          'Studying successful projects highlights best practices and techniques.'
+        ],
+        points: [
+          'Clear scope and objectives',
+          'Effective team collaboration',
+          'Strong leadership and communication',
+          'Timely risk mitigation'
+        ]
+      },
+
+      // ---------------- BEST PRACTICES (0.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Project Management Best Practices',
+        content: [
+          'Best practices improve project outcomes and reduce risks.'
+        ],
+        points: [
+          'Define clear goals and deliverables',
+          'Maintain proper documentation',
+          'Monitor progress and performance metrics',
+          'Engage stakeholders regularly',
+          'Perform lessons learned sessions'
+        ]
+      },
+
+      // ---------------- GROUP DISCUSSIONS & PRACTICAL EXERCISES (0.5 HOURS) ----------------
+      {
+        type: 'lesson',
+        title: 'Group Discussions and Exercises',
+        content: [
+          'Engaging in discussions and exercises helps students apply theoretical knowledge.'
+        ],
+        points: [
+          'Analyze case studies in groups',
+          'Present findings and recommendations',
+          'Discuss challenges and solutions',
+          'Reflect on lessons learned and best practices'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Practical Exercises',
+        content: [
+          'Hands-on exercises allow students to simulate project management activities.'
+        ],
+        points: [
+          'Create a mini project plan',
+          'Perform cost and resource estimation',
+          'Develop risk management strategies',
+          'Prepare project status reports'
+        ]
+      },
+
+      // ---------------- AUTO-GRADED MODULE QUIZ ----------------
+      {
+        type: 'exam',
+        title: 'Module Quiz: Case Studies & Practical Exercises',
+        description:
+          'This quiz evaluates understanding of applying project management concepts through case studies and practical exercises.',
+        duration: 20, // minutes
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Analyzing real-world projects helps students:',
+            options: [
+              'Ignore risks',
+              'Understand practical challenges and solutions',
+              'Only memorize theory',
+              'Focus on unrelated subjects'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Best practices in project management include:',
+            options: [
+              'Defining unclear goals',
+              'Ignoring stakeholder communication',
+              'Monitoring progress and engaging stakeholders',
+              'Skipping documentation'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Group discussions are useful because they:',
+            options: [
+              'Increase theoretical knowledge only',
+              'Allow students to share ideas and solutions',
+              'Replace practical exercises',
+              'Are optional and not beneficial'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Practical exercises simulate real project activities.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'true-false',
+            question: 'Lessons learned are only relevant to the current project.',
+            correctAnswer: false
+          }
+        ]
+      }
+    ]
   }
+
 };
 
 // Helper function to get slides for a course module

@@ -14,7 +14,7 @@ export const coursesData = {
                 module: 1,
                 title: "Introduction to Software Project Management",
                 hours: 6,
-                topics: ["Project fundamentals", "PM roles & responsibilities", "SDLC overview"]
+                topics: ["Project fundamentals", "PM roles & responsibilities", "SDLC overview", "Module Exam"]
             },
             {
                 module: 2,
