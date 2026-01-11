@@ -655,43 +655,37 @@ export const coursesData = {
                 module: 4,
                 title: "Functions & Modules",
                 hours: 6,
-                topics: ["Defining functions", "Parameters & return", "Modules & packages", "Importing libraries", "Module Exam"]
+                topics: ["Defining functions", "Parameters & return", "Modules & packages", "Importing libraries"]
             },
             {
                 module: 5,
                 title: "Data Structures",
                 hours: 6,
-                topics: ["Lists, Tuples, Sets, Dictionaries", "Operations", "Iteration", "Use cases", "Module Exam"]
+                topics: ["Lists, Tuples, Sets, Dictionaries", "Operations", "Iteration", "Use cases"]
             },
             {
                 module: 6,
                 title: "Object-Oriented Python",
                 hours: 6,
-                topics: ["Classes & objects", "Inheritance", "Methods & attributes", "Encapsulation", "Module Exam"]
+                topics: ["Classes & objects", "Inheritance", "Methods & attributes", "Encapsulation"]
             },
             {
                 module: 7,
                 title: "Working with Files & Exceptions",
                 hours: 6,
-                topics: ["Reading/writing files", "Exception handling", "Context managers", "Module Exam"]
+                topics: ["Reading/writing files", "Exception handling", "Context managers"]
             },
             {
                 module: 8,
                 title: "Python Libraries",
                 hours: 8,
-                topics: ["Requests", "Pandas basics", "NumPy basics", "Matplotlib introduction", "Module Exam"]
+                topics: ["Requests", "Pandas basics", "NumPy basics", "Matplotlib introduction"]
             },
             {
                 module: 9,
-                title: "Advanced Python Concepts",
+                title: "Web Applications with Ant Design",
                 hours: 8,
-                topics: [
-                    "Decorators & Higher-Order Functions",
-                    "Generators & Iterators",
-                    "Context Managers & with Statement",
-                    "Pythonic Patterns & Best Practices",
-                    "Module Exam"
-                ]
+                topics: ["Frontend integration", "Using Ant Design components", "Forms & tables", "Styling & theming"]
             },
             {
                 module: 10,
@@ -773,247 +767,247 @@ export const coursesData = {
         ]
     },
     mongodb: {
-        id: 'mongodb',
-        title: "MongoDB Fundamentals",
-        icon: Database, // import Database from lucide-react
-        color: "mustard", // reference your global green color
-        hours: 50,
-        modules: 10,
-        description: "Learn to build and manage databases using MongoDB for modern applications",
-        curriculum: [
-            {
-                module: 1,
-                title: "Introduction to MongoDB",
-                hours: 4,
-                topics: [
-                    "What is MongoDB?",
-                    "NoSQL vs SQL",
-                    "Installation & setup",
-                    "MongoDB Atlas overview"
-                ]
-            },
-            {
-                module: 2,
-                title: "MongoDB Basics",
-                hours: 6,
-                topics: [
-                    "Databases & collections",
-                    "Documents & BSON format",
-                    "CRUD operations basics",
-                    "Indexes introduction"
-                ]
-            },
-            {
-                module: 3,
-                title: "Data Modeling",
-                hours: 6,
-                topics: [
-                    "Schema design",
-                    "Embedded vs referenced documents",
-                    "Relationships in MongoDB",
-                    "Normalization & denormalization"
-                ]
-            },
-            {
-                module: 4,
-                title: "Advanced CRUD Operations",
-                hours: 6,
-                topics: [
-                    "Query operators",
-                    "Projections",
-                    "Sorting & filtering",
-                    "Aggregation basics"
-                ]
-            },
-            {
-                module: 5,
-                title: "Aggregation Framework",
-                hours: 6,
-                topics: [
-                    "Pipeline stages",
-                    "Group, Match, Project",
-                    "Lookup & unwind",
-                    "Practical aggregation examples"
-                ]
-            },
-            {
-                module: 6,
-                title: "Indexes & Performance",
-                hours: 6,
-                topics: [
-                    "Creating indexes",
-                    "Compound indexes",
-                    "Query optimization",
-                    "Performance best practices"
-                ]
-            },
-            {
-                module: 7,
-                title: "Replication & Sharding",
-                hours: 6,
-                topics: [
-                    "Replica sets overview",
-                    "Sharding basics",
-                    "High availability",
-                    "Scaling MongoDB"
-                ]
-            },
-            {
-                module: 8,
-                title: "Security & Backup",
-                hours: 4,
-                topics: [
-                    "User roles & permissions",
-                    "Authentication methods",
-                    "Encryption at rest",
-                    "Backup & restore"
-                ]
-            },
-            {
-                module: 9,
-                title: "Integrating MongoDB with Node.js",
-                hours: 4,
-                topics: [
-                    "MongoDB driver for Node.js",
-                    "Mongoose basics",
-                    "Connecting and querying",
-                    "Error handling"
-                ]
-            },
-            {
-                module: 10,
-                title: "Final Project",
-                hours: 4,
-                topics: [
-                    "Design a database for a real-world app",
-                    "Implement CRUD operations",
-                    "Use aggregation & indexing",
-                    "Presentation & demo"
-                ]
-            }
-        ]
-    },
-    // machineLearning: {
-    //     id: 'ml',
-    //     title: "Machine Learning (ML) Fundamentals",
-    //     icon: Cpu, // import Cpu from lucide-react
-    //     color: "blue", // reference your global blue color palette
-    //     hours: 60,
-    //     modules: 10,
-    //     description: "Learn the fundamentals of Machine Learning (ML), including supervised and unsupervised learning, model evaluation, and real-world applications.",
-    //     curriculum: [
-    //         {
-    //             module: 1,
-    //             title: "Introduction to Machine Learning",
-    //             hours: 4,
-    //             topics: [
-    //                 "What is Machine Learning?",
-    //                 "History and applications",
-    //                 "Types of ML: Supervised, Unsupervised, Reinforcement",
-    //                 "ML workflow overview"
-    //             ]
-    //         },
-    //         {
-    //             module: 2,
-    //             title: "Python for ML",
-    //             hours: 6,
-    //             topics: [
-    //                 "Python basics for data science",
-    //                 "NumPy & Pandas",
-    //                 "Data manipulation and cleaning",
-    //                 "Visualization with Matplotlib & Seaborn"
-    //             ]
-    //         },
-    //         {
-    //             module: 3,
-    //             title: "Supervised Learning",
-    //             hours: 6,
-    //             topics: [
-    //                 "Linear regression",
-    //                 "Logistic regression",
-    //                 "Decision trees",
-    //                 "Evaluation metrics: accuracy, precision, recall"
-    //             ]
-    //         },
-    //         {
-    //             module: 4,
-    //             title: "Unsupervised Learning",
-    //             hours: 6,
-    //             topics: [
-    //                 "Clustering: K-Means, Hierarchical",
-    //                 "Dimensionality reduction: PCA",
-    //                 "Association rules",
-    //                 "Applications of unsupervised learning"
-    //             ]
-    //         },
-    //         {
-    //             module: 5,
-    //             title: "Feature Engineering & Preprocessing",
-    //             hours: 6,
-    //             topics: [
-    //                 "Handling missing data",
-    //                 "Encoding categorical variables",
-    //                 "Scaling & normalization",
-    //                 "Feature selection techniques"
-    //             ]
-    //         },
-    //         {
-    //             module: 6,
-    //             title: "Model Evaluation & Tuning",
-    //             hours: 6,
-    //             topics: [
-    //                 "Train/Test split & Cross-validation",
-    //                 "Hyperparameter tuning",
-    //                 "Overfitting & underfitting",
-    //                 "Model selection strategies"
-    //             ]
-    //         },
-    //         {
-    //             module: 7,
-    //             title: "Advanced ML Algorithms",
-    //             hours: 6,
-    //             topics: [
-    //                 "Random Forests",
-    //                 "Support Vector Machines",
-    //                 "Gradient Boosting",
-    //                 "Introduction to Neural Networks"
-    //             ]
-    //         },
-    //         {
-    //             module: 8,
-    //             title: "Deep Learning Basics",
-    //             hours: 6,
-    //             topics: [
-    //                 "Introduction to deep learning",
-    //                 "Perceptrons and activation functions",
-    //                 "Feedforward Neural Networks",
-    //                 "Frameworks: TensorFlow / PyTorch overview"
-    //             ]
-    //         },
-    //         {
-    //             module: 9,
-    //             title: "Practical ML Projects",
-    //             hours: 6,
-    //             topics: [
-    //                 "Predictive modeling project",
-    //                 "Image classification project",
-    //                 "Natural language processing project",
-    //                 "Deploying ML models"
-    //             ]
-    //         },
-    //         {
-    //             module: 10,
-    //             title: "Final Project",
-    //             hours: 4,
-    //             topics: [
-    //                 "Build an end-to-end ML solution",
-    //                 "Collect and preprocess data",
-    //                 "Train, evaluate, and optimize models",
-    //                 "Presentation & demo"
-    //             ]
-    //         }
-    //     ]
-    // }
+    id: 'mongodb',
+    title: "MongoDB Fundamentals",
+    icon: Database, // import Database from lucide-react
+    color: "mustard", // reference your global green color
+    hours: 50,
+    modules: 10,
+    description: "Learn to build and manage databases using MongoDB for modern applications",
+    curriculum: [
+        {
+            module: 1,
+            title: "Introduction to MongoDB",
+            hours: 4,
+            topics: [
+                "What is MongoDB?",
+                "NoSQL vs SQL",
+                "Installation & setup",
+                "MongoDB Atlas overview"
+            ]
+        },
+        {
+            module: 2,
+            title: "MongoDB Basics",
+            hours: 6,
+            topics: [
+                "Databases & collections",
+                "Documents & BSON format",
+                "CRUD operations basics",
+                "Indexes introduction"
+            ]
+        },
+        {
+            module: 3,
+            title: "Data Modeling",
+            hours: 6,
+            topics: [
+                "Schema design",
+                "Embedded vs referenced documents",
+                "Relationships in MongoDB",
+                "Normalization & denormalization"
+            ]
+        },
+        {
+            module: 4,
+            title: "Advanced CRUD Operations",
+            hours: 6,
+            topics: [
+                "Query operators",
+                "Projections",
+                "Sorting & filtering",
+                "Aggregation basics"
+            ]
+        },
+        {
+            module: 5,
+            title: "Aggregation Framework",
+            hours: 6,
+            topics: [
+                "Pipeline stages",
+                "Group, Match, Project",
+                "Lookup & unwind",
+                "Practical aggregation examples"
+            ]
+        },
+        {
+            module: 6,
+            title: "Indexes & Performance",
+            hours: 6,
+            topics: [
+                "Creating indexes",
+                "Compound indexes",
+                "Query optimization",
+                "Performance best practices"
+            ]
+        },
+        {
+            module: 7,
+            title: "Replication & Sharding",
+            hours: 6,
+            topics: [
+                "Replica sets overview",
+                "Sharding basics",
+                "High availability",
+                "Scaling MongoDB"
+            ]
+        },
+        {
+            module: 8,
+            title: "Security & Backup",
+            hours: 4,
+            topics: [
+                "User roles & permissions",
+                "Authentication methods",
+                "Encryption at rest",
+                "Backup & restore"
+            ]
+        },
+        {
+            module: 9,
+            title: "Integrating MongoDB with Node.js",
+            hours: 4,
+            topics: [
+                "MongoDB driver for Node.js",
+                "Mongoose basics",
+                "Connecting and querying",
+                "Error handling"
+            ]
+        },
+        {
+            module: 10,
+            title: "Final Project",
+            hours: 4,
+            topics: [
+                "Design a database for a real-world app",
+                "Implement CRUD operations",
+                "Use aggregation & indexing",
+                "Presentation & demo"
+            ]
+        }
+    ]
+},
+ml: {
+    id: 'ml',
+    title: "Machine Learning (ML) Fundamentals",
+    icon: Cpu, // import Cpu from lucide-react
+    color: "blue", // reference your global blue color palette
+    hours: 60,
+    modules: 10,
+    description: "Learn the fundamentals of Machine Learning (ML), including supervised and unsupervised learning, model evaluation, and real-world applications.",
+    curriculum: [
+        {
+            module: 1,
+            title: "Introduction to Machine Learning",
+            hours: 4,
+            topics: [
+                "What is Machine Learning?",
+                "History and applications",
+                "Types of ML: Supervised, Unsupervised, Reinforcement",
+                "ML workflow overview"
+            ]
+        },
+        {
+            module: 2,
+            title: "Python for ML",
+            hours: 6,
+            topics: [
+                "Python basics for data science",
+                "NumPy & Pandas",
+                "Data manipulation and cleaning",
+                "Visualization with Matplotlib & Seaborn"
+            ]
+        },
+        {
+            module: 3,
+            title: "Supervised Learning",
+            hours: 6,
+            topics: [
+                "Linear regression",
+                "Logistic regression",
+                "Decision trees",
+                "Evaluation metrics: accuracy, precision, recall"
+            ]
+        },
+        {
+            module: 4,
+            title: "Unsupervised Learning",
+            hours: 6,
+            topics: [
+                "Clustering: K-Means, Hierarchical",
+                "Dimensionality reduction: PCA",
+                "Association rules",
+                "Applications of unsupervised learning"
+            ]
+        },
+        {
+            module: 5,
+            title: "Feature Engineering & Preprocessing",
+            hours: 6,
+            topics: [
+                "Handling missing data",
+                "Encoding categorical variables",
+                "Scaling & normalization",
+                "Feature selection techniques"
+            ]
+        },
+        {
+            module: 6,
+            title: "Model Evaluation & Tuning",
+            hours: 6,
+            topics: [
+                "Train/Test split & Cross-validation",
+                "Hyperparameter tuning",
+                "Overfitting & underfitting",
+                "Model selection strategies"
+            ]
+        },
+        {
+            module: 7,
+            title: "Advanced ML Algorithms",
+            hours: 6,
+            topics: [
+                "Random Forests",
+                "Support Vector Machines",
+                "Gradient Boosting",
+                "Introduction to Neural Networks"
+            ]
+        },
+        {
+            module: 8,
+            title: "Deep Learning Basics",
+            hours: 6,
+            topics: [
+                "Introduction to deep learning",
+                "Perceptrons and activation functions",
+                "Feedforward Neural Networks",
+                "Frameworks: TensorFlow / PyTorch overview"
+            ]
+        },
+        {
+            module: 9,
+            title: "Practical ML Projects",
+            hours: 6,
+            topics: [
+                "Predictive modeling project",
+                "Image classification project",
+                "Natural language processing project",
+                "Deploying ML models"
+            ]
+        },
+        {
+            module: 10,
+            title: "Final Project",
+            hours: 4,
+            topics: [
+                "Build an end-to-end ML solution",
+                "Collect and preprocess data",
+                "Train, evaluate, and optimize models",
+                "Presentation & demo"
+            ]
+        }
+    ]
+}
 
 
 };

@@ -85,6 +85,14 @@ export const colorSchemes = {
         bg: "bg-cyan-100",
         text: "text-cyan-900",
         badge: "bg-cyan-100 text-cyan-800"
+    },
+    red: {
+        light: "from-red-50 to-pink-50",
+        card: "from-red-600 to-pink-600",
+        cardHover: "from-red-700 to-pink-700",
+        bg: "bg-red-100",
+        text: "text-red-900",
+        badge: "bg-red-100 text-red-800"
     }
 
 };
