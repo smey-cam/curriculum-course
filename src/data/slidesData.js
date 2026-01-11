@@ -18,7 +18,7 @@ export const slidesData = {
           { title: 'Module Exam', description: 'Test your knowledge' }
         ]
       },
-    
+
       {
         type: 'lesson',
         title: 'Python Overview',
@@ -36,7 +36,7 @@ export const slidesData = {
           'Strong community and ecosystem'
         ]
       },
-    
+
       {
         type: 'lesson',
         title: 'Installing Python',
@@ -53,7 +53,7 @@ export const slidesData = {
           'Verify installation using the terminal'
         ]
       },
-    
+
       {
         type: 'lesson',
         title: 'IDE Setup',
@@ -69,7 +69,7 @@ export const slidesData = {
           'Run Python code'
         ]
       },
-    
+
       {
         type: 'example',
         title: 'Your First Python Program',
@@ -83,7 +83,7 @@ export const slidesData = {
         explanation:
           'The print() function outputs text to the console. Lines starting with # are comments.'
       },
-    
+
       {
         type: 'exam',
         title: 'Module 1 Exam: Python Basics',
@@ -136,47 +136,47 @@ export const slidesData = {
           }
         ]
       }
-    ],      
+    ],
 
     // Module 2: Python Basics
-2: [
-  {
-    type: 'overview',
-    title: 'Python Basics',
-    content:
-      'Learn the fundamental building blocks of Python programming including variables, data types, operators, input/output, and basic syntax.',
-    topics: [
-      { title: 'Variables & Data Types', description: 'Storing and working with different types of data' },
-      { title: 'Operators', description: 'Performing calculations and comparisons' },
-      { title: 'Input/Output', description: 'Getting user input and displaying output' },
-      { title: 'Basic Syntax', description: 'Understanding Python code structure' },
-      { title: 'Module Exam', description: 'Test your understanding of Python basics' }
-    ]
-  },
+    2: [
+      {
+        type: 'overview',
+        title: 'Python Basics',
+        content:
+          'Learn the fundamental building blocks of Python programming including variables, data types, operators, input/output, and basic syntax.',
+        topics: [
+          { title: 'Variables & Data Types', description: 'Storing and working with different types of data' },
+          { title: 'Operators', description: 'Performing calculations and comparisons' },
+          { title: 'Input/Output', description: 'Getting user input and displaying output' },
+          { title: 'Basic Syntax', description: 'Understanding Python code structure' },
+          { title: 'Module Exam', description: 'Test your understanding of Python basics' }
+        ]
+      },
 
-  {
-    type: 'lesson',
-    title: 'Variables and Data Types',
-    content: [
-      'Variables are used to store data values in Python.',
-      'A variable is created when a value is assigned to it.',
-      'Python automatically determines the data type of a variable.'
-    ],
-    points: [
-      'int – Integer numbers (e.g., 10, -5)',
-      'float – Decimal numbers (e.g., 3.14, 2.0)',
-      'str – Text values (e.g., "Hello")',
-      'bool – Boolean values (True or False)',
-      'list – Ordered collection of values',
-      'dict – Key-value pairs'
-    ]
-  },
+      {
+        type: 'lesson',
+        title: 'Variables and Data Types',
+        content: [
+          'Variables are used to store data values in Python.',
+          'A variable is created when a value is assigned to it.',
+          'Python automatically determines the data type of a variable.'
+        ],
+        points: [
+          'int – Integer numbers (e.g., 10, -5)',
+          'float – Decimal numbers (e.g., 3.14, 2.0)',
+          'str – Text values (e.g., "Hello")',
+          'bool – Boolean values (True or False)',
+          'list – Ordered collection of values',
+          'dict – Key-value pairs'
+        ]
+      },
 
-  {
-    type: 'example',
-    title: 'Working with Variables',
-    description: 'Create and use variables with different data types.',
-    code: `# Variables and Data Types
+      {
+        type: 'example',
+        title: 'Working with Variables',
+        description: 'Create and use variables with different data types.',
+        code: `# Variables and Data Types
 
 age = 25
 price = 19.99
@@ -192,7 +192,7 @@ print(type(age))
 print(type(price))
 print(type(name))
 print(type(is_student))`,
-    output: `25
+        output: `25
 19.99
 Alice
 True
@@ -200,30 +200,30 @@ True
 <class 'float'>
 <class 'str'>
 <class 'bool'>`,
-    explanation:
-      'Variables are created using assignment. Python automatically detects the data type.'
-  },
+        explanation:
+          'Variables are created using assignment. Python automatically detects the data type.'
+      },
 
-  {
-    type: 'lesson',
-    title: 'Operators in Python',
-    content: [
-      'Operators are used to perform operations on variables and values.',
-      'Python supports arithmetic, comparison, logical, and assignment operators.'
-    ],
-    points: [
-      'Arithmetic: +, -, *, /, %, **',
-      'Comparison: ==, !=, >, <, >=, <=',
-      'Logical: and, or, not',
-      'Assignment: =, +=, -=, *=, /='
-    ]
-  },
+      {
+        type: 'lesson',
+        title: 'Operators in Python',
+        content: [
+          'Operators are used to perform operations on variables and values.',
+          'Python supports arithmetic, comparison, logical, and assignment operators.'
+        ],
+        points: [
+          'Arithmetic: +, -, *, /, %, **',
+          'Comparison: ==, !=, >, <, >=, <=',
+          'Logical: and, or, not',
+          'Assignment: =, +=, -=, *=, /='
+        ]
+      },
 
-  {
-    type: 'example',
-    title: 'Using Operators',
-    description: 'Examples of arithmetic, comparison, and logical operators.',
-    code: `a = 10
+      {
+        type: 'example',
+        title: 'Using Operators',
+        description: 'Examples of arithmetic, comparison, and logical operators.',
+        code: `a = 10
 b = 3
 
 print(a + b)
@@ -231,122 +231,122 @@ print(a * b)
 print(a > b)
 print(a == b)
 print(True and False)`,
-    output: `13
+        output: `13
 30
 True
 False
 False`,
-    explanation:
-      'Operators allow Python programs to perform calculations and make decisions.'
-  },
+        explanation:
+          'Operators allow Python programs to perform calculations and make decisions.'
+      },
 
-  {
-    type: 'lesson',
-    title: 'Input and Output',
-    content: [
-      'Python allows interaction with users using input and output.',
-      'The input() function gets data from the user.',
-      'The print() function displays output on the screen.'
-    ],
-    points: [
-      'input() always returns a string',
-      'Use int() or float() to convert input',
-      'print() is used to display results'
-    ]
-  },
+      {
+        type: 'lesson',
+        title: 'Input and Output',
+        content: [
+          'Python allows interaction with users using input and output.',
+          'The input() function gets data from the user.',
+          'The print() function displays output on the screen.'
+        ],
+        points: [
+          'input() always returns a string',
+          'Use int() or float() to convert input',
+          'print() is used to display results'
+        ]
+      },
 
-  {
-    type: 'example',
-    title: 'Getting User Input',
-    description: 'Use input() and print() in a Python program.',
-    code: `name = input("Enter your name: ")
+      {
+        type: 'example',
+        title: 'Getting User Input',
+        description: 'Use input() and print() in a Python program.',
+        code: `name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 
 print("Hello", name)
 print("You are", age, "years old")`,
-    output: `Enter your name: John
+        output: `Enter your name: John
 Enter your age: 20
 Hello John
 You are 20 years old`,
-    explanation:
-      'User input must be converted to numbers before doing calculations.'
-  },
+        explanation:
+          'User input must be converted to numbers before doing calculations.'
+      },
 
-  {
-    type: 'lesson',
-    title: 'Basic Python Syntax',
-    content: [
-      'Python uses indentation to define code blocks.',
-      'Statements are written line by line.',
-      'Comments start with the # symbol.'
-    ],
-    points: [
-      'Indentation is required (usually 4 spaces)',
-      'Python is case-sensitive',
-      'Use comments to explain code'
-    ]
-  },
+      {
+        type: 'lesson',
+        title: 'Basic Python Syntax',
+        content: [
+          'Python uses indentation to define code blocks.',
+          'Statements are written line by line.',
+          'Comments start with the # symbol.'
+        ],
+        points: [
+          'Indentation is required (usually 4 spaces)',
+          'Python is case-sensitive',
+          'Use comments to explain code'
+        ]
+      },
 
-  {
-    type: 'example',
-    title: 'Basic Syntax Example',
-    description: 'Understand indentation and comments in Python.',
-    code: `# Check if number is positive
+      {
+        type: 'example',
+        title: 'Basic Syntax Example',
+        description: 'Understand indentation and comments in Python.',
+        code: `# Check if number is positive
 number = 5
 
 if number > 0:
     print("Positive number")
 else:
     print("Not positive")`,
-    output: `Positive number`,
-    explanation:
-      'Indentation tells Python which code belongs to a block such as if/else.'
-  },
+        output: `Positive number`,
+        explanation:
+          'Indentation tells Python which code belongs to a block such as if/else.'
+      },
 
-  {
-    type: 'exam',
-    title: 'Module 2 Exam: Python Basics',
-    description: 'Answer the following questions to test your understanding.',
-    duration: 30,
-    passingScore: 70,
-    questions: [
       {
-        id: 1,
-        type: 'multiple-choice',
-        question: 'Which data type is used to store text in Python?',
-        options: ['int', 'float', 'str', 'bool'],
-        correctAnswer: 2
-      },
-      {
-        id: 2,
-        type: 'multiple-choice',
-        question: 'Which operator is used for multiplication?',
-        options: ['+', '-', '*', '/'],
-        correctAnswer: 2
-      },
-      {
-        id: 3,
-        type: 'true-false',
-        question: 'The input() function returns a string.',
-        correctAnswer: true
-      },
-      {
-        id: 4,
-        type: 'true-false',
-        question: 'Python uses indentation to define code blocks.',
-        correctAnswer: true
-      },
-      {
-        id: 5,
-        type: 'code',
-        question: 'Write a Python program that asks for a number and prints it.',
-        sampleAnswer: `num = input("Enter a number: ")
+        type: 'exam',
+        title: 'Module 2 Exam: Python Basics',
+        description: 'Answer the following questions to test your understanding.',
+        duration: 30,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which data type is used to store text in Python?',
+            options: ['int', 'float', 'str', 'bool'],
+            correctAnswer: 2
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which operator is used for multiplication?',
+            options: ['+', '-', '*', '/'],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'The input() function returns a string.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Python uses indentation to define code blocks.',
+            correctAnswer: true
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write a Python program that asks for a number and prints it.',
+            sampleAnswer: `num = input("Enter a number: ")
 print(num)`,
-        evaluation: 'manual'
+            evaluation: 'manual'
+          }
+        ]
       }
-    ]
-  }
-],
+    ],
 
     // Module 3: Control Structures
     3: [
@@ -703,7 +703,8 @@ Even numbers from list: [2, 4, 6, 8, 10]
           { title: 'Defining Functions', description: 'Creating your own functions' },
           { title: 'Parameters & Return', description: 'Passing data to functions and getting results' },
           { title: 'Modules & Packages', description: 'Organizing code into modules' },
-          { title: 'Importing Libraries', description: 'Using Python\'s built-in and third-party libraries' }
+          { title: 'Importing Libraries', description: 'Using Python\'s built-in and third-party libraries' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
         ]
       },
       {
@@ -948,6 +949,1277 @@ Shuffled colors: ['green', 'red', 'yellow', 'blue']
 Pi (no module prefix): 3.141592653589793
 Square root: 25`,
         explanation: 'Modules are files containing Python code. Use import to bring them into your program. You can import entire modules, specific functions, or use aliases. The standard library has many useful modules like math, datetime, and random.'
+      },
+      {
+        type: 'exam',
+        title: 'Module 4 Exam: Functions & Modules',
+        description: 'Test your understanding of functions, parameters, return values, and Python modules.',
+        duration: 30, // minutes
+        passingScore: 70, // percent
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which keyword is used to define a function in Python?',
+            options: ['function', 'define', 'def', 'fun'],
+            correctAnswer: 2
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'What does the return statement do in a function?',
+            options: [
+              'Prints a value',
+              'Ends the program',
+              'Sends a value back to the caller',
+              'Defines a variable'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'A function can return multiple values in Python.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which symbol is used to collect multiple positional arguments?',
+            options: ['&', '*', '**', '#'],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Which statement correctly imports the math module?',
+            options: [
+              'include math',
+              'import math',
+              'using math',
+              'require math'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 6,
+            type: 'code',
+            question: 'Write a function named add that takes two numbers and returns their sum.',
+            sampleAnswer: `def add(a, b):
+    return a + b`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 5: Data Collections
+    5: [
+      {
+        type: 'overview',
+        title: 'Data Collections in Python',
+        content: 'Python provides several built-in data structures to store and organize data: lists, tuples, sets, and dictionaries. In this module, you will learn how to use these collections effectively.',
+        topics: [
+          { title: 'Lists, Tuples, Sets, Dictionaries', description: 'Understanding the main Python collections' },
+          { title: 'Operations', description: 'Manipulating data in collections' },
+          { title: 'Iteration', description: 'Looping through collections' },
+          { title: 'Use Cases', description: 'When to use each collection type' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Lists, Tuples, Sets, Dictionaries',
+        content: [
+          'Python has four main collection types: lists, tuples, sets, and dictionaries.',
+          'Lists are ordered, mutable collections.',
+          'Tuples are ordered, immutable collections.',
+          'Sets are unordered collections of unique elements.',
+          'Dictionaries are unordered collections of key-value pairs.'
+        ],
+        points: [
+          'List: [1, 2, 3] — mutable, ordered',
+          'Tuple: (1, 2, 3) — immutable, ordered',
+          'Set: {1, 2, 3} — unordered, no duplicates',
+          'Dictionary: {"key": "value"} — unordered, key-value pairs'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Working with Lists',
+        description: 'Learn how to create, access, and modify lists.',
+        code: `# Lists
+fruits = ["apple", "banana", "cherry"]
+print("Fruits:", fruits)
+
+# Accessing elements
+print("First fruit:", fruits[0])
+
+# Adding elements
+fruits.append("orange")
+fruits.insert(1, "mango")
+print("Updated fruits:", fruits)
+
+# Removing elements
+fruits.remove("banana")
+print("After removal:", fruits)
+
+# Slicing
+print("First two fruits:", fruits[:2])`,
+        output: `Fruits: ['apple', 'banana', 'cherry']
+First fruit: apple
+Updated fruits: ['apple', 'mango', 'banana', 'cherry', 'orange']
+After removal: ['apple', 'mango', 'cherry', 'orange']
+First two fruits: ['apple', 'mango']`,
+        explanation: 'Lists are mutable and ordered. You can access elements by index, modify them, add, remove, and slice to get sublists.'
+      },
+
+      {
+        type: 'example',
+        title: 'Working with Tuples',
+        description: 'Learn how to create and use tuples.',
+        code: `# Tuples
+dimensions = (1920, 1080)
+print("Screen resolution:", dimensions)
+
+# Accessing elements
+print("Width:", dimensions[0])
+print("Height:", dimensions[1])
+
+# Tuples are immutable
+# dimensions[0] = 1280  # This would raise an error
+
+# Tuple unpacking
+width, height = dimensions
+print("Width:", width, "Height:", height)`,
+        output: `Screen resolution: (1920, 1080)
+Width: 1920
+Height: 1080
+Width: 1920 Height: 1080`,
+        explanation: 'Tuples are immutable sequences. You can access elements by index and use tuple unpacking to assign elements to variables.'
+      },
+
+      {
+        type: 'example',
+        title: 'Working with Sets',
+        description: 'Learn how to create sets and perform operations.',
+        code: `# Sets
+colors = {"red", "green", "blue"}
+print("Colors:", colors)
+
+# Adding elements
+colors.add("yellow")
+print("After adding yellow:", colors)
+
+# Removing elements
+colors.discard("green")
+print("After discarding green:", colors)
+
+# Set operations
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+print("Union:", set_a | set_b)
+print("Intersection:", set_a & set_b)
+print("Difference:", set_a - set_b)`,
+        output: `Colors: {'blue', 'red', 'green'}
+After adding yellow: {'yellow', 'blue', 'red', 'green'}
+After discarding green: {'yellow', 'blue', 'red'}
+Union: {1, 2, 3, 4, 5}
+Intersection: {3}
+Difference: {1, 2}`,
+        explanation: 'Sets are unordered collections of unique elements. You can perform union, intersection, and difference operations.'
+      },
+
+      {
+        type: 'example',
+        title: 'Working with Dictionaries',
+        description: 'Learn how to create, access, and modify dictionaries.',
+        code: `# Dictionaries
+student = {"name": "Alice", "age": 20, "course": "Python"}
+print("Student:", student)
+
+# Accessing values
+print("Name:", student["name"])
+
+# Adding/updating values
+student["grade"] = "A"
+student["age"] = 21
+print("Updated student:", student)
+
+# Removing values
+del student["course"]
+print("After removing course:", student)
+
+# Iterating over dictionary
+for key, value in student.items():
+    print(key, "->", value)`,
+        output: `Student: {'name': 'Alice', 'age': 20, 'course': 'Python'}
+Name: Alice
+Updated student: {'name': 'Alice', 'age': 21, 'course': 'Python', 'grade': 'A'}
+After removing course: {'name': 'Alice', 'age': 21, 'grade': 'A'}
+name -> Alice
+age -> 21
+grade -> A`,
+        explanation: 'Dictionaries store key-value pairs. You can access, update, add, remove items, and iterate over keys and values.'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 5 Exam: Python Collections',
+        description: 'Test your understanding of Python data collections.',
+        duration: 30, // minutes
+        passingScore: 70, // percent
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which collection type is immutable?',
+            options: ['List', 'Tuple', 'Set', 'Dictionary'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which collection type does not allow duplicate elements?',
+            options: ['List', 'Tuple', 'Set', 'Dictionary'],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'Dictionaries are unordered collections of key-value pairs.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which of these operations can be used with sets?',
+            options: ['Union', 'Intersection', 'Difference', 'All of the above'],
+            correctAnswer: 3
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write a Python dictionary to store a student\'s name and age, then print the name.',
+            sampleAnswer: `student = {"name": "Alice", "age": 20}
+print(student["name"])`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 6: Object-Oriented Programming
+    6: [
+      {
+        type: 'overview',
+        title: 'Classes & Objects',
+        content: 'Object-Oriented Programming (OOP) allows you to model real-world entities using classes and objects. In this module, you will learn how to create classes, define attributes and methods, and use inheritance and encapsulation.',
+        topics: [
+          { title: 'Classes & Objects', description: 'Defining your own classes and creating objects' },
+          { title: 'Inheritance', description: 'Reusing code and creating hierarchies' },
+          { title: 'Methods & Attributes', description: 'Using functions and variables inside classes' },
+          { title: 'Encapsulation', description: 'Restricting access to internal class data' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Classes and Objects',
+        content: [
+          'A class is a blueprint for creating objects. Objects are instances of classes.',
+          'Attributes are variables that belong to an object. Methods are functions that belong to an object.',
+          'Classes allow you to organize data and behavior logically.'
+        ],
+        points: [
+          'Define a class using the class keyword',
+          'Create objects by calling the class as a function',
+          'Use self to refer to the current object inside methods',
+          'Attributes store object-specific data',
+          'Methods define actions the object can perform'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Creating a Class and Object',
+        description: 'Learn how to define a simple class and create an object.',
+        code: `# Defining a class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello! My name is {self.name} and I am {self.age} years old.")
+
+# Creating objects
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+
+# Calling methods
+person1.greet()
+person2.greet()`,
+        output: `Hello! My name is Alice and I am 25 years old.
+Hello! My name is Bob and I am 30 years old.`,
+        explanation: 'The __init__ method initializes object attributes. Methods can access these attributes using self. Objects are created by calling the class with the required parameters.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Inheritance',
+        content: [
+          'Inheritance allows a class (child) to inherit attributes and methods from another class (parent).',
+          'This helps to reuse code and create a hierarchical class structure.'
+        ],
+        points: [
+          'Define a child class by specifying the parent class in parentheses',
+          'Child classes inherit all attributes and methods from the parent',
+          'Child classes can override parent methods or add new ones'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Using Inheritance',
+        description: 'Learn how to create a subclass that inherits from a parent class.',
+        code: `# Parent class
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        print(f"{self.name} makes a sound.")
+
+# Child class
+class Dog(Animal):
+    def speak(self):
+        print(f"{self.name} barks.")
+
+# Creating objects
+animal = Animal("Generic Animal")
+dog = Dog("Buddy")
+
+animal.speak()
+dog.speak()`,
+        output: `Generic Animal makes a sound.
+Buddy barks.`,
+        explanation: 'The Dog class inherits from Animal. The speak method is overridden in Dog to provide a custom behavior while the parent class remains unchanged.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Methods and Attributes',
+        content: [
+          'Methods define behaviors of a class, while attributes store the state.',
+          'Use instance attributes for data specific to an object, and class attributes for data shared across all objects.'
+        ],
+        points: [
+          'Instance attributes: self.attribute_name',
+          'Class attributes: defined directly inside the class but outside methods',
+          'Instance methods operate on object data using self',
+          'Class methods operate on class data and are decorated with @classmethod',
+          'Static methods do not access instance or class data and are decorated with @staticmethod'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Methods and Attributes Examples',
+        description: 'Examples showing instance, class, and static methods.',
+        code: `class Circle:
+    pi = 3.1416  # Class attribute
+
+    def __init__(self, radius):
+        self.radius = radius  # Instance attribute
+
+    def area(self):  # Instance method
+        return Circle.pi * self.radius ** 2
+
+    @classmethod
+    def info(cls):  # Class method
+        print(f"All circles use pi = {cls.pi}")
+
+    @staticmethod
+    def greet():  # Static method
+        print("Welcome to the Circle class!")
+
+# Using the class
+c1 = Circle(5)
+print(f"Area of circle: {c1.area()}")
+Circle.info()
+Circle.greet()`,
+        output: `Area of circle: 78.54
+All circles use pi = 3.1416
+Welcome to the Circle class!`,
+        explanation: 'Instance methods use self to access object data. Class methods use cls to access class-level data. Static methods do not access instance or class data.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Encapsulation',
+        content: [
+          'Encapsulation restricts direct access to an object’s attributes and methods to protect its internal state.',
+          'Python uses naming conventions to indicate private variables and methods.'
+        ],
+        points: [
+          'Prefix attributes with _ (single underscore) to indicate protected',
+          'Prefix attributes with __ (double underscore) to make them private (name mangling)',
+          'Access and modify private attributes using getter and setter methods'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Encapsulation Example',
+        description: 'Learn how to use private attributes with getter and setter methods.',
+        code: `class BankAccount:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.__balance = balance  # Private attribute
+
+    def deposit(self, amount):
+        if amount > 0:
+            self.__balance += amount
+
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+        else:
+            print("Insufficient funds!")
+
+    def get_balance(self):
+        return self.__balance
+
+# Using the class
+account = BankAccount("Alice", 1000)
+account.deposit(500)
+account.withdraw(200)
+print(f"Balance: {account.get_balance()}")
+# account.__balance  # This would raise an error`,
+        output: `Balance: 1300`,
+        explanation: 'The __balance attribute is private. Access is only possible through methods. This protects the data from being modified directly.'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 6 Exam: Object-Oriented Programming',
+        description: 'Test your understanding of classes, objects, methods, inheritance, and encapsulation.',
+        duration: 30, // minutes
+        passingScore: 70, // percent
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which keyword is used to define a class in Python?',
+            options: ['def', 'class', 'object', 'function'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'What does the __init__ method do?',
+            options: [
+              'Deletes an object',
+              'Initializes an object’s attributes',
+              'Calls a class method',
+              'Defines a static method'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'Encapsulation prevents direct access to certain attributes and methods.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which symbol is used to make an attribute private?',
+            options: ['_', '__', '$', '#'],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Create a class Car with attributes make and model, and a method display_info that prints both.',
+            sampleAnswer: `class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+    def display_info(self):
+        print(f"Make: {self.make}, Model: {self.model}")`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 7: File Handling & Exceptions
+    7: [
+      {
+        type: 'overview',
+        title: 'File Handling & Exceptions',
+        content: 'Learn how to read and write files, handle exceptions, and use context managers in Python. This module helps you manage data safely and effectively.',
+        topics: [
+          { title: 'Reading/Writing Files', description: 'Work with text and binary files' },
+          { title: 'Exception Handling', description: 'Handle errors gracefully using try/except' },
+          { title: 'Context Managers', description: 'Use with statement for safe file handling' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Reading and Writing Files',
+        content: [
+          'Files are used to store data permanently. Python provides functions to open, read, write, and close files.',
+          'Use open() function to access files in different modes: read (r), write (w), append (a), binary (b).'
+        ],
+        points: [
+          'Use open(filename, mode) to open a file',
+          'Use read(), readline(), readlines() to read content',
+          'Use write() or writelines() to write data',
+          'Always close the file after operations, or use a context manager'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Reading and Writing Files',
+        description: 'Example of reading from and writing to a text file.',
+        code: `# Writing to a file
+with open("example.txt", "w") as file:
+    file.write("Hello, world!\\n")
+    file.write("Python file handling is easy.\\n")
+
+# Reading from a file
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+# Reading line by line
+with open("example.txt", "r") as file:
+    for line in file:
+        print(f"Line: {line.strip()}")`,
+        output: `Hello, world!
+Python file handling is easy.
+
+Line: Hello, world!
+Line: Python file handling is easy.`,
+        explanation: 'The with statement automatically closes the file after use. read() reads the whole file, while iterating line by line lets you process large files efficiently.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Exception Handling',
+        content: [
+          'Exceptions are errors that occur during program execution. Python provides a way to handle them gracefully using try/except blocks.',
+          'You can catch specific exceptions or use a generic exception handler.'
+        ],
+        points: [
+          'Use try/except to catch errors',
+          'You can have multiple except blocks for different exception types',
+          'Optionally use else for code that runs if no exception occurs',
+          'Use finally to run code regardless of exceptions'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Handling Exceptions',
+        description: 'Example of using try/except to catch errors.',
+        code: `try:
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+    result = num1 / num2
+except ValueError:
+    print("Invalid input! Please enter numbers only.")
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+else:
+    print(f"Result: {result}")
+finally:
+    print("Execution finished.")`,
+        output: `Enter first number: 10
+Enter second number: 2
+Result: 5.0
+Execution finished.`,
+        explanation: 'The try block contains code that might raise an exception. except blocks handle specific errors. finally always runs at the end, ensuring cleanup code executes.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Context Managers',
+        content: [
+          'Context managers allow you to allocate and release resources precisely when needed.',
+          'The with statement is commonly used with files to ensure they are properly closed after use.'
+        ],
+        points: [
+          'Use with open(filename, mode) as file: to handle files safely',
+          'Custom context managers can be created using the contextlib module',
+          'Helps prevent resource leaks and ensures clean code'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Context Manager Example',
+        description: 'Using the with statement for safe file handling.',
+        code: `# Writing with context manager
+with open("data.txt", "w") as f:
+    f.write("Python is powerful!\\n")
+    f.write("Context managers are helpful.")
+
+# Reading with context manager
+with open("data.txt", "r") as f:
+    print(f.read())`,
+        output: `Python is powerful!
+Context managers are helpful.`,
+        explanation: 'The with statement ensures the file is closed automatically, even if an exception occurs during the block execution.'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 7 Exam: File Handling & Exceptions',
+        description: 'Test your knowledge of reading/writing files, handling exceptions, and context managers.',
+        duration: 30,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which mode opens a file for reading only?',
+            options: ['r', 'w', 'a', 'rw'],
+            correctAnswer: 0
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which statement is used to handle exceptions in Python?',
+            options: ['try/catch', 'try/except', 'catch/try', 'error/except'],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'The with statement automatically closes a file after its block finishes.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which exception is raised when dividing a number by zero?',
+            options: ['ZeroDivisionError', 'ValueError', 'TypeError', 'IndexError'],
+            correctAnswer: 0
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write Python code to open a file "notes.txt", write "Hello Python" to it, and then read the content.',
+            sampleAnswer: `with open("notes.txt", "w") as f:
+    f.write("Hello Python")
+
+with open("notes.txt", "r") as f:
+    print(f.read())`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 8: Python Libraries for Data
+    8: [
+      {
+        type: 'overview',
+        title: 'Python Libraries for Data',
+        content: 'Learn how to work with popular Python libraries for data handling and visualization. This module covers making HTTP requests, basic data manipulation with Pandas and NumPy, and plotting with Matplotlib.',
+        topics: [
+          { title: 'Requests', description: 'Fetching data from the web' },
+          { title: 'Pandas Basics', description: 'Working with tables and dataframes' },
+          { title: 'NumPy Basics', description: 'Efficient numerical computations' },
+          { title: 'Matplotlib Introduction', description: 'Creating charts and visualizations' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Requests Library',
+        content: [
+          'The Requests library allows you to send HTTP requests easily in Python. It is widely used for fetching data from APIs or web pages.',
+          'Common methods include get(), post(), put(), and delete().'
+        ],
+        points: [
+          'Install Requests: pip install requests',
+          'Use requests.get(url) to fetch data',
+          'Check response status with response.status_code',
+          'Access content with response.text or response.json()',
+          'Handle errors with try/except blocks'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Using Requests',
+        description: 'Fetching data from a web API using Requests library.',
+        code: `import requests
+
+url = "https://jsonplaceholder.typicode.com/todos/1"
+try:
+    response = requests.get(url)
+    response.raise_for_status()  # Raise error if status is not 200
+    data = response.json()
+    print("Fetched Data:", data)
+except requests.exceptions.RequestException as e:
+    print("Error fetching data:", e)`,
+        output: `Fetched Data: {'userId': 1, 'id': 1, 'title': 'delectus aut autem', 'completed': False}`,
+        explanation: 'Requests allows easy HTTP calls. Use .json() to parse JSON responses. Always handle exceptions for network errors or invalid responses.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Pandas Basics',
+        content: [
+          'Pandas is a powerful library for data manipulation and analysis. Its main data structures are Series (1D) and DataFrame (2D).',
+          'You can read data from CSV, Excel, or JSON files and perform operations like filtering, grouping, and aggregating.'
+        ],
+        points: [
+          'Install Pandas: pip install pandas',
+          'Use pd.Series() and pd.DataFrame() to create data structures',
+          'Read CSV with pd.read_csv("file.csv")',
+          'Select, filter, and modify columns easily',
+          'Use methods like describe(), head(), tail() for quick insights'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Working with Pandas',
+        description: 'Create a DataFrame, manipulate it, and analyze data.',
+        code: `import pandas as pd
+
+# Create a DataFrame
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35],
+    "City": ["New York", "Los Angeles", "Chicago"]
+}
+df = pd.DataFrame(data)
+
+# View data
+print("DataFrame:")
+print(df)
+
+# Select column
+print("\\nNames:", df["Name"].tolist())
+
+# Filter rows
+adults = df[df["Age"] >= 30]
+print("\\nAdults:")
+print(adults)
+
+# Summary statistics
+print("\\nSummary statistics:")
+print(df.describe(include="all"))`,
+        output: `DataFrame:
+      Name  Age         City
+0    Alice   25     New York
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+
+Names: ['Alice', 'Bob', 'Charlie']
+
+Adults:
+      Name  Age         City
+1      Bob   30  Los Angeles
+2  Charlie   35      Chicago
+
+Summary statistics:
+        Name        Age         City
+count       3   3.000000            3
+unique      3        NaN            3
+top     Alice       NaN      New York
+freq        1        NaN            1
+mean      NaN  30.000000          NaN
+std       NaN   5.000000          NaN
+min       NaN  25.000000          NaN
+25%       NaN  27.500000          NaN
+50%       NaN  30.000000          NaN
+75%       NaN  32.500000          NaN
+max       NaN  35.000000          NaN`,
+        explanation: 'Pandas makes data manipulation easy. You can select columns, filter rows, and compute statistics quickly. DataFrames are similar to Excel tables in Python.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'NumPy Basics',
+        content: [
+          'NumPy is a library for numerical computing in Python. It provides high-performance multidimensional arrays and mathematical functions.',
+          'NumPy arrays are faster and more memory-efficient than Python lists for large datasets.'
+        ],
+        points: [
+          'Install NumPy: pip install numpy',
+          'Use np.array() to create arrays',
+          'Perform element-wise operations efficiently',
+          'Use np.mean(), np.sum(), np.max(), np.min() for calculations',
+          'Use np.arange() and np.linspace() to generate sequences'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Working with NumPy',
+        description: 'Creating arrays and performing calculations with NumPy.',
+        code: `import numpy as np
+
+# Create arrays
+arr = np.array([1, 2, 3, 4, 5])
+print("Array:", arr)
+
+# Operations
+print("Sum:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Squared:", arr**2)
+
+# 2D array
+matrix = np.array([[1, 2], [3, 4]])
+print("\\nMatrix:")
+print(matrix)
+
+# Generate sequences
+seq = np.arange(0, 10, 2)
+print("Sequence:", seq)`,
+
+        output: `Array: [1 2 3 4 5]
+Sum: 15
+Mean: 3.0
+Squared: [ 1  4  9 16 25]
+
+Matrix:
+[[1 2]
+ [3 4]]
+Sequence: [0 2 4 6 8]`,
+        explanation: 'NumPy arrays enable fast computation on large datasets. Use built-in functions for calculations instead of looping over lists.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Matplotlib Introduction',
+        content: [
+          'Matplotlib is a popular Python library for creating visualizations. It allows you to plot line charts, bar charts, histograms, scatter plots, and more.'
+        ],
+        points: [
+          'Install Matplotlib: pip install matplotlib',
+          'Use plt.plot(), plt.bar(), plt.scatter() for different chart types',
+          'Use plt.xlabel(), plt.ylabel(), plt.title() to label charts',
+          'Use plt.show() to display the chart'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Plotting with Matplotlib',
+        description: 'Create a simple line chart and bar chart using Matplotlib.',
+        code: `import matplotlib.pyplot as plt
+
+# Line chart
+x = [1, 2, 3, 4, 5]
+y = [2, 4, 6, 8, 10]
+plt.plot(x, y, marker='o', color='green', label='Line Chart')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
+plt.title('Simple Line Chart')
+plt.legend()
+plt.show()
+
+# Bar chart
+labels = ['A', 'B', 'C', 'D']
+values = [10, 15, 7, 12]
+plt.bar(labels, values, color='skyblue')
+plt.title('Simple Bar Chart')
+plt.show()`,
+
+        output: 'Two charts displayed: a green line chart with markers and a skyblue bar chart.',
+        explanation: 'Matplotlib provides a wide range of customization. You can create multiple types of plots, label them, and display them using plt.show().'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 8 Exam: Python Libraries for Data',
+        description: 'Test your knowledge of Requests, Pandas, NumPy, and Matplotlib.',
+        duration: 30,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which method is used to fetch data from a URL using Requests?',
+            options: ['requests.post()', 'requests.get()', 'requests.fetch()', 'requests.read()'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'true-false',
+            question: 'Pandas DataFrame is a 2-dimensional labeled data structure.',
+            correctAnswer: true
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which function creates a NumPy array?',
+            options: ['np.array()', 'np.list()', 'np.data()', 'np.matrix()'],
+            correctAnswer: 0
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which Matplotlib function is used to display a chart?',
+            options: ['plt.show()', 'plt.display()', 'plt.plot()', 'plt.draw()'],
+            correctAnswer: 0
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write Python code to create a Pandas DataFrame with columns "Name" and "Age" and add 3 rows of data.',
+            sampleAnswer: `import pandas as pd
+
+data = {
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35]
+}
+df = pd.DataFrame(data)
+print(df)`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 9: Advanced Python Concepts
+    9: [
+      {
+        type: 'overview',
+        title: 'Advanced Python Concepts',
+        content: 'In this module, you will learn advanced Python programming concepts including decorators, generators, context managers, and Pythonic best practices.',
+        topics: [
+          { title: 'Decorators & Higher-Order Functions', description: 'Enhance functions and reuse code efficiently' },
+          { title: 'Generators & Iterators', description: 'Efficient ways to handle sequences of data' },
+          { title: 'Context Managers & with Statement', description: 'Manage resources cleanly and safely' },
+          { title: 'Pythonic Patterns & Best Practices', description: 'Write clean, readable, and efficient Python code' },
+          { title: 'Module Exam', description: 'Test your knowledge of advanced Python concepts' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Decorators & Higher-Order Functions',
+        content: [
+          'Decorators are functions that modify the behavior of another function or method.',
+          'Higher-order functions are functions that take other functions as arguments or return them as results.'
+        ],
+        points: [
+          'Use @decorator syntax to apply a decorator',
+          'Decorators can add functionality without changing the original function code',
+          'Higher-order functions include map(), filter(), and custom functions',
+          'Useful for logging, timing, access control, and caching'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Using Decorators',
+        description: 'Example of a simple decorator that measures execution time.',
+        code: `import time
+
+def timer(func):
+    """Decorator to measure execution time"""
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print(f"Execution time: {end - start:.4f} seconds")
+        return result
+    return wrapper
+
+@timer
+def compute_squares(n):
+    return [i**2 for i in range(n)]
+
+compute_squares(1000000)`,
+        output: `Execution time: 0.0853 seconds`,
+        explanation: 'The timer decorator wraps the compute_squares function and prints how long it took to execute.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Generators & Iterators',
+        content: [
+          'Generators are a simple way to create iterators using functions and the yield keyword.',
+          'Iterators allow you to loop over data efficiently without storing everything in memory.'
+        ],
+        points: [
+          'Use yield in a function to create a generator',
+          'Generators are memory efficient for large datasets',
+          'Iterators implement __iter__() and __next__() methods',
+          'Useful for streaming data, reading files line by line, or large computations'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Generator Example',
+        description: 'Create a generator that yields Fibonacci numbers.',
+        code: `def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        yield a
+        a, b = b, a + b
+
+for num in fibonacci(10):
+    print(num)`,
+        output: `0
+1
+1
+2
+3
+5
+8
+13
+21
+34`,
+        explanation: 'The fibonacci function is a generator that yields the next number in the Fibonacci sequence each time it is iterated.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Context Managers & with Statement',
+        content: [
+          'Context managers allow you to manage resources such as files or network connections safely.',
+          'The with statement ensures proper acquisition and release of resources.'
+        ],
+        points: [
+          'Use with to open files safely (automatically closes the file)',
+          'Create custom context managers using __enter__() and __exit__()',
+          'Useful for file handling, database connections, or temporary resources',
+          'Reduces errors and improves readability'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Context Manager Example',
+        description: 'Using the with statement to read a file safely.',
+        code: `# Writing to a file using context manager
+with open("example.txt", "w") as f:
+    f.write("Hello, Python context managers!")
+
+# Reading from the file
+with open("example.txt", "r") as f:
+    content = f.read()
+    print(content)`,
+        output: `Hello, Python context managers!`,
+        explanation: 'The with statement ensures that the file is properly closed after the block, even if an error occurs.'
+      },
+
+      {
+        type: 'lesson',
+        title: 'Pythonic Patterns & Best Practices',
+        content: [
+          'Pythonic code is readable, concise, and takes advantage of Python\'s features.',
+          'Using list comprehensions, unpacking, and built-in functions can make code cleaner and faster.'
+        ],
+        points: [
+          'Follow PEP8 style guidelines',
+          'Use list/dict/set comprehensions',
+          'Use unpacking to assign multiple variables',
+          'Use built-in functions like map(), filter(), zip()',
+          'Write meaningful function and variable names'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Pythonic Code Example',
+        description: 'Compare traditional vs Pythonic ways to filter even numbers.',
+        code: `# Traditional way
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = []
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
+print(even_numbers)
+
+# Pythonic way
+even_numbers2 = [num for num in numbers if num % 2 == 0]
+print(even_numbers2)`,
+        output: `[2, 4, 6]
+[2, 4, 6]`,
+        explanation: 'Using list comprehensions makes the code shorter and more readable.'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 9 Exam: Advanced Python Concepts',
+        description: 'Test your understanding of decorators, generators, context managers, and Pythonic coding.',
+        duration: 30, // minutes
+        passingScore: 70, // percent
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which keyword is used to create a generator in Python?',
+            options: ['yield', 'return', 'generate', 'iter'],
+            correctAnswer: 0
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'What does a context manager help with?',
+            options: [
+              'Memory management',
+              'Resource management',
+              'Sorting data',
+              'Printing output'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'Decorators can modify the behavior of a function without changing its code.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which of the following is a Pythonic way to create a list of squares?',
+            options: [
+              'squares = []\nfor i in range(10): squares.append(i**2)',
+              'squares = [i**2 for i in range(10)]',
+              'Both 1 and 2',
+              'None of the above'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write a decorator that prints "Function called" every time a function is executed.',
+            sampleAnswer: `def notify(func):
+    def wrapper(*args, **kwargs):
+        print("Function called")
+        return func(*args, **kwargs)
+    return wrapper`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 10: Final Python Projects
+    10: [
+      {
+        type: 'overview',
+        title: 'Final Python Projects',
+        content: 'Apply everything you learned in previous modules by building real Python projects. This module will guide you through creating a project from planning to implementation.',
+        topics: [
+          { title: 'TODO List Project', description: 'Create a Python application to manage tasks' },
+          { title: 'Portfolio Website (Python Backend)', description: 'Build a personal portfolio using Python frameworks' },
+          { title: 'Personal Finance Management System', description: 'Track income, expenses, and savings using Python' },
+          { title: 'Music Player', description: 'Build a simple desktop music player using Python' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Planning Your Project',
+        content: [
+          'Every project starts with careful planning. Define your project goals, required features, and expected outputs.',
+          'Break your project into smaller tasks and modules for easier development and testing.'
+        ],
+        points: [
+          'Define project objectives clearly',
+          'List main features and optional features',
+          'Break features into smaller tasks or functions',
+          'Think about input/output, user interface, and data storage',
+          'Decide which Python libraries or frameworks you need'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'TODO List Project',
+        description: 'A command-line Python application to manage tasks efficiently.',
+        guidelines: [
+          'Use Python lists to store tasks and functions to add, remove, and view tasks.',
+          'Optional: Save tasks to a CSV or text file for persistence.',
+          'Features to implement: add task, remove task, mark task as done, view all tasks.',
+          'Extendable: Add due dates, priorities, or categories.'
+        ],
+        steps: [
+          'Step 1: Initialize an empty task list',
+          'Step 2: Write functions to add, remove, and view tasks',
+          'Step 3: Implement a simple menu loop for user interaction',
+          'Step 4: Optional - Save/load tasks from a file',
+          'Step 5: Test all features and handle invalid inputs'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Portfolio Website (Python Backend)',
+        description: 'Build a portfolio website using Flask or FastAPI to showcase projects, skills, and personal information.',
+        guidelines: [
+          'Use Flask or FastAPI to create routes and serve HTML templates.',
+          'Include pages like Home, Projects, About, Contact.',
+          'Optional: Use Jinja2 templates for dynamic content.',
+          'Optional: Use SQLite or JSON to store project data.'
+        ],
+        steps: [
+          'Step 1: Install Flask/FastAPI and set up a basic app',
+          'Step 2: Create HTML templates for your pages',
+          'Step 3: Add routes in Python to render pages',
+          'Step 4: Add content for projects, skills, and contact info',
+          'Step 5: Optional - Deploy to a local server or online hosting'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Personal Finance Management System',
+        description: 'A Python project to track income, expenses, and savings.',
+        guidelines: [
+          'Use CSV files or JSON to store transactions.',
+          'Implement functions for adding, viewing, and summarizing transactions.',
+          'Optional: Generate reports or visualize data with Matplotlib.',
+          'Optional: Add categories for expenses like food, rent, utilities.'
+        ],
+        steps: [
+          'Step 1: Decide the data structure (CSV, JSON, or dictionary)',
+          'Step 2: Write functions to add and view transactions',
+          'Step 3: Calculate total income, expenses, and balance',
+          'Step 4: Optional - Visualize data using charts',
+          'Step 5: Test with sample transactions'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Music Player',
+        description: 'Create a simple desktop music player using Python.',
+        guidelines: [
+          'Use Pygame or Tkinter for playing audio and creating a GUI.',
+          'Allow users to play, pause, stop, and load music files.',
+          'Optional: Add playlist support, volume control, and track duration display.',
+          'Optional: Use os module to load multiple files from a folder.'
+        ],
+        steps: [
+          'Step 1: Install Pygame or Tkinter and initialize audio module',
+          'Step 2: Write functions to load and play audio files',
+          'Step 3: Implement basic controls (play, pause, stop)',
+          'Step 4: Optional - Add GUI buttons and playlist management',
+          'Step 5: Test with different audio formats'
+        ]
       }
     ]
   }
