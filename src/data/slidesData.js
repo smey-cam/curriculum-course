@@ -2223,6 +2223,4160 @@ print(even_numbers2)`,
       }
     ]
   },
+  webdesign: {
+    // Module 1: Introduction to Web Design
+    1: [
+      {
+        type: 'overview',
+        title: 'Welcome to Web Design',
+        content:
+          'Web design focuses on creating visually appealing, user-friendly, and effective websites. In this module, you will learn the fundamentals of web design, including principles, thinking processes, trends, and career opportunities.',
+        topics: [
+          { title: 'Web Design Principles', description: 'Core principles for effective website design' },
+          { title: 'Design Thinking', description: 'Problem-solving approach in design' },
+          { title: 'Current Trends', description: 'Modern web design trends and styles' },
+          { title: 'Career Paths', description: 'Job roles and opportunities in web design' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Web Design Principles',
+        content: [
+          'Web design principles guide designers in creating functional and attractive websites.',
+          'Good design improves usability, accessibility, and user experience.',
+          'Consistency and simplicity are key elements of effective web design.'
+        ],
+        points: [
+          'Balance and alignment',
+          'Contrast and color usage',
+          'Typography and readability',
+          'Visual hierarchy',
+          'Responsive design'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Design Thinking',
+        content: [
+          'Design thinking is a user-centered approach to solving problems.',
+          'It helps designers understand user needs before creating solutions.',
+          'This process encourages creativity and innovation.'
+        ],
+        points: [
+          'Empathize with users',
+          'Define the problem',
+          'Ideate solutions',
+          'Create prototypes',
+          'Test and improve designs'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Current Web Design Trends',
+        content: [
+          'Web design trends evolve with technology and user expectations.',
+          'Modern websites focus on performance, accessibility, and aesthetics.'
+        ],
+        points: [
+          'Minimalist design',
+          'Dark mode',
+          'Mobile-first design',
+          'Micro-interactions',
+          'AI-powered interfaces'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Web Design Career Paths',
+        content: [
+          'Web design offers multiple career opportunities across industries.',
+          'Designers can specialize based on skills and interests.'
+        ],
+        points: [
+          'Web Designer',
+          'UI Designer',
+          'UX Designer',
+          'Product Designer',
+          'Frontend Developer'
+        ]
+      },
+
+      {
+        type: 'example',
+        title: 'Simple Web Page Structure',
+        description: 'A basic HTML structure for a web page.',
+        code: `<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Website</title>
+</head>
+<body>
+  <h1>Welcome to Web Design</h1>
+  <p>This is my first web page.</p>
+</body>
+</html>`,
+        output: 'A simple web page displaying a heading and paragraph.',
+        explanation:
+          'HTML provides the structure of a website. Headings and paragraphs help organize content clearly.'
+      },
+
+      {
+        type: 'exam',
+        title: 'Module 1 Exam: Web Design Basics',
+        description: 'Answer the following questions to test your understanding of web design fundamentals.',
+        duration: 20, // minutes
+        passingScore: 70, // percent
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is the main goal of web design?',
+            options: [
+              'Writing server-side code',
+              'Creating user-friendly and visually appealing websites',
+              'Managing databases',
+              'Configuring servers'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which principle helps guide the user’s attention?',
+            options: [
+              'Visual hierarchy',
+              'Compilation',
+              'Encryption',
+              'Debugging'
+            ],
+            correctAnswer: 0
+          },
+          {
+            id: 3,
+            type: 'true-false',
+            question: 'Design thinking focuses on user needs.',
+            correctAnswer: true
+          },
+          {
+            id: 4,
+            type: 'true-false',
+            question: 'Web design trends never change.',
+            correctAnswer: false
+          },
+          {
+            id: 5,
+            type: 'code',
+            question: 'Write an HTML heading that displays "Hello Web Design".',
+            sampleAnswer: `<h1>Hello Web Design</h1>`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    // Module 2: HTML Fundamentals
+    2: [
+      {
+        type: 'overview',
+        title: 'HTML Fundamentals',
+        content:
+          'HTML (HyperText Markup Language) is the foundation of every website. In this module, you will learn how to structure web pages, use semantic elements, build forms, and explore HTML5 APIs.',
+        topics: [
+          { title: 'HTML Structure', description: 'Basic structure of an HTML document' },
+          { title: 'Semantic HTML', description: 'Meaningful HTML elements for better accessibility' },
+          { title: 'Forms & Inputs', description: 'Collecting user data using forms' },
+          { title: 'HTML5 APIs', description: 'Modern browser APIs provided by HTML5' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'HTML Structure',
+        content: [
+          'HTML documents follow a standard structure that browsers understand.',
+          'The structure defines how content is organized and displayed.',
+          'Correct structure improves browser compatibility and SEO.'
+        ],
+        points: [
+          '<!DOCTYPE html> declaration',
+          '<html> root element',
+          '<head> for metadata',
+          '<body> for visible content',
+          'Proper nesting and indentation'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Semantic HTML',
+        content: [
+          'Semantic HTML uses elements that clearly describe their meaning.',
+          'It improves accessibility and helps search engines understand content.',
+          'Semantic elements should replace generic divs when possible.'
+        ],
+        points: [
+          '<header>, <nav>, <main>, <footer>',
+          '<section> vs <article>',
+          '<aside> for secondary content',
+          '<figure> and <figcaption>',
+          'Accessibility for screen readers'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Forms & Inputs',
+        content: [
+          'Forms allow users to submit data to a website.',
+          'HTML provides many input types to improve user experience.',
+          'Built-in validation reduces JavaScript dependency.'
+        ],
+        points: [
+          '<form action="" method="">',
+          'Input types: text, email, password, number, date',
+          'Required and placeholder attributes',
+          '<label> for accessibility',
+          'Client-side validation'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'HTML5 APIs',
+        content: [
+          'HTML5 introduced APIs that enhance web applications.',
+          'These APIs enable offline storage, graphics, and device interaction.'
+        ],
+        points: [
+          'Geolocation API',
+          'LocalStorage & SessionStorage',
+          'Canvas API',
+          'Drag and Drop API',
+          'Web Storage API'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Basic HTML Structure Example',
+        description: 'Standard structure of an HTML document.',
+        code: `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+</head>
+<body>
+  <h1>Hello HTML</h1>
+  <p>This is a basic HTML page.</p>
+</body>
+</html>`,
+        output: 'A web page with a heading and paragraph.',
+        explanation:
+          'Every HTML page must include doctype, html, head, and body elements.'
+      },
+
+      {
+        type: 'example',
+        title: 'Semantic Layout Example',
+        description: 'Using semantic elements for page layout.',
+        code: `<header>
+  <h1>My Blog</h1>
+</header>
+
+<main>
+  <article>
+    <h2>Post Title</h2>
+    <p>Article content here...</p>
+  </article>
+</main>
+
+<footer>
+  <p>© 2026 My Blog</p>
+</footer>`,
+        output: 'A structured blog layout.',
+        explanation:
+          'Semantic elements describe the role of each section clearly.'
+      },
+
+      {
+        type: 'example',
+        title: 'Advanced Form Example',
+        description: 'Form with validation and multiple input types.',
+        code: `<form>
+  <label>Username:</label>
+  <input type="text" required />
+
+  <label>Email:</label>
+  <input type="email" required />
+
+  <label>Password:</label>
+  <input type="password" required minlength="6" />
+
+  <button type="submit">Register</button>
+</form>`,
+        output: 'A registration form with validation.',
+        explanation:
+          'HTML validation improves user experience before form submission.'
+      },
+
+      {
+        type: 'example',
+        title: 'Local Storage Example',
+        description: 'Storing data using HTML5 Web Storage.',
+        code: `<script>
+  localStorage.setItem("username", "student01");
+</script>`,
+        output: 'Username saved in browser storage.',
+        explanation:
+          'LocalStorage stores data persistently in the browser.'
+      },
+
+      /* ===================== EXAM (15 QUESTIONS) ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 2 Exam: HTML Fundamentals',
+        description: 'Answer the following questions to test your HTML knowledge.',
+        duration: 30,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What does HTML stand for?',
+            options: [
+              'Hyper Trainer Marking Language',
+              'HyperText Markup Language',
+              'HighText Machine Language',
+              'Hyper Tool Markup Language'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which tag defines the root of an HTML document?',
+            options: ['<body>', '<head>', '<html>', '<main>'],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which element is semantic?',
+            options: ['<div>', '<span>', '<section>', '<b>'],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which input type validates email format?',
+            options: ['text', 'email', 'password', 'number'],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Which tag is used for navigation links?',
+            options: ['<header>', '<nav>', '<section>', '<footer>'],
+            correctAnswer: 1
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: '<!DOCTYPE html> is required for modern HTML.',
+            correctAnswer: true
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: '<div> is a semantic element.',
+            correctAnswer: false
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Forms can be submitted without JavaScript.',
+            correctAnswer: true
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'LocalStorage data is removed when browser closes.',
+            correctAnswer: false
+          },
+          {
+            id: 10,
+            type: 'code',
+            question: 'Write a basic HTML document structure.',
+            sampleAnswer: `<!DOCTYPE html><html><head></head><body></body></html>`,
+            evaluation: 'manual'
+          },
+          {
+            id: 11,
+            type: 'code',
+            question: 'Write a semantic tag for page footer.',
+            sampleAnswer: `<footer></footer>`,
+            evaluation: 'manual'
+          },
+          {
+            id: 12,
+            type: 'code',
+            question: 'Create an input field for password.',
+            sampleAnswer: `<input type="password" />`,
+            evaluation: 'manual'
+          },
+          {
+            id: 13,
+            type: 'multiple-choice',
+            question: 'Which API is used for offline data storage?',
+            options: ['Canvas', 'Geolocation', 'LocalStorage', 'Drag and Drop'],
+            correctAnswer: 2
+          },
+          {
+            id: 14,
+            type: 'true-false',
+            question: 'Semantic HTML improves accessibility.',
+            correctAnswer: true
+          },
+          {
+            id: 15,
+            type: 'code',
+            question: 'Write a label linked to an input field.',
+            sampleAnswer: `<label>Email</label><input type="email" />`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    3: [
+      {
+        type: 'overview',
+        title: 'CSS Fundamentals',
+        content:
+          'CSS (Cascading Style Sheets) is used to style and layout web pages. In this module, you will learn how to apply styles, control spacing, build modern layouts, and create animations.',
+        topics: [
+          { title: 'CSS Selectors', description: 'Targeting HTML elements for styling' },
+          { title: 'Box Model', description: 'Understanding spacing and sizing' },
+          { title: 'Flexbox', description: 'Flexible one-dimensional layouts' },
+          { title: 'Grid Layout', description: 'Two-dimensional layout system' },
+          { title: 'Animations', description: 'Adding motion and transitions' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'CSS Selectors',
+        content: [
+          'CSS selectors define which HTML elements styles apply to.',
+          'Selectors can be simple or combined for precise control.',
+          'Good selector usage improves maintainability.'
+        ],
+        points: [
+          'Element selectors (p, div)',
+          'Class selectors (.box)',
+          'ID selectors (#header)',
+          'Attribute selectors ([type="text"])',
+          'Pseudo-classes (:hover, :focus)'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'CSS Box Model',
+        content: [
+          'Every HTML element is treated as a box.',
+          'The box model controls layout spacing.',
+          'Understanding it prevents layout bugs.'
+        ],
+        points: [
+          'Content area',
+          'Padding (inside spacing)',
+          'Border',
+          'Margin (outside spacing)',
+          'box-sizing: border-box'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Flexbox',
+        content: [
+          'Flexbox is designed for one-dimensional layouts.',
+          'It simplifies alignment and spacing.',
+          'Flexbox is ideal for navigation bars and cards.'
+        ],
+        points: [
+          'display: flex',
+          'flex-direction',
+          'justify-content',
+          'align-items',
+          'gap'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Grid Layout',
+        content: [
+          'CSS Grid is a powerful two-dimensional layout system.',
+          'It controls rows and columns simultaneously.',
+          'Grid is best for page-level layouts.'
+        ],
+        points: [
+          'display: grid',
+          'grid-template-columns',
+          'grid-template-rows',
+          'gap',
+          'grid-area'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'CSS Animations',
+        content: [
+          'Animations improve user experience when used carefully.',
+          'CSS supports transitions and keyframe animations.'
+        ],
+        points: [
+          'transition property',
+          '@keyframes',
+          'animation-duration',
+          'animation-delay',
+          'animation-iteration-count'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Selector Example',
+        description: 'Using class and ID selectors.',
+        code: `#title {
+  color: blue;
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #ccc;
+}`,
+        output: 'Title turns blue and card has padding and border.',
+        explanation:
+          'ID selectors are unique, while classes are reusable.'
+      },
+
+      {
+        type: 'example',
+        title: 'Box Model Example',
+        description: 'Spacing using padding, border, and margin.',
+        code: `.box {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+  box-sizing: border-box;
+}`,
+        output: 'Element keeps fixed width including padding.',
+        explanation:
+          'border-box prevents size expansion.'
+      },
+
+      {
+        type: 'example',
+        title: 'Flexbox Centering Example',
+        description: 'Centering content using Flexbox.',
+        code: `.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}`,
+        output: 'Content is centered vertically and horizontally.',
+        explanation:
+          'Flexbox simplifies alignment.'
+      },
+
+      {
+        type: 'example',
+        title: 'Grid Layout Example',
+        description: 'Creating a 3-column layout.',
+        code: `.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}`,
+        output: 'Items display in three equal columns.',
+        explanation:
+          'Grid controls both rows and columns.'
+      },
+
+      {
+        type: 'example',
+        title: 'Animation Example',
+        description: 'Hover animation using transition.',
+        code: `.button {
+  background: blue;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: green;
+}`,
+        output: 'Button color changes smoothly on hover.',
+        explanation:
+          'Transitions animate property changes.'
+      },
+
+      /* ===================== EXAM (15 QUESTIONS) ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 3 Exam: CSS Fundamentals',
+        description: 'Answer the following questions to test your CSS knowledge.',
+        duration: 30,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which selector targets a class?',
+            options: ['#box', '.box', 'box', '*box'],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which property adds space inside an element?',
+            options: ['margin', 'padding', 'border', 'outline'],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which value enables Flexbox?',
+            options: ['block', 'inline', 'flex', 'grid'],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which property aligns items vertically in Flexbox?',
+            options: ['justify-content', 'align-items', 'gap', 'flex-wrap'],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Which layout system is two-dimensional?',
+            options: ['Flexbox', 'Float', 'Grid', 'Position'],
+            correctAnswer: 2
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'Margin controls space outside elements.',
+            correctAnswer: true
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'CSS Grid cannot control rows.',
+            correctAnswer: false
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Animations should be subtle and meaningful.',
+            correctAnswer: true
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'ID selectors can be reused multiple times.',
+            correctAnswer: false
+          },
+          {
+            id: 10,
+            type: 'code',
+            question: 'Write CSS to enable Flexbox on a container.',
+            sampleAnswer: `.container { display: flex; }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 11,
+            type: 'code',
+            question: 'Create a 2-column grid layout.',
+            sampleAnswer: `.grid { display: grid; grid-template-columns: repeat(2, 1fr); }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 12,
+            type: 'code',
+            question: 'Write CSS to add 10px margin.',
+            sampleAnswer: `.box { margin: 10px; }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 13,
+            type: 'multiple-choice',
+            question: 'Which property animates changes smoothly?',
+            options: ['transition', 'float', 'position', 'overflow'],
+            correctAnswer: 0
+          },
+          {
+            id: 14,
+            type: 'true-false',
+            question: 'Flexbox is best for 1D layouts.',
+            correctAnswer: true
+          },
+          {
+            id: 15,
+            type: 'code',
+            question: 'Write a keyframes animation for fading in.',
+            sampleAnswer: `@keyframes fade { from { opacity: 0; } to { opacity: 1; } }`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    4: [
+      {
+        type: 'overview',
+        title: 'Responsive Web Design',
+        content:
+          'Responsive Web Design ensures websites look and work well on all devices, from mobile phones to large desktop screens. This module focuses on mobile-first design, media queries, responsive images, and breakpoints.',
+        topics: [
+          { title: 'Mobile-First Design', description: 'Designing for small screens first' },
+          { title: 'Media Queries', description: 'Applying styles based on screen size' },
+          { title: 'Responsive Images', description: 'Optimizing images for different devices' },
+          { title: 'Breakpoints', description: 'Adjusting layout at specific screen widths' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'What Is Responsive Web Design?',
+        content: [
+          'Responsive Web Design adapts layouts to different screen sizes and devices.',
+          'It improves usability, accessibility, and performance.',
+          'Responsive design is essential for modern web development.'
+        ],
+        points: [
+          'Supports mobile, tablet, and desktop',
+          'Improves user experience',
+          'Reduces maintenance cost',
+          'Preferred by search engines',
+          'Industry standard approach'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Mobile-First Design Concept',
+        content: [
+          'Mobile-first design starts by designing for the smallest screen.',
+          'Layouts are progressively enhanced for larger screens.',
+          'This approach improves performance and focus.'
+        ],
+        points: [
+          'Design for mobile first',
+          'Add features for larger screens',
+          'Faster loading on mobile',
+          'Better content prioritization',
+          'Recommended by Google'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Why Mobile-First Matters',
+        content: [
+          'Most users browse the web on mobile devices.',
+          'Mobile-first improves performance and accessibility.',
+          'It forces designers to focus on essential content.'
+        ],
+        points: [
+          'Mobile traffic dominance',
+          'Simpler layouts',
+          'Improved SEO',
+          'Better performance',
+          'Scalable design'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Media Queries Basics',
+        content: [
+          'Media queries allow CSS to apply styles conditionally.',
+          'They detect screen size, orientation, and resolution.',
+          'Media queries are core to responsive design.'
+        ],
+        points: [
+          '@media rule',
+          'min-width and max-width',
+          'Orientation queries',
+          'Multiple conditions',
+          'Logical operators'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Common Media Query Patterns',
+        content: [
+          'Media queries are commonly used to change layouts.',
+          'They help adapt font size, spacing, and structure.'
+        ],
+        points: [
+          'Mobile-first queries',
+          'Desktop-first queries',
+          'Range-based queries',
+          'Orientation-based queries',
+          'Device-independent queries'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Responsive Images',
+        content: [
+          'Images must adapt to different screen sizes.',
+          'Large images can harm performance on mobile.',
+          'Responsive images improve loading speed.'
+        ],
+        points: [
+          'max-width: 100%',
+          'height: auto',
+          'srcset attribute',
+          'sizes attribute',
+          'Modern image formats'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Understanding Breakpoints',
+        content: [
+          'Breakpoints define when layout changes occur.',
+          'They are based on content, not specific devices.',
+          'Choosing good breakpoints improves UX.'
+        ],
+        points: [
+          'Mobile breakpoint',
+          'Tablet breakpoint',
+          'Desktop breakpoint',
+          'Content-driven breakpoints',
+          'Avoid device-specific thinking'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Mobile-First CSS Example',
+        description: 'Starting layout for mobile screens.',
+        code: `body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 16px;
+}`,
+        output: 'Clean layout optimized for mobile.',
+        explanation:
+          'Base styles target mobile devices first.'
+      },
+
+      {
+        type: 'example',
+        title: 'Media Query Example',
+        description: 'Enhancing layout for larger screens.',
+        code: `@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: auto;
+  }
+}`,
+        output: 'Layout expands on tablets and desktops.',
+        explanation:
+          'min-width follows mobile-first principles.'
+      },
+
+      {
+        type: 'example',
+        title: 'Responsive Image Example',
+        description: 'Ensuring images scale correctly.',
+        code: `img {
+  max-width: 100%;
+  height: auto;
+}`,
+        output: 'Images resize with screen width.',
+        explanation:
+          'Prevents images from overflowing containers.'
+      },
+
+      {
+        type: 'example',
+        title: 'Breakpoint Layout Example',
+        description: 'Changing layout at breakpoints.',
+        code: `.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}`,
+        output: 'Single column on mobile, three columns on desktop.',
+        explanation:
+          'Layout adapts based on screen width.'
+      },
+
+      {
+        type: 'example',
+        title: 'Orientation Media Query',
+        description: 'Applying styles based on orientation.',
+        code: `@media (orientation: landscape) {
+  body {
+    background-color: #f5f5f5;
+  }
+}`,
+        output: 'Different styling in landscape mode.',
+        explanation:
+          'Orientation queries enhance UX.'
+      },
+
+      /* ===================== EXAM (15 QUESTIONS) ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 4 Exam: Responsive Web Design',
+        description: 'Answer the following questions to test your responsive design knowledge.',
+        duration: 40,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is the goal of responsive web design?',
+            options: [
+              'Increase JavaScript usage',
+              'Adapt layouts to all screen sizes',
+              'Use only mobile devices',
+              'Remove CSS'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'What does mobile-first design mean?',
+            options: [
+              'Design desktop first',
+              'Design mobile first then scale up',
+              'Ignore mobile devices',
+              'Use only media queries'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which media query is mobile-first?',
+            options: [
+              'max-width',
+              'min-width',
+              'device-width',
+              'orientation'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which CSS makes images responsive?',
+            options: [
+              'width: auto',
+              'max-width: 100%',
+              'display: block',
+              'float: left'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'What are breakpoints?',
+            options: [
+              'Browser bugs',
+              'Fixed device sizes',
+              'Screen widths where layout changes',
+              'CSS errors'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'Mobile-first design improves performance.',
+            correctAnswer: true
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'Breakpoints should be based on devices only.',
+            correctAnswer: false
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Media queries can detect screen orientation.',
+            correctAnswer: true
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'Responsive images improve page loading speed.',
+            correctAnswer: true
+          },
+          {
+            id: 10,
+            type: 'code',
+            question: 'Write a mobile-first media query for screens wider than 768px.',
+            sampleAnswer: `@media (min-width: 768px) { }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 11,
+            type: 'code',
+            question: 'Write CSS to make an image responsive.',
+            sampleAnswer: `img { max-width: 100%; height: auto; }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 12,
+            type: 'code',
+            question: 'Create a breakpoint for desktop screens.',
+            sampleAnswer: `@media (min-width: 1024px) { }`,
+            evaluation: 'manual'
+          },
+          {
+            id: 13,
+            type: 'multiple-choice',
+            question: 'Which approach is recommended by Google?',
+            options: [
+              'Desktop-first',
+              'Mobile-first',
+              'Fixed layout',
+              'No CSS'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 14,
+            type: 'true-false',
+            question: 'Responsive design reduces the need for multiple websites.',
+            correctAnswer: true
+          },
+          {
+            id: 15,
+            type: 'code',
+            question: 'Write a media query for landscape orientation.',
+            sampleAnswer: `@media (orientation: landscape) { }`,
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    5: [
+      {
+        type: 'overview',
+        title: 'UX / UI Design Fundamentals',
+        content:
+          'UX (User Experience) and UI (User Interface) design focus on creating products that are easy to use, accessible, and enjoyable. In this module, students will learn user research, wireframing, prototyping, usability testing, and accessibility principles.',
+        topics: [
+          { title: 'User Research', description: 'Understanding user needs and behavior' },
+          { title: 'Wireframing', description: 'Planning layouts and structure' },
+          { title: 'Prototyping', description: 'Creating interactive design samples' },
+          { title: 'Usability Testing', description: 'Testing designs with real users' },
+          { title: 'Accessibility', description: 'Designing for all users' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Introduction to UX and UI',
+        content: [
+          'UX focuses on how users feel when using a product.',
+          'UI focuses on how the product looks and interacts.',
+          'Good UX/UI design balances user needs and business goals.'
+        ],
+        points: [
+          'UX = experience and usability',
+          'UI = visual and interaction design',
+          'User-centered design approach',
+          'Problem-solving mindset',
+          'Iterative design process'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'User Research',
+        content: [
+          'User research helps designers understand real user problems.',
+          'Research should be done before design begins.',
+          'Decisions should be based on data, not assumptions.'
+        ],
+        points: [
+          'User interviews',
+          'Surveys and questionnaires',
+          'User personas',
+          'User journeys',
+          'Competitive analysis'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Wireframing',
+        content: [
+          'Wireframes are simple visual guides for page structure.',
+          'They focus on layout, not colors or images.',
+          'Wireframes save time by validating ideas early.'
+        ],
+        points: [
+          'Low-fidelity wireframes',
+          'High-fidelity wireframes',
+          'Page layout structure',
+          'Content hierarchy',
+          'Navigation planning'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Prototyping',
+        content: [
+          'Prototypes simulate how a product will work.',
+          'They help stakeholders and users understand interactions.',
+          'Prototypes reduce development risk.'
+        ],
+        points: [
+          'Clickable prototypes',
+          'Low vs high fidelity',
+          'Design tools (Figma, Adobe XD)',
+          'Interaction flow',
+          'Design validation'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Usability Testing',
+        content: [
+          'Usability testing evaluates how easy a design is to use.',
+          'Testing reveals problems early in development.',
+          'Real users provide the most valuable feedback.'
+        ],
+        points: [
+          'Task-based testing',
+          'Observing user behavior',
+          'Think-aloud method',
+          'Identifying pain points',
+          'Iterating based on feedback'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Accessibility in Design',
+        content: [
+          'Accessibility ensures products can be used by everyone.',
+          'Designs should support users with disabilities.',
+          'Accessibility is a legal and ethical requirement.'
+        ],
+        points: [
+          'WCAG guidelines',
+          'Color contrast',
+          'Keyboard navigation',
+          'Screen reader support',
+          'Accessible forms and labels'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'User Persona Example',
+        description: 'A simple user persona created from research.',
+        code: `{
+  name: "Sokha",
+  age: 21,
+  goal: "Learn web development",
+  painPoint: "Complex interfaces",
+  device: "Mobile"
+}`,
+        output: 'A persona representing target users.',
+        explanation:
+          'Personas help designers focus on real user needs.'
+      },
+
+      {
+        type: 'example',
+        title: 'Wireframe Example',
+        description: 'Low-fidelity wireframe layout.',
+        code: `Header
+----------------
+Navigation
+----------------
+Main Content
+----------------
+Footer`,
+        output: 'Simple page layout structure.',
+        explanation:
+          'Wireframes focus on structure, not visuals.'
+      },
+
+      {
+        type: 'example',
+        title: 'Prototype Flow Example',
+        description: 'Simple login flow.',
+        code: `Login Page → Dashboard → Profile`,
+        output: 'User navigation flow.',
+        explanation:
+          'Prototypes help visualize user interaction.'
+      },
+
+      {
+        type: 'example',
+        title: 'Usability Test Task Example',
+        description: 'Task given to a test user.',
+        code: `Task: Register an account and update profile information.`,
+        output: 'User completes task while being observed.',
+        explanation:
+          'Task-based testing identifies usability issues.'
+      },
+
+      {
+        type: 'example',
+        title: 'Accessibility Example',
+        description: 'Accessible form input.',
+        code: `<label for="email">Email</label>
+<input id="email" type="email" aria-required="true" />`,
+        output: 'Form accessible to screen readers.',
+        explanation:
+          'Labels and ARIA attributes improve accessibility.'
+      },
+
+      /* ===================== EXAM (15 QUESTIONS) ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 5 Exam: UX / UI Design Fundamentals',
+        description: 'Answer the following questions to test your UX/UI knowledge.',
+        duration: 40,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is the main goal of UX design?',
+            options: [
+              'Make interfaces colorful',
+              'Improve user experience',
+              'Write code',
+              'Create animations'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which activity helps understand user needs?',
+            options: ['Wireframing', 'User research', 'Coding', 'Deployment'],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'What is a wireframe?',
+            options: [
+              'Final design',
+              'Code structure',
+              'Layout blueprint',
+              'User database'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'What is a prototype?',
+            options: [
+              'Static image',
+              'Interactive design sample',
+              'Database schema',
+              'CSS file'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Why is usability testing important?',
+            options: [
+              'To add features',
+              'To test server speed',
+              'To find usability issues',
+              'To deploy faster'
+            ],
+            correctAnswer: 2
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'User research should be done after development.',
+            correctAnswer: false
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'Wireframes focus on layout, not colors.',
+            correctAnswer: true
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Accessibility benefits only disabled users.',
+            correctAnswer: false
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'Usability testing uses real users.',
+            correctAnswer: true
+          },
+          {
+            id: 10,
+            type: 'code',
+            question: 'Write one example of accessible HTML.',
+            sampleAnswer: `<label for="name">Name</label><input id="name" />`,
+            evaluation: 'manual'
+          },
+          {
+            id: 11,
+            type: 'multiple-choice',
+            question: 'Which guideline relates to accessibility?',
+            options: ['WCAG', 'HTTP', 'DOM', 'API'],
+            correctAnswer: 0
+          },
+          {
+            id: 12,
+            type: 'true-false',
+            question: 'Prototypes help reduce development risk.',
+            correctAnswer: true
+          },
+          {
+            id: 13,
+            type: 'multiple-choice',
+            question: 'Which tool is commonly used for prototyping?',
+            options: ['Figma', 'Git', 'Docker', 'Node.js'],
+            correctAnswer: 0
+          },
+          {
+            id: 14,
+            type: 'true-false',
+            question: 'Good UX balances user and business needs.',
+            correctAnswer: true
+          },
+          {
+            id: 15,
+            type: 'short-answer',
+            question: 'Name one benefit of usability testing.',
+            sampleAnswer: 'Identifies user pain points early.',
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    6: [
+      {
+        type: 'overview',
+        title: 'JavaScript Fundamentals',
+        content:
+          'JavaScript is a powerful programming language used to make web pages interactive. In this module, students will learn JavaScript basics, DOM manipulation, events, form validation, and animations.',
+        topics: [
+          { title: 'JavaScript Basics', description: 'Core language concepts' },
+          { title: 'DOM Manipulation', description: 'Interacting with HTML elements' },
+          { title: 'Events', description: 'Handling user interactions' },
+          { title: 'Form Validation', description: 'Validating user input' },
+          { title: 'Animations', description: 'Creating simple animations' },
+          { title: 'Module Exam', description: 'Test your JavaScript knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'JavaScript Basics',
+        content: [
+          'JavaScript runs in the browser and makes websites interactive.',
+          'It allows you to control logic, data, and behavior.',
+          'JavaScript works together with HTML and CSS.'
+        ],
+        points: [
+          'Variables (let, const)',
+          'Data types (string, number, boolean)',
+          'Operators',
+          'Conditions (if / else)',
+          'Loops (for, while)',
+          'Functions'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'DOM Manipulation',
+        content: [
+          'DOM stands for Document Object Model.',
+          'JavaScript can access and modify HTML elements.',
+          'DOM manipulation updates the page without reloading.'
+        ],
+        points: [
+          'getElementById',
+          'querySelector',
+          'Changing text and HTML',
+          'Changing styles',
+          'Creating and removing elements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Events',
+        content: [
+          'Events occur when users interact with a webpage.',
+          'JavaScript listens for events and responds to them.',
+          'Events improve interactivity.'
+        ],
+        points: [
+          'Click events',
+          'Input and change events',
+          'Keyboard events',
+          'Mouse events',
+          'addEventListener'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Form Validation',
+        content: [
+          'Form validation ensures users enter correct data.',
+          'Validation improves data quality and user experience.',
+          'Validation can be done using JavaScript.'
+        ],
+        points: [
+          'Required fields',
+          'Email format validation',
+          'Password length checks',
+          'Preventing form submission',
+          'Displaying error messages'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Animations with JavaScript',
+        content: [
+          'Animations make web pages more engaging.',
+          'JavaScript can control animations dynamically.',
+          'Animations should be smooth and purposeful.'
+        ],
+        points: [
+          'setTimeout and setInterval',
+          'CSS class toggling',
+          'Basic animations',
+          'Transition control',
+          'Performance considerations'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'JavaScript Variable Example',
+        description: 'Basic variable declaration.',
+        code: `let name = "Sokha";
+const age = 20;
+console.log(name, age);`,
+        output: 'Sokha 20',
+        explanation:
+          'Variables store data that can be reused in the program.'
+      },
+
+      {
+        type: 'example',
+        title: 'DOM Manipulation Example',
+        description: 'Change text content using JavaScript.',
+        code: `document.getElementById("title").innerText = "Hello JavaScript";`,
+        output: 'Text updated on the page.',
+        explanation:
+          'JavaScript can modify HTML content dynamically.'
+      },
+
+      {
+        type: 'example',
+        title: 'Event Handling Example',
+        description: 'Click event listener.',
+        code: `button.addEventListener("click", () => {
+  alert("Button clicked!");
+});`,
+        output: 'Alert appears when button is clicked.',
+        explanation:
+          'Events respond to user actions.'
+      },
+
+      {
+        type: 'example',
+        title: 'Form Validation Example',
+        description: 'Check if input is empty.',
+        code: `if (email === "") {
+  alert("Email is required");
+}`,
+        output: 'Validation message displayed.',
+        explanation:
+          'Form validation prevents incorrect submissions.'
+      },
+
+      {
+        type: 'example',
+        title: 'Animation Example',
+        description: 'Toggle CSS class for animation.',
+        code: `box.classList.toggle("animate");`,
+        output: 'Element animates on screen.',
+        explanation:
+          'JavaScript controls animations by changing classes.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: JavaScript Fundamentals',
+        description: 'Answer the following questions to test your JavaScript knowledge.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'Which keyword is used to declare a variable?',
+            options: ['var', 'let', 'const', 'All of the above'],
+            correctAnswer: 3
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'What does DOM stand for?',
+            options: [
+              'Data Object Model',
+              'Document Object Model',
+              'Display Object Method',
+              'Digital Order Model'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Which method selects an element by ID?',
+            options: [
+              'querySelector',
+              'getElementById',
+              'getElementsByClass',
+              'selectById'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which event occurs when a button is clicked?',
+            options: ['hover', 'submit', 'click', 'load'],
+            correctAnswer: 2
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Why is form validation important?',
+            options: [
+              'Improve design',
+              'Reduce server load',
+              'Ensure correct data',
+              'All of the above'
+            ],
+            correctAnswer: 3
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'JavaScript can change HTML content.',
+            correctAnswer: true
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'Events cannot be handled by JavaScript.',
+            correctAnswer: false
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Form validation improves user experience.',
+            correctAnswer: true
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'Animations should always be complex.',
+            correctAnswer: false
+          },
+          {
+            id: 10,
+            type: 'code',
+            question: 'Write JavaScript to display an alert message.',
+            sampleAnswer: `alert("Hello!");`,
+            evaluation: 'manual'
+          },
+          {
+            id: 11,
+            type: 'multiple-choice',
+            question: 'Which function repeats code at intervals?',
+            options: ['setTimeout', 'setInterval', 'repeat', 'loop'],
+            correctAnswer: 1
+          },
+          {
+            id: 12,
+            type: 'true-false',
+            question: 'querySelector can select CSS selectors.',
+            correctAnswer: true
+          },
+          {
+            id: 13,
+            type: 'multiple-choice',
+            question: 'Which is used to stop form submission?',
+            options: ['stop()', 'preventDefault()', 'block()', 'cancel()'],
+            correctAnswer: 1
+          },
+          {
+            id: 14,
+            type: 'short-answer',
+            question: 'Name one example of a JavaScript event.',
+            sampleAnswer: 'click',
+            evaluation: 'manual'
+          },
+          {
+            id: 15,
+            type: 'short-answer',
+            question: 'Why are animations used in websites?',
+            sampleAnswer: 'To improve user engagement.',
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    7: [
+      {
+        type: 'overview',
+        title: 'CSS Frameworks & UI Libraries',
+        content:
+          'CSS frameworks and component libraries help developers build responsive, consistent, and professional user interfaces faster. In this module, students will learn Bootstrap 5, Tailwind CSS, custom themes, and modern component libraries.',
+        topics: [
+          { title: 'Bootstrap 5', description: 'Popular CSS framework for responsive design' },
+          { title: 'Tailwind CSS', description: 'Utility-first CSS framework' },
+          { title: 'Custom Themes', description: 'Branding and theme customization' },
+          { title: 'Component Libraries', description: 'Reusable UI components' },
+          { title: 'Module Exam', description: 'Test your understanding' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Bootstrap 5',
+        content: [
+          'Bootstrap 5 is a popular CSS framework for building responsive websites.',
+          'It provides prebuilt components, layout systems, and utilities.',
+          'Bootstrap uses a mobile-first approach.'
+        ],
+        points: [
+          'Grid system (row, col)',
+          'Responsive breakpoints',
+          'Buttons, cards, navbar',
+          'Forms and utilities',
+          'Bootstrap icons',
+          'No jQuery required in Bootstrap 5'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Tailwind CSS',
+        content: [
+          'Tailwind CSS is a utility-first CSS framework.',
+          'Styles are applied directly in HTML using utility classes.',
+          'Tailwind gives developers full control over design.'
+        ],
+        points: [
+          'Utility-first approach',
+          'Responsive utilities',
+          'Flexbox and Grid helpers',
+          'Spacing, colors, typography',
+          'Custom configuration (tailwind.config.js)'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Custom Themes',
+        content: [
+          'Custom themes allow you to apply branding and consistent styles.',
+          'Themes help maintain design consistency across pages.',
+          'Both Bootstrap and Tailwind support theming.'
+        ],
+        points: [
+          'Custom colors',
+          'Typography styles',
+          'Dark and light themes',
+          'CSS variables',
+          'Theme reuse across projects'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Component Libraries',
+        content: [
+          'Component libraries provide reusable UI elements.',
+          'They speed up development and ensure consistency.',
+          'Often used with modern frameworks like React.'
+        ],
+        points: [
+          'Buttons, modals, tables',
+          'Accessibility-ready components',
+          'Examples: Bootstrap Components, Material UI, Ant Design',
+          'Reusable and scalable UI',
+          'Consistent design system'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Bootstrap Button Example',
+        description: 'Create a primary button using Bootstrap.',
+        code: `<button class="btn btn-primary">Click Me</button>`,
+        output: 'A blue Bootstrap button.',
+        explanation:
+          'Bootstrap provides predefined button styles using classes.'
+      },
+
+      {
+        type: 'example',
+        title: 'Bootstrap Grid Example',
+        description: 'Responsive two-column layout.',
+        code: `<div class="row">
+  <div class="col-md-6">Column 1</div>
+  <div class="col-md-6">Column 2</div>
+</div>`,
+        output: 'Two responsive columns.',
+        explanation:
+          'Bootstrap grid system uses rows and columns.'
+      },
+
+      {
+        type: 'example',
+        title: 'Tailwind Button Example',
+        description: 'Create a styled button using Tailwind CSS.',
+        code: `<button class="bg-blue-500 text-white px-4 py-2 rounded">
+  Click Me
+</button>`,
+        output: 'A blue Tailwind button.',
+        explanation:
+          'Tailwind uses utility classes instead of predefined components.'
+      },
+
+      {
+        type: 'example',
+        title: 'Custom Theme Example',
+        description: 'Using CSS variables for theming.',
+        code: `:root {
+  --primary-color: #2563eb;
+}
+
+button {
+  background-color: var(--primary-color);
+}`,
+        output: 'Buttons use the custom primary color.',
+        explanation:
+          'CSS variables make theme customization easy.'
+      },
+
+      {
+        type: 'example',
+        title: 'Component Library Example',
+        description: 'Reusable card component.',
+        code: `<div class="card">
+  <h3>Title</h3>
+  <p>Description</p>
+</div>`,
+        output: 'Reusable card component.',
+        explanation:
+          'Component libraries promote reuse and consistency.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 7 Exam: CSS Frameworks & UI Libraries',
+        description: 'Answer the following questions to test your knowledge.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is Bootstrap?',
+            options: [
+              'A JavaScript framework',
+              'A CSS framework',
+              'A database',
+              'A backend language'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Bootstrap 5 follows which design approach?',
+            options: ['Desktop-first', 'Mobile-first', 'Tablet-first', 'Fixed-width'],
+            correctAnswer: 1
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'What is Tailwind CSS?',
+            options: [
+              'Component-based framework',
+              'Utility-first CSS framework',
+              'JavaScript library',
+              'CSS preprocessor'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'Which file is used to configure Tailwind?',
+            options: [
+              'style.css',
+              'tailwind.config.js',
+              'config.css',
+              'theme.json'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'What is the benefit of custom themes?',
+            options: [
+              'Better branding',
+              'Consistent design',
+              'Easy updates',
+              'All of the above'
+            ],
+            correctAnswer: 3
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'Bootstrap 5 requires jQuery.',
+            correctAnswer: false
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'Tailwind CSS uses utility classes.',
+            correctAnswer: true
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Component libraries reduce development time.',
+            correctAnswer: true
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'Themes help maintain consistent UI design.',
+            correctAnswer: true
+          },
+          {
+            id: 10,
+            type: 'multiple-choice',
+            question: 'Which is a component library?',
+            options: ['Material UI', 'Tailwind', 'Bootstrap Grid', 'CSS Variables'],
+            correctAnswer: 0
+          },
+          {
+            id: 11,
+            type: 'short-answer',
+            question: 'Name one Bootstrap component.',
+            sampleAnswer: 'Navbar',
+            evaluation: 'manual'
+          },
+          {
+            id: 12,
+            type: 'short-answer',
+            question: 'Why use Tailwind CSS?',
+            sampleAnswer: 'For flexible and custom UI design.',
+            evaluation: 'manual'
+          },
+          {
+            id: 13,
+            type: 'code',
+            question: 'Write a Bootstrap class for a primary button.',
+            sampleAnswer: `<button class="btn btn-primary"></button>`,
+            evaluation: 'manual'
+          },
+          {
+            id: 14,
+            type: 'code',
+            question: 'Write a Tailwind class to add padding.',
+            sampleAnswer: `p-4`,
+            evaluation: 'manual'
+          },
+          {
+            id: 15,
+            type: 'short-answer',
+            question: 'What is a UI component?',
+            sampleAnswer: 'A reusable UI element.',
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    8: [
+      {
+        type: 'overview',
+        title: 'UI/UX Design Tools & Collaboration',
+        content:
+          'Modern UI/UX designers use powerful design tools and structured workflows to create, manage, and collaborate on digital products. This module introduces industry-standard tools such as Figma and Adobe XD, design systems, and version control concepts for designers.',
+        topics: [
+          { title: 'Figma', description: 'Cloud-based UI/UX design and collaboration tool' },
+          { title: 'Adobe XD', description: 'Design and prototyping tool from Adobe' },
+          { title: 'Design Systems', description: 'Reusable components and design standards' },
+          { title: 'Version Control for Designers', description: 'Managing design changes and collaboration' },
+          { title: 'Module Exam', description: 'Evaluate your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Figma',
+        content: [
+          'Figma is a cloud-based UI/UX design tool used for interface design and prototyping.',
+          'It allows real-time collaboration between designers and developers.',
+          'Figma runs in the browser and as a desktop application.'
+        ],
+        points: [
+          'Frames, layers, and components',
+          'Auto layout',
+          'Prototyping and interactions',
+          'Real-time collaboration',
+          'Developer handoff (Inspect)',
+          'Plugins and community resources'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Adobe XD',
+        content: [
+          'Adobe XD is a vector-based UI/UX design tool.',
+          'It integrates well with other Adobe products.',
+          'Adobe XD supports wireframing, prototyping, and design systems.'
+        ],
+        points: [
+          'Artboards and layouts',
+          'Repeat grid',
+          'Interactive prototypes',
+          'Design specs',
+          'Integration with Photoshop and Illustrator'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Design Systems',
+        content: [
+          'A design system is a collection of reusable components and design rules.',
+          'It ensures consistency across products and teams.',
+          'Design systems improve collaboration between designers and developers.'
+        ],
+        points: [
+          'Color palette',
+          'Typography styles',
+          'Buttons and UI components',
+          'Spacing and layout rules',
+          'Accessibility guidelines',
+          'Documentation'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Version Control for Designers',
+        content: [
+          'Version control helps designers track changes and collaborate safely.',
+          'It prevents overwriting work and enables rollback to previous versions.',
+          'Modern design tools support version history.'
+        ],
+        points: [
+          'Version history',
+          'Branching concepts',
+          'Design file comments',
+          'File naming conventions',
+          'Collaboration with developers',
+          'Tools: Figma History, Git for design assets'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Figma Component Example',
+        description: 'Create a reusable button component in Figma.',
+        code: `1. Draw a rectangle
+2. Add text label
+3. Select both
+4. Convert to Component`,
+        output: 'Reusable button component.',
+        explanation:
+          'Components allow consistent UI elements across designs.'
+      },
+
+      {
+        type: 'example',
+        title: 'Figma Auto Layout Example',
+        description: 'Create a responsive card using Auto Layout.',
+        code: `Auto Layout:
+- Direction: Vertical
+- Padding: 16px
+- Gap: 8px`,
+        output: 'Responsive card layout.',
+        explanation:
+          'Auto Layout adjusts spacing automatically.'
+      },
+
+      {
+        type: 'example',
+        title: 'Adobe XD Repeat Grid Example',
+        description: 'Create a list using Repeat Grid.',
+        code: `Select items → Enable Repeat Grid → Drag`,
+        output: 'Repeated list items.',
+        explanation:
+          'Repeat Grid speeds up layout creation.'
+      },
+
+      {
+        type: 'example',
+        title: 'Design System Example',
+        description: 'Define color and typography tokens.',
+        code: `Primary Color: #2563EB
+Font: Inter
+Button Radius: 8px`,
+        output: 'Consistent design tokens.',
+        explanation:
+          'Design tokens keep UI consistent.'
+      },
+
+      {
+        type: 'example',
+        title: 'Version History Example',
+        description: 'Restore a previous design version.',
+        code: `File → Show version history → Restore`,
+        output: 'Previous design restored.',
+        explanation:
+          'Version history prevents data loss.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 8 Exam: UI/UX Design Tools & Collaboration',
+        description: 'Answer the following questions to test your knowledge.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          {
+            id: 1,
+            type: 'multiple-choice',
+            question: 'What is Figma?',
+            options: [
+              'Image editor',
+              'UI/UX design tool',
+              'Database',
+              'Programming language'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 2,
+            type: 'multiple-choice',
+            question: 'Which feature allows real-time collaboration in Figma?',
+            options: ['Layers', 'Auto Layout', 'Multiplayer', 'Frames'],
+            correctAnswer: 2
+          },
+          {
+            id: 3,
+            type: 'multiple-choice',
+            question: 'Adobe XD is mainly used for?',
+            options: ['Backend development', 'UI/UX design', 'Server hosting', 'Testing'],
+            correctAnswer: 1
+          },
+          {
+            id: 4,
+            type: 'multiple-choice',
+            question: 'What is a design system?',
+            options: [
+              'A coding framework',
+              'A set of reusable design rules and components',
+              'A database',
+              'A design software'
+            ],
+            correctAnswer: 1
+          },
+          {
+            id: 5,
+            type: 'multiple-choice',
+            question: 'Why use design systems?',
+            options: [
+              'Consistency',
+              'Scalability',
+              'Collaboration',
+              'All of the above'
+            ],
+            correctAnswer: 3
+          },
+          {
+            id: 6,
+            type: 'true-false',
+            question: 'Figma requires installation to work.',
+            correctAnswer: false
+          },
+          {
+            id: 7,
+            type: 'true-false',
+            question: 'Components can be reused across designs.',
+            correctAnswer: true
+          },
+          {
+            id: 8,
+            type: 'true-false',
+            question: 'Version control is only for developers.',
+            correctAnswer: false
+          },
+          {
+            id: 9,
+            type: 'true-false',
+            question: 'Design systems improve team efficiency.',
+            correctAnswer: true
+          },
+          {
+            id: 10,
+            type: 'multiple-choice',
+            question: 'Which tool provides Auto Layout?',
+            options: ['Adobe XD', 'Figma', 'Photoshop', 'Illustrator'],
+            correctAnswer: 1
+          },
+          {
+            id: 11,
+            type: 'short-answer',
+            question: 'Name one benefit of using Figma.',
+            sampleAnswer: 'Real-time collaboration',
+            evaluation: 'manual'
+          },
+          {
+            id: 12,
+            type: 'short-answer',
+            question: 'What is version history?',
+            sampleAnswer: 'A record of file changes.',
+            evaluation: 'manual'
+          },
+          {
+            id: 13,
+            type: 'short-answer',
+            question: 'Name one design system component.',
+            sampleAnswer: 'Button',
+            evaluation: 'manual'
+          },
+          {
+            id: 14,
+            type: 'code',
+            question: 'List one design token.',
+            sampleAnswer: 'Primary color',
+            evaluation: 'manual'
+          },
+          {
+            id: 15,
+            type: 'short-answer',
+            question: 'Why is accessibility important in design?',
+            sampleAnswer: 'To ensure usability for all users.',
+            evaluation: 'manual'
+          }
+        ]
+      }
+    ],
+    9: [
+      {
+        type: 'overview',
+        title: 'Web Performance & SEO Fundamentals',
+        content:
+          'Optimizing web performance and search engine visibility is crucial for modern websites. In this module, students will learn about page speed optimization, SEO basics, meta tags, analytics, and tools to improve site performance.',
+        topics: [
+          { title: 'Page Speed Optimization', description: 'Improve website load times and responsiveness' },
+          { title: 'SEO Basics', description: 'Search engine optimization principles' },
+          { title: 'Meta Tags', description: 'HTML elements that provide metadata to browsers and search engines' },
+          { title: 'Analytics', description: 'Tracking and analyzing website performance' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Page Speed Optimization',
+        content: [
+          'Page speed impacts user experience, engagement, and search ranking.',
+          'Optimized websites load faster and reduce bounce rates.',
+          'Both frontend and backend optimizations are important.'
+        ],
+        points: [
+          'Minify CSS, JavaScript, and HTML',
+          'Optimize images (compression, WebP format)',
+          'Use caching strategies',
+          'Lazy loading for images and videos',
+          'Reduce HTTP requests',
+          'Use a Content Delivery Network (CDN)'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'SEO Basics',
+        content: [
+          'Search Engine Optimization (SEO) improves visibility on search engines.',
+          'Proper SEO helps users find your website and content.',
+          'SEO combines technical, on-page, and off-page strategies.'
+        ],
+        points: [
+          'Keyword research and placement',
+          'Readable URLs',
+          'Internal linking',
+          'Header tags (H1-H6)',
+          'Content quality and relevance',
+          'Mobile-friendliness'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Meta Tags',
+        content: [
+          'Meta tags provide metadata about a web page.',
+          'They are placed in the HTML <head> section.',
+          'Meta tags influence SEO, social sharing, and browser behavior.'
+        ],
+        points: [
+          '<title>: Page title',
+          '<meta name="description">',
+          '<meta name="keywords">',
+          '<meta name="viewport">',
+          'Open Graph tags for social media',
+          'Robots meta tag to control indexing'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Analytics',
+        content: [
+          'Analytics tools track user behavior, traffic, and conversions.',
+          'They provide data to improve user experience and business decisions.',
+          'Popular analytics tools are easy to integrate.'
+        ],
+        points: [
+          'Google Analytics setup',
+          'Track pageviews and events',
+          'Conversion tracking',
+          'User behavior flow',
+          'Report generation and insights',
+          'A/B testing for optimization'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Image Optimization Example',
+        description: 'Convert images to WebP format.',
+        code: `<img src="image.webp" alt="Optimized Image">`,
+        output: 'Faster-loading images.',
+        explanation: 'WebP images are smaller and load faster than JPEG or PNG.'
+      },
+
+      {
+        type: 'example',
+        title: 'Meta Tag Example',
+        description: 'SEO meta tags in HTML head.',
+        code: `<head>
+  <title>My Web Page</title>
+  <meta name="description" content="Learn web development and optimization">
+  <meta name="keywords" content="HTML, CSS, JavaScript, SEO">
+</head>`,
+        output: 'Search engines read this metadata.',
+        explanation: 'Meta tags improve search engine visibility.'
+      },
+
+      {
+        type: 'example',
+        title: 'Lazy Loading Example',
+        description: 'Load images only when visible.',
+        code: `<img src="image.jpg" loading="lazy" alt="Lazy Image">`,
+        output: 'Images load only when needed.',
+        explanation: 'Lazy loading reduces initial page load time.'
+      },
+
+      {
+        type: 'example',
+        title: 'Analytics Example',
+        description: 'Google Analytics basic setup.',
+        code: `<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>`,
+        output: 'Tracks pageviews and user behavior.',
+        explanation: 'Analytics script sends data to Google Analytics.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 9 Exam: Web Performance & SEO',
+        description: 'Answer the following questions to test your knowledge.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What affects page speed?', options: ['Images', 'CSS', 'JavaScript', 'All of the above'], correctAnswer: 3 },
+          { id: 2, type: 'multiple-choice', question: 'What does SEO stand for?', options: ['Search Engine Optimization', 'Site Error Overview', 'Server Execution Order', 'Search Engine Operation'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'Which meta tag controls mobile scaling?', options: ['description', 'viewport', 'keywords', 'robots'], correctAnswer: 1 },
+          { id: 4, type: 'multiple-choice', question: 'What is lazy loading?', options: ['Load all images at once', 'Load images when visible', 'Delay CSS', 'Compress JS'], correctAnswer: 1 },
+          { id: 5, type: 'multiple-choice', question: 'Which format is faster for images?', options: ['JPEG', 'PNG', 'WebP', 'GIF'], correctAnswer: 2 },
+          { id: 6, type: 'true-false', question: 'SEO improves website visibility on search engines.', correctAnswer: true },
+          { id: 7, type: 'true-false', question: 'Page speed has no effect on user experience.', correctAnswer: false },
+          { id: 8, type: 'true-false', question: 'Meta description helps search engines understand page content.', correctAnswer: true },
+          { id: 9, type: 'true-false', question: 'Analytics can track user behavior.', correctAnswer: true },
+          { id: 10, type: 'true-false', question: 'Using too many large images can slow down a website.', correctAnswer: true },
+          { id: 11, type: 'short-answer', question: 'Name one benefit of optimizing page speed.', sampleAnswer: 'Improves user experience', evaluation: 'manual' },
+          { id: 12, type: 'short-answer', question: 'Name one SEO strategy.', sampleAnswer: 'Using header tags correctly', evaluation: 'manual' },
+          { id: 13, type: 'short-answer', question: 'Give an example of a meta tag.', sampleAnswer: '<meta name="description" content="...">', evaluation: 'manual' },
+          { id: 14, type: 'short-answer', question: 'Why use Google Analytics?', sampleAnswer: 'To track website traffic and behavior', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Name one way to reduce HTTP requests.', sampleAnswer: 'Combine CSS/JS files', evaluation: 'manual' }
+        ]
+      }
+    ],
+    10: [
+      {
+        type: 'overview',
+        title: 'Final Project & Portfolio',
+        content:
+          'This module guides students through planning, creating, and deploying a final portfolio website. It also covers project presentation and showcases best practices for professional portfolios.',
+        topics: [
+          { title: 'Project Planning', description: 'Define project goals, features, and workflow' },
+          { title: 'Final Portfolio Website', description: 'Design and develop your own portfolio website' },
+          { title: 'Deployment', description: 'Publish your website online' },
+          { title: 'Presentation', description: 'Prepare and present your project' },
+          { title: 'Module Exam', description: 'Evaluate your overall understanding' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Project Planning',
+        content: [
+          'Project planning is essential to organize ideas, define scope, and allocate resources.',
+          'A clear plan reduces development time and ensures a successful project.'
+        ],
+        points: [
+          'Define project objectives and target audience',
+          'Create a list of required features',
+          'Sketch wireframes and mockups',
+          'Plan development workflow and milestones',
+          'Use tools like Trello, Jira, or Notion for task management'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Final Portfolio Website',
+        content: [
+          'Your portfolio website demonstrates your skills and projects.',
+          'It should be visually appealing, responsive, and functional.'
+        ],
+        points: [
+          'Include sections: About, Projects, Skills, Contact',
+          'Responsive design using CSS frameworks or Flex/Grid',
+          'Add interactivity with JavaScript',
+          'Use consistent design systems and themes',
+          'Optimize for performance and accessibility'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Deployment',
+        content: [
+          'Deployment makes your portfolio accessible online.',
+          'Modern tools allow easy hosting and continuous updates.'
+        ],
+        points: [
+          'Use hosting platforms like GitHub Pages, Netlify, or Vercel',
+          'Configure domain name (optional)',
+          'Ensure assets are optimized for performance',
+          'Test website on different devices and browsers',
+          'Enable SSL for secure connections (HTTPS)'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Presentation',
+        content: [
+          'Presenting your project professionally showcases your work and communication skills.',
+          'A good presentation includes visuals, live demo, and explanation of features.'
+        ],
+        points: [
+          'Prepare slides summarizing the project',
+          'Explain design choices and tools used',
+          'Demonstrate functionality live',
+          'Highlight challenges and solutions',
+          'Collect feedback and questions from audience'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Project Planning Example',
+        description: 'Define features for a portfolio site.',
+        code: `- Home page with intro
+- Projects gallery
+- About me section
+- Contact form
+- Responsive design`,
+        output: 'Clear project roadmap.',
+        explanation: 'Planning helps organize features before coding.'
+      },
+
+      {
+        type: 'example',
+        title: 'Portfolio Layout Example',
+        description: 'HTML structure for projects section.',
+        code: `<section id="projects">
+  <div class="project-card">Project 1</div>
+  <div class="project-card">Project 2</div>
+</section>`,
+        output: 'Displays multiple projects on the portfolio page.',
+        explanation: 'Use semantic HTML and CSS for styling.'
+      },
+
+      {
+        type: 'example',
+        title: 'Deployment Example',
+        description: 'Deploying to GitHub Pages.',
+        code: `1. Push code to GitHub repository
+2. Go to repository Settings → Pages
+3. Select main branch → Save
+4. Access site at username.github.io/repository`,
+        output: 'Portfolio website live online.',
+        explanation: 'Simple deployment using GitHub Pages.'
+      },
+
+      {
+        type: 'example',
+        title: 'Presentation Example',
+        description: 'Prepare slides for project demo.',
+        code: `Slide 1: Project overview
+Slide 2: Tools and tech stack
+Slide 3: Features demonstration
+Slide 4: Challenges and solutions
+Slide 5: Conclusion & next steps`,
+        output: 'Structured presentation for audience.',
+        explanation: 'Organized slides improve communication.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module 10 Exam: Final Project & Portfolio',
+        description: 'Answer the following questions to evaluate your understanding of web project development.',
+        duration: 60,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What is the first step in a project?', options: ['Coding', 'Planning', 'Deployment', 'Presentation'], correctAnswer: 1 },
+          { id: 2, type: 'multiple-choice', question: 'Which section is essential in a portfolio?', options: ['About', 'Blog', 'Forum', 'Shopping cart'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'Which tool can be used for hosting?', options: ['Netlify', 'Photoshop', 'Figma', 'Illustrator'], correctAnswer: 0 },
+          { id: 4, type: 'multiple-choice', question: 'Responsive design is important because?', options: ['Mobile users', 'Desktop users', 'Tablet users', 'All devices'], correctAnswer: 3 },
+          { id: 5, type: 'multiple-choice', question: 'What improves presentation clarity?', options: ['Random order slides', 'Structured slides', 'Skip demo', 'No visuals'], correctAnswer: 1 },
+          { id: 6, type: 'true-false', question: 'Planning helps reduce development errors.', correctAnswer: true },
+          { id: 7, type: 'true-false', question: 'Deployment is optional for a portfolio.', correctAnswer: false },
+          { id: 8, type: 'true-false', question: 'Portfolio should include personal projects.', correctAnswer: true },
+          { id: 9, type: 'true-false', question: 'Presentation does not require a live demo.', correctAnswer: false },
+          { id: 10, type: 'true-false', question: 'Optimized images improve website performance.', correctAnswer: true },
+          { id: 11, type: 'short-answer', question: 'Name one platform to deploy a website.', sampleAnswer: 'GitHub Pages', evaluation: 'manual' },
+          { id: 12, type: 'short-answer', question: 'Why is responsive design important?', sampleAnswer: 'To ensure the site works on all devices.', evaluation: 'manual' },
+          { id: 13, type: 'short-answer', question: 'List one section in a portfolio website.', sampleAnswer: 'Projects', evaluation: 'manual' },
+          { id: 14, type: 'short-answer', question: 'Why is project planning important?', sampleAnswer: 'It organizes tasks and reduces errors.', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Give one tip for effective presentation.', sampleAnswer: 'Use live demo and visuals.', evaluation: 'manual' }
+        ]
+      }
+    ],
+  },
+  ecommerce: {
+    1: [{
+      type: 'overview',
+      title: 'E-commerce Fundamentals',
+      content:
+        'This module introduces the basics of e-commerce, including business models, market analysis, and legal considerations. Students will learn how online businesses operate and what it takes to launch an e-commerce project.',
+      topics: [
+        { title: 'E-commerce Overview', description: 'What is e-commerce and why it matters' },
+        { title: 'Business Models', description: 'Different e-commerce business models and revenue strategies' },
+        { title: 'Market Analysis', description: 'Understanding the target market, competition, and trends' },
+        { title: 'Legal Considerations', description: 'Regulations, compliance, and policies for online businesses' },
+        { title: 'Module Exam', description: 'Test your knowledge' }
+      ]
+    },
+
+    /* ===================== LESSONS ===================== */
+
+    {
+      type: 'lesson',
+      title: 'E-commerce Overview',
+      content: [
+        'E-commerce refers to buying and selling goods or services online.',
+        'It includes retail, digital products, subscriptions, and services.',
+        'Understanding the e-commerce ecosystem is crucial for success.'
+      ],
+      points: [
+        'Online marketplaces (Amazon, eBay)',
+        'Direct-to-consumer (D2C) websites',
+        'B2B e-commerce platforms',
+        'Mobile commerce (m-commerce)',
+        'Digital products and services'
+      ]
+    },
+
+    {
+      type: 'lesson',
+      title: 'Business Models',
+      content: [
+        'E-commerce business models determine how a company generates revenue.',
+        'Choosing the right model is key for profitability and scalability.'
+      ],
+      points: [
+        'B2C (Business-to-Consumer): Online stores selling directly to customers',
+        'B2B (Business-to-Business): Selling products or services to other businesses',
+        'C2C (Consumer-to-Consumer): Platforms like eBay or Etsy',
+        'Subscription-based model: Recurring revenue from services or products',
+        'Dropshipping: Selling products without holding inventory'
+      ]
+    },
+
+    {
+      type: 'lesson',
+      title: 'Market Analysis',
+      content: [
+        'Market analysis helps identify opportunities and understand competition.',
+        'It involves researching target audiences, competitors, and trends.'
+      ],
+      points: [
+        'Identify target audience demographics',
+        'Analyze competitors’ strengths and weaknesses',
+        'Evaluate market demand and trends',
+        'Determine pricing strategies',
+        'Use tools like Google Trends, SEMrush, and surveys'
+      ]
+    },
+
+    {
+      type: 'lesson',
+      title: 'Legal Considerations',
+      content: [
+        'E-commerce businesses must comply with laws and regulations to operate legally.',
+        'Non-compliance can result in fines or shutdown.'
+      ],
+      points: [
+        'Business registration and licenses',
+        'Data privacy laws (e.g., GDPR)',
+        'Consumer protection regulations',
+        'Terms of Service and Privacy Policy',
+        'Payment and tax compliance'
+      ]
+    },
+
+    /* ===================== EXAMPLES ===================== */
+
+    {
+      type: 'example',
+      title: 'B2C E-commerce Example',
+      description: 'A basic online store selling products directly to customers.',
+      code: `// Example product list in JSON
+[
+  { "id": 1, "name": "T-shirt", "price": 15.99 },
+  { "id": 2, "name": "Laptop", "price": 899.99 }
+]`,
+      output: 'Displays products with price and purchase option.',
+      explanation: 'B2C stores sell directly to consumers.'
+    },
+
+    {
+      type: 'example',
+      title: 'Subscription Model Example',
+      description: 'A subscription-based service.',
+      code: `// Example subscription plans
+[
+  { "plan": "Basic", "price": 9.99 },
+  { "plan": "Pro", "price": 19.99 }
+]`,
+      output: 'Users can subscribe to recurring plans.',
+      explanation: 'Subscription models provide recurring revenue.'
+    },
+
+    {
+      type: 'example',
+      title: 'Market Analysis Example',
+      description: 'Using Google Trends to research interest in a product.',
+      code: `// Steps:
+1. Go to Google Trends
+2. Search product keyword
+3. Analyze trend graph
+4. Compare with competitors`,
+      output: 'Identify popular products and seasonal demand.',
+      explanation: 'Market research helps optimize product selection.'
+    },
+
+    {
+      type: 'example',
+      title: 'Legal Compliance Example',
+      description: 'Include Privacy Policy on an e-commerce website.',
+      code: `<footer>
+  <a href="/privacy-policy">Privacy Policy</a>
+</footer>`,
+      output: 'Website complies with data privacy requirements.',
+      explanation: 'Displaying a Privacy Policy ensures legal compliance.'
+    },
+
+    /* ===================== MODULE EXAM ===================== */
+
+    {
+      type: 'exam',
+      title: 'Module Exam: E-commerce Fundamentals',
+      description: 'Test your knowledge of e-commerce concepts and practices.',
+      duration: 45,
+      passingScore: 70,
+      questions: [
+        { id: 1, type: 'multiple-choice', question: 'What does B2C stand for?', options: ['Business-to-Customer', 'Business-to-Company', 'Buyer-to-Customer', 'Business-to-Commerce'], correctAnswer: 0 },
+        { id: 2, type: 'multiple-choice', question: 'Which e-commerce model allows users to sell to each other?', options: ['B2C', 'B2B', 'C2C', 'Subscription'], correctAnswer: 2 },
+        { id: 3, type: 'multiple-choice', question: 'What is dropshipping?', options: ['Holding inventory', 'Selling products without holding inventory', 'Subscription service', 'B2B sales'], correctAnswer: 1 },
+        { id: 4, type: 'multiple-choice', question: 'Why perform market analysis?', options: ['Understand competition', 'Identify target audience', 'Check demand', 'All of the above'], correctAnswer: 3 },
+        { id: 5, type: 'multiple-choice', question: 'Which law affects customer data privacy?', options: ['GDPR', 'HTML5', 'SEO', 'HTTP'], correctAnswer: 0 },
+        { id: 6, type: 'true-false', question: 'B2B e-commerce is selling directly to consumers.', correctAnswer: false },
+        { id: 7, type: 'true-false', question: 'Subscription models provide recurring revenue.', correctAnswer: true },
+        { id: 8, type: 'true-false', question: 'Ignoring legal regulations has no impact on e-commerce.', correctAnswer: false },
+        { id: 9, type: 'true-false', question: 'Market analysis helps optimize product selection.', correctAnswer: true },
+        { id: 10, type: 'true-false', question: 'C2C platforms include marketplaces like Etsy.', correctAnswer: true },
+        { id: 11, type: 'short-answer', question: 'Name one e-commerce business model.', sampleAnswer: 'B2C', evaluation: 'manual' },
+        { id: 12, type: 'short-answer', question: 'Give one tool for market research.', sampleAnswer: 'Google Trends', evaluation: 'manual' },
+        { id: 13, type: 'short-answer', question: 'Name one legal requirement for online stores.', sampleAnswer: 'Privacy Policy', evaluation: 'manual' },
+        { id: 14, type: 'short-answer', question: 'What is the main advantage of subscription models?', sampleAnswer: 'Recurring revenue', evaluation: 'manual' },
+        { id: 15, type: 'short-answer', question: 'Give an example of a B2B platform.', sampleAnswer: 'Alibaba', evaluation: 'manual' }
+      ]
+    }],
+    2: [
+      {
+        type: 'overview',
+        title: 'E-commerce Platforms',
+        content:
+          'This module introduces popular e-commerce platforms and custom solutions. Students will learn how to choose the right platform based on business size, features, and technical expertise.',
+        topics: [
+          { title: 'Shopify', description: 'Hosted platform for creating online stores quickly' },
+          { title: 'WooCommerce', description: 'WordPress plugin to add e-commerce functionality' },
+          { title: 'Magento', description: 'Flexible, open-source e-commerce platform for large businesses' },
+          { title: 'Custom Solutions', description: 'Building tailored e-commerce solutions from scratch' },
+          { title: 'Platform Comparison', description: 'Compare features, pricing, and scalability' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Shopify',
+        content: [
+          'Shopify is a hosted e-commerce platform allowing businesses to quickly launch online stores.',
+          'It provides templates, apps, and built-in payment options.'
+        ],
+        points: [
+          'Hosted platform – no server management',
+          'Drag-and-drop store builder',
+          'Supports multiple payment gateways',
+          'App marketplace for additional features',
+          'Best for small to medium businesses'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'WooCommerce',
+        content: [
+          'WooCommerce is a WordPress plugin that adds e-commerce functionality to websites.',
+          'It is flexible, open-source, and widely used for small to medium stores.'
+        ],
+        points: [
+          'Requires WordPress installation',
+          'Customizable with plugins and themes',
+          'Supports digital and physical products',
+          'Open-source with strong community support',
+          'Scalable with extensions'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Magento',
+        content: [
+          'Magento is an open-source platform ideal for large and enterprise-level e-commerce stores.',
+          'It provides advanced features and customization but requires technical expertise.'
+        ],
+        points: [
+          'Highly customizable with extensions',
+          'Supports multi-store and multi-currency',
+          'Scalable for large businesses',
+          'Open-source community and enterprise editions',
+          'Requires developer skills or team support'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Custom Solutions',
+        content: [
+          'Custom solutions are built from scratch to meet unique business requirements.',
+          'They provide complete control but are more resource-intensive.'
+        ],
+        points: [
+          'Fully tailored to business needs',
+          'Unlimited customization options',
+          'Higher development and maintenance costs',
+          'Requires skilled developers',
+          'Best for complex or niche businesses'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Platform Comparison',
+        content: [
+          'Choosing the right e-commerce platform depends on budget, scalability, features, and technical expertise.'
+        ],
+        points: [
+          'Shopify: Fast setup, limited customization, hosted',
+          'WooCommerce: Flexible, WordPress-based, open-source',
+          'Magento: Highly scalable, complex, developer-dependent',
+          'Custom: Fully tailored, costly, requires development team'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Shopify Example',
+        description: 'Creating a simple Shopify store.',
+        code: `// Shopify provides a dashboard to add products, customize theme, and set up payment gateways.`,
+        output: 'Online store ready to sell products quickly.',
+        explanation: 'Shopify simplifies setup with hosted tools.'
+      },
+
+      {
+        type: 'example',
+        title: 'WooCommerce Example',
+        description: 'Adding WooCommerce to a WordPress website.',
+        code: `// Steps:
+1. Install WordPress
+2. Add WooCommerce plugin
+3. Configure products and payments
+4. Customize theme`,
+        output: 'Functional online store integrated with WordPress.',
+        explanation: 'WooCommerce leverages WordPress flexibility.'
+      },
+
+      {
+        type: 'example',
+        title: 'Magento Example',
+        description: 'Setting up Magento for a multi-store enterprise.',
+        code: `// Requires hosting, installation, configuring multiple stores, and adding extensions.`,
+        output: 'Scalable e-commerce solution with advanced features.',
+        explanation: 'Magento is suitable for large and complex businesses.'
+      },
+
+      {
+        type: 'example',
+        title: 'Custom Solution Example',
+        description: 'Building an e-commerce platform from scratch.',
+        code: `// Using frameworks like Laravel or Django to create custom e-commerce features.`,
+        output: 'Completely tailored store meeting specific business requirements.',
+        explanation: 'Custom solutions offer maximum flexibility but higher cost.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: E-commerce Platforms',
+        description: 'Test your knowledge of e-commerce platforms.',
+        duration: 40,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'Which platform is hosted and easy to set up?', options: ['Shopify', 'WooCommerce', 'Magento', 'Custom'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Which platform is a WordPress plugin?', options: ['Shopify', 'WooCommerce', 'Magento', 'Custom'], correctAnswer: 1 },
+          { id: 3, type: 'multiple-choice', question: 'Which platform is ideal for large businesses?', options: ['Shopify', 'WooCommerce', 'Magento', 'Custom'], correctAnswer: 2 },
+          { id: 4, type: 'multiple-choice', question: 'Custom solutions are best for?', options: ['Simple stores', 'Unique business requirements', 'Pre-built templates', 'Low budget projects'], correctAnswer: 1 },
+          { id: 5, type: 'true-false', question: 'Shopify requires server management by the user.', correctAnswer: false },
+          { id: 6, type: 'true-false', question: 'Magento requires developer expertise.', correctAnswer: true },
+          { id: 7, type: 'true-false', question: 'WooCommerce cannot sell digital products.', correctAnswer: false },
+          { id: 8, type: 'short-answer', question: 'Name one hosted e-commerce platform.', sampleAnswer: 'Shopify', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Name one open-source e-commerce platform.', sampleAnswer: 'Magento', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Why choose custom solutions?', sampleAnswer: 'For unique business requirements', evaluation: 'manual' }
+        ]
+      }
+    ],
+    3: [
+      {
+        type: 'overview',
+        title: 'Product Management in E-commerce',
+        content:
+          'This module teaches students how to manage products effectively in an online store, covering catalog management, product photography, product descriptions, and inventory systems.',
+        topics: [
+          { title: 'Catalog Management', description: 'Organizing products for easy browsing and search' },
+          { title: 'Product Photography', description: 'High-quality images to improve sales and trust' },
+          { title: 'Descriptions', description: 'Writing effective product descriptions for clarity and SEO' },
+          { title: 'Inventory Systems', description: 'Managing stock and availability efficiently' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Catalog Management',
+        content: [
+          'Catalog management involves organizing products into categories, collections, or types to help customers find them easily.',
+          'It also ensures consistency in product attributes, pricing, and labeling.'
+        ],
+        points: [
+          'Use clear categories and subcategories',
+          'Maintain consistent product attributes (size, color, brand)',
+          'Implement filters for better search (price, category, rating)',
+          'Update catalog regularly',
+          'Ensure easy navigation and searchability'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Product Photography',
+        content: [
+          'High-quality product images increase trust, reduce returns, and improve sales.'
+        ],
+        points: [
+          'Use consistent lighting and background',
+          'Provide multiple angles of the product',
+          'Include lifestyle/context images',
+          'Optimize image file size for web performance',
+          'Use high-resolution images for zooming'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Product Descriptions',
+        content: [
+          'Effective product descriptions inform, persuade, and improve search engine visibility.'
+        ],
+        points: [
+          'Highlight key features and benefits',
+          'Use clear, concise language',
+          'Include dimensions, specifications, or usage instructions',
+          'Incorporate SEO-friendly keywords',
+          'Focus on what the customer will gain from the product'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Inventory Systems',
+        content: [
+          'Inventory systems track stock, prevent overselling, and help with demand forecasting.'
+        ],
+        points: [
+          'Track stock levels in real-time',
+          'Set low-stock alerts and notifications',
+          'Integrate inventory with e-commerce platform',
+          'Avoid overselling or stockouts',
+          'Analyze sales trends for better reordering decisions'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Catalog Management Example',
+        description: 'Organizing products into categories and collections.',
+        code: `// Example structure in JSON
+[
+  { "category": "Clothing", "subcategories": ["T-shirts", "Jackets", "Jeans"] },
+  { "category": "Electronics", "subcategories": ["Phones", "Laptops", "Accessories"] }
+]`,
+        output: 'Customers can browse by category and filter products easily.',
+        explanation: 'Structured catalog improves customer navigation and discovery.'
+      },
+
+      {
+        type: 'example',
+        title: 'Product Photography Example',
+        description: 'Using multiple angles for a T-shirt product.',
+        code: `// Images: front.jpg, back.jpg, side.jpg, model.jpg`,
+        output: 'Customer can view product from multiple perspectives.',
+        explanation: 'Multiple images increase confidence in purchase decisions.'
+      },
+
+      {
+        type: 'example',
+        title: 'Product Description Example',
+        description: 'Writing a concise and clear description for a laptop.',
+        code: `<p>Powerful laptop with 16GB RAM, 512GB SSD, Intel i7 processor. Perfect for gaming and productivity.</p>`,
+        output: 'Customer gets key product information at a glance.',
+        explanation: 'Clear, benefit-focused descriptions help conversion and SEO.'
+      },
+
+      {
+        type: 'example',
+        title: 'Inventory System Example',
+        description: 'Tracking stock in real-time using software.',
+        code: `// Example inventory JSON
+[
+  { "productId": 1, "name": "T-shirt", "stock": 25 },
+  { "productId": 2, "name": "Laptop", "stock": 10 }
+]`,
+        output: 'Shows current stock for each product.',
+        explanation: 'Helps prevent overselling and manage replenishment.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Product Management',
+        description: 'Test your knowledge of catalog management, product photography, descriptions, and inventory systems.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What is the purpose of catalog management?', options: ['Organize products', 'Manage payments', 'Track customer data', 'Optimize SEO only'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Which improves product trust online?', options: ['Low prices', 'High-quality photography', 'Long descriptions', 'Shipping methods'], correctAnswer: 1 },
+          { id: 3, type: 'multiple-choice', question: 'Product descriptions should include?', options: ['Key features and benefits', 'Competitor prices', 'Website traffic', 'Payment info'], correctAnswer: 0 },
+          { id: 4, type: 'multiple-choice', question: 'Inventory systems help to?', options: ['Prevent overselling', 'Design website', 'Collect payments', 'Send marketing emails'], correctAnswer: 0 },
+          { id: 5, type: 'true-false', question: 'High-quality product images can reduce returns.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'Inventory tracking is optional for small stores.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'SEO keywords should be included in product descriptions.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Give one method to organize a product catalog.', sampleAnswer: 'By category', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Name one key element of a good product photo.', sampleAnswer: 'Multiple angles', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Give one feature an inventory system should track.', sampleAnswer: 'Stock level', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Why are product descriptions important?', sampleAnswer: 'Inform and persuade customers', evaluation: 'manual' },
+          { id: 12, type: 'short-answer', question: 'Name one tool to manage product inventory.', sampleAnswer: 'Shopify inventory', evaluation: 'manual' },
+          { id: 13, type: 'true-false', question: 'Consistent product attributes improve catalog clarity.', correctAnswer: true },
+          { id: 14, type: 'multiple-choice', question: 'Which type of images increase trust?', options: ['Stock images', 'Multiple angles of product', 'Random images', 'Icons only'], correctAnswer: 1 },
+          { id: 15, type: 'short-answer', question: 'How often should a catalog be updated?', sampleAnswer: 'Regularly or when new products arrive', evaluation: 'manual' }
+        ]
+      }
+    ],
+    4: [
+      {
+        type: 'overview',
+        title: 'Payment & Security in E-commerce',
+        content:
+          'This module covers essential aspects of payment processing and security in e-commerce, including payment gateways, SSL certificates, PCI compliance, and fraud prevention strategies.',
+        topics: [
+          { title: 'Payment Gateways', description: 'Integrate payment solutions for online transactions' },
+          { title: 'SSL Certificates', description: 'Encrypt customer data and secure transactions' },
+          { title: 'PCI Compliance', description: 'Follow payment security standards for handling card data' },
+          { title: 'Fraud Prevention', description: 'Detect and prevent fraudulent transactions' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Payment Gateways',
+        content: [
+          'Payment gateways allow e-commerce websites to process online payments securely and efficiently.'
+        ],
+        points: [
+          'Popular gateways: PayPal, Stripe, Square, Authorize.net',
+          'Supports credit/debit cards, digital wallets, and alternative payments',
+          'Integrate directly with e-commerce platforms',
+          'Enable multiple currencies if needed',
+          'Ensure fast, reliable, and secure transactions'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'SSL Certificates',
+        content: [
+          'SSL certificates encrypt data between the customer and the website, protecting sensitive information like credit card details.'
+        ],
+        points: [
+          'Enable HTTPS for all pages',
+          'Protect personal and payment data',
+          'Improves customer trust and SEO ranking',
+          'Renew certificates before expiration',
+          'Choose certificates from trusted providers'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'PCI Compliance',
+        content: [
+          'PCI DSS (Payment Card Industry Data Security Standard) compliance ensures safe handling of credit card information.'
+        ],
+        points: [
+          'Follow PCI DSS security requirements',
+          'Do not store sensitive card data unless necessary',
+          'Use secure payment processors',
+          'Regularly audit systems for compliance',
+          'Train staff on security best practices'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Fraud Prevention',
+        content: [
+          'Fraud prevention protects businesses and customers from scams, chargebacks, and unauthorized transactions.'
+        ],
+        points: [
+          'Monitor suspicious transactions',
+          'Enable 3D Secure verification',
+          'Use fraud detection software and plugins',
+          'Check for chargebacks and disputed payments',
+          'Educate customers on secure transactions'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Payment Gateway Example',
+        description: 'Integrating Stripe as a payment gateway.',
+        code: `// Example integration snippet (Stripe)
+const stripe = require('stripe')('your_api_key');
+const paymentIntent = await stripe.paymentIntents.create({
+  amount: 2000,
+  currency: 'usd',
+  payment_method_types: ['card'],
+});`,
+        output: 'Customer can pay securely using a credit card.',
+        explanation: 'Payment gateways enable online transactions safely and efficiently.'
+      },
+
+      {
+        type: 'example',
+        title: 'SSL Certificate Example',
+        description: 'Enable HTTPS using SSL for your website.',
+        code: `// Steps:
+1. Purchase SSL certificate from trusted CA
+2. Install certificate on web server
+3. Redirect all HTTP traffic to HTTPS
+4. Test using SSL tools`,
+        output: 'Website is encrypted, and data is secure.',
+        explanation: 'SSL protects sensitive customer data and improves trust.'
+      },
+
+      {
+        type: 'example',
+        title: 'PCI Compliance Example',
+        description: 'Using PCI-compliant payment processors.',
+        code: `// Do not store card data directly.
+Use Stripe or PayPal to process payments securely.`,
+        output: 'Credit card data handled safely without storing sensitive info.',
+        explanation: 'Following PCI standards reduces risk of data breaches.'
+      },
+
+      {
+        type: 'example',
+        title: 'Fraud Prevention Example',
+        description: 'Detect suspicious transactions.',
+        code: `// Example: Set up 3D Secure for payments
+if(paymentRequiresAuthentication) {
+  redirectTo3DSecure();
+}`,
+        output: 'Reduces fraud and unauthorized transactions.',
+        explanation: 'Fraud prevention tools protect business and customers.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Payment & Security',
+        description: 'Test your knowledge of payment gateways, SSL, PCI compliance, and fraud prevention.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What is the purpose of a payment gateway?', options: ['Process online payments', 'Track inventory', 'Manage SEO', 'Send emails'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Which protocol encrypts customer data?', options: ['HTTP', 'HTTPS/SSL', 'FTP', 'SMTP'], correctAnswer: 1 },
+          { id: 3, type: 'multiple-choice', question: 'PCI compliance ensures?', options: ['Safe handling of card data', 'Faster shipping', 'Better SEO', 'Higher conversion'], correctAnswer: 0 },
+          { id: 4, type: 'multiple-choice', question: 'Fraud prevention includes?', options: ['3D Secure', 'Suspicious transaction monitoring', 'Chargeback analysis', 'All of the above'], correctAnswer: 3 },
+          { id: 5, type: 'true-false', question: 'SSL certificates protect sensitive customer information.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'PCI compliance is optional for e-commerce sites.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'Fraud prevention helps reduce chargebacks.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Name one popular payment gateway.', sampleAnswer: 'Stripe', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Give one step to enable SSL.', sampleAnswer: 'Install certificate on server', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Why is PCI compliance important?', sampleAnswer: 'Protects customer card data', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Name one method to prevent fraud.', sampleAnswer: 'Enable 3D Secure', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which of these is NOT a payment gateway?', options: ['PayPal', 'Stripe', 'Magento', 'Square'], correctAnswer: 2 },
+          { id: 13, type: 'true-false', question: '3D Secure verification adds an extra layer of payment security.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Give one example of a fraud detection tool.', sampleAnswer: 'FraudLabs Pro', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'What should you monitor to prevent fraud?', sampleAnswer: 'Suspicious transactions', evaluation: 'manual' }
+        ]
+      }
+    ],
+    5: [
+      {
+        type: 'overview',
+        title: 'Cart & Checkout Optimization',
+        content:
+          'This module focuses on designing and optimizing the shopping cart and checkout experience. Students will learn about cart functionality, improving checkout flow, abandoned cart recovery, and guest checkout to maximize conversions.',
+        topics: [
+          { title: 'Cart Functionality', description: 'Essential features for the shopping cart' },
+          { title: 'Checkout Optimization', description: 'Streamline the checkout process for better conversion' },
+          { title: 'Abandoned Cart Recovery', description: 'Techniques to recover lost sales' },
+          { title: 'Guest Checkout', description: 'Allow users to checkout without creating an account' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Cart Functionality',
+        content: [
+          'The shopping cart is a key part of the e-commerce experience, allowing users to select and review products before purchase.'
+        ],
+        points: [
+          'Add, remove, and update product quantities',
+          'Show subtotal, taxes, and shipping estimates',
+          'Save cart for logged-in users',
+          'Display product images, names, and prices clearly',
+          'Responsive cart design for mobile and desktop'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Checkout Optimization',
+        content: [
+          'A smooth and fast checkout increases conversion rates and reduces cart abandonment.'
+        ],
+        points: [
+          'Minimize the number of steps in the checkout process',
+          'Enable autofill and address suggestions',
+          'Provide multiple payment options',
+          'Show progress indicators (Step 1, Step 2, etc.)',
+          'Offer order summary and clear total price before payment'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Abandoned Cart Recovery',
+        content: [
+          'Many users leave without completing the purchase. Recovery strategies help convert these potential customers.'
+        ],
+        points: [
+          'Send automated reminder emails or SMS',
+          'Offer limited-time discounts',
+          'Use push notifications for logged-in users',
+          'Provide clear call-to-action to return to checkout',
+          'Track abandoned carts in analytics for improvement'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Guest Checkout',
+        content: [
+          'Allowing users to checkout without creating an account reduces friction and improves conversions.'
+        ],
+        points: [
+          'Provide guest checkout option alongside account creation',
+          'Collect essential information only (email, shipping address)',
+          'Allow easy account creation after purchase',
+          'Maintain security and fraud checks',
+          'Integrate with payment gateways seamlessly'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Cart Functionality Example',
+        description: 'Adding products to a cart and updating quantities using JavaScript.',
+        code: `// Example: Cart object
+let cart = [];
+function addToCart(product) {
+  cart.push(product);
+}
+function updateQuantity(productId, qty) {
+  let item = cart.find(p => p.id === productId);
+  if(item) item.quantity = qty;
+}`,
+        output: 'User can add products, remove, and update quantities in the cart.',
+        explanation: 'Basic cart functionality is essential for any online store.'
+      },
+
+      {
+        type: 'example',
+        title: 'Checkout Optimization Example',
+        description: 'Streamlined checkout steps.',
+        code: `// Steps:
+1. Review cart
+2. Enter shipping info
+3. Choose payment method
+4. Confirm order`,
+        output: 'Users complete checkout in fewer steps, improving conversion.',
+        explanation: 'Reducing friction in checkout improves purchase completion.'
+      },
+
+      {
+        type: 'example',
+        title: 'Abandoned Cart Recovery Example',
+        description: 'Send an automated email reminder for abandoned carts.',
+        code: `// Example pseudo-code
+if(cart.abandoned) {
+  sendEmail(cart.userEmail, "You left items in your cart! Complete your purchase now.");
+}`,
+        output: 'Users are reminded to complete checkout, recovering lost sales.',
+        explanation: 'Automated recovery strategies help boost revenue.'
+      },
+
+      {
+        type: 'example',
+        title: 'Guest Checkout Example',
+        description: 'Allow checkout without creating an account.',
+        code: `// Checkout form collects only essential info
+<form>
+  <input type="email" required />
+  <input type="address" required />
+  <button>Pay Now</button>
+</form>`,
+        output: 'Users can complete purchase quickly without account creation.',
+        explanation: 'Guest checkout reduces friction and improves user experience.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Cart & Checkout Optimization',
+        description: 'Test your knowledge of cart functionality, checkout optimization, abandoned cart recovery, and guest checkout.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'Which feature is essential in a shopping cart?', options: ['Add/remove products', 'SEO optimization', 'SSL certificate', 'Marketing automation'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Checkout optimization helps to?', options: ['Increase conversion', 'Decrease page load', 'Improve SEO', 'Send marketing emails'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'Abandoned cart recovery includes?', options: ['Email reminders', 'Offering discounts', 'Push notifications', 'All of the above'], correctAnswer: 3 },
+          { id: 4, type: 'multiple-choice', question: 'Guest checkout is useful because?', options: ['Reduces friction', 'Requires login', 'Increases taxes', 'Blocks carts'], correctAnswer: 0 },
+          { id: 5, type: 'true-false', question: 'Users should be forced to create accounts to checkout.', correctAnswer: false },
+          { id: 6, type: 'true-false', question: 'Progress indicators improve checkout experience.', correctAnswer: true },
+          { id: 7, type: 'true-false', question: 'Abandoned cart recovery can increase revenue.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Name one method to recover abandoned carts.', sampleAnswer: 'Email reminders', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Why is guest checkout important?', sampleAnswer: 'Reduces friction for first-time buyers', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Give one feature of cart functionality.', sampleAnswer: 'Update quantity', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'List one way to optimize checkout.', sampleAnswer: 'Minimize number of steps', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which is NOT part of abandoned cart recovery?', options: ['Email reminder', 'Push notification', 'SEO meta tags', 'Discount offer'], correctAnswer: 2 },
+          { id: 13, type: 'true-false', question: 'Multiple payment options improve checkout.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Name one essential field in guest checkout.', sampleAnswer: 'Email address', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Give one strategy to improve cart design.', sampleAnswer: 'Show product image and price clearly', evaluation: 'manual' }
+        ]
+      }
+    ],
+    6: [
+      {
+        type: 'overview',
+        title: 'E-commerce Marketing',
+        content:
+          'This module teaches students how to promote e-commerce stores using SEO, paid advertising, social media, and email campaigns. Effective marketing drives traffic, conversions, and revenue.',
+        topics: [
+          { title: 'SEO for E-commerce', description: 'Improve organic search visibility and attract customers' },
+          { title: 'Google Ads', description: 'Run paid campaigns to reach targeted audiences' },
+          { title: 'Social Media Marketing', description: 'Leverage social platforms to engage customers' },
+          { title: 'Email Campaigns', description: 'Communicate with customers and drive repeat purchases' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'SEO for E-commerce',
+        content: [
+          'Search Engine Optimization (SEO) helps your store rank higher on search engines and attract organic traffic.'
+        ],
+        points: [
+          'Optimize product titles and descriptions with keywords',
+          'Use clean URLs and proper metadata (title tags, meta descriptions)',
+          'Optimize images (alt text, file size)',
+          'Create content that adds value (blogs, guides)',
+          'Build backlinks and internal linking for authority'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Google Ads',
+        content: [
+          'Google Ads allows businesses to run targeted paid campaigns to drive traffic and sales.'
+        ],
+        points: [
+          'Choose the right campaign type (Search, Display, Shopping)',
+          'Set budget and bidding strategy',
+          'Target keywords and audience demographics',
+          'Monitor performance with metrics like CTR, CPC, ROAS',
+          'Use retargeting to convert visitors'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Social Media Marketing',
+        content: [
+          'Social media marketing helps build brand awareness, engage customers, and drive traffic to your store.'
+        ],
+        points: [
+          'Choose platforms where your audience is active (Facebook, Instagram, TikTok)',
+          'Plan content strategy: posts, reels, stories, and ads',
+          'Engage with followers via comments and DMs',
+          'Collaborate with influencers',
+          'Analyze performance metrics to improve campaigns'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Email Campaigns',
+        content: [
+          'Email marketing keeps customers informed, encourages repeat purchases, and builds loyalty.'
+        ],
+        points: [
+          'Segment email lists based on behavior and demographics',
+          'Send promotional, transactional, and educational emails',
+          'Use personalized subject lines and content',
+          'Analyze open rates, click-through rates, and conversions',
+          'Automate abandoned cart, welcome series, and follow-up emails'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'SEO Example',
+        description: 'Optimizing a product page for search engines.',
+        code: `<!-- Example meta tags -->
+<title>Red Cotton T-Shirt - BrandName</title>
+<meta name="description" content="Buy Red Cotton T-Shirt, soft and comfortable, available in all sizes. Free shipping.">`,
+        output: 'Improved search engine ranking for product keywords.',
+        explanation: 'Well-optimized meta tags and descriptions improve visibility and clicks.'
+      },
+
+      {
+        type: 'example',
+        title: 'Google Ads Example',
+        description: 'Creating a Google Shopping ad campaign.',
+        code: `// Steps:
+1. Upload product feed
+2. Set daily budget and target audience
+3. Select keywords or product targets
+4. Launch campaign and monitor performance`,
+        output: 'Targeted ads appear to users searching for products.',
+        explanation: 'Paid advertising drives immediate traffic and sales.'
+      },
+
+      {
+        type: 'example',
+        title: 'Social Media Marketing Example',
+        description: 'Promoting products on Instagram.',
+        code: `// Example:
+1. Post high-quality product photos
+2. Use relevant hashtags (#ecommerce, #tshirt)
+3. Run Instagram Ads targeting age 18-35
+4. Track engagement and sales`,
+        output: 'Engages potential customers and drives traffic to the store.',
+        explanation: 'Social media campaigns increase brand awareness and conversions.'
+      },
+
+      {
+        type: 'example',
+        title: 'Email Campaign Example',
+        description: 'Sending abandoned cart emails.',
+        code: `// Example pseudo-code
+if(cart.abandoned) {
+  sendEmail(cart.userEmail, "You left items in your cart! Complete your purchase and get 10% off.");
+}`,
+        output: 'Recovers lost sales by reminding customers to complete purchase.',
+        explanation: 'Targeted emails improve conversions and customer retention.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: E-commerce Marketing',
+        description: 'Test your knowledge of SEO, Google Ads, social media, and email marketing.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What is the main goal of SEO?', options: ['Rank higher in search engines', 'Send emails', 'Manage inventory', 'Create ads'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Which is a Google Ads campaign type?', options: ['Shopping', 'Blogging', 'Newsletter', 'SEO'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'Social media marketing helps with?', options: ['Brand awareness', 'Conversions', 'Engagement', 'All of the above'], correctAnswer: 3 },
+          { id: 4, type: 'multiple-choice', question: 'Which is NOT part of email marketing?', options: ['Abandoned cart emails', 'Welcome emails', 'Checkout optimization', 'Promotional campaigns'], correctAnswer: 2 },
+          { id: 5, type: 'true-false', question: 'SEO improves organic traffic to your store.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'Google Ads requires paying for clicks or impressions.', correctAnswer: true },
+          { id: 7, type: 'true-false', question: 'Social media campaigns cannot drive sales.', correctAnswer: false },
+          { id: 8, type: 'short-answer', question: 'Name one SEO technique for product pages.', sampleAnswer: 'Optimize meta tags', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Give one way to target customers using Google Ads.', sampleAnswer: 'Use keywords', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Name one type of social media content.', sampleAnswer: 'Reels', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'What is one benefit of email campaigns?', sampleAnswer: 'Recover abandoned carts', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which tool can track ad performance?', options: ['Google Analytics', 'Photoshop', 'WordPress', 'MailChimp'], correctAnswer: 0 },
+          { id: 13, type: 'true-false', question: 'Personalized email subject lines improve open rates.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Name one metric to measure social media success.', sampleAnswer: 'Engagement rate', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Why use content in SEO?', sampleAnswer: 'To attract and inform users', evaluation: 'manual' }
+        ]
+      }
+    ],
+    7: [
+      {
+        type: 'overview',
+        title: 'Customer Support & Engagement',
+        content:
+          'This module teaches students how to manage customer service, returns, reviews, and automated support using chatbots. Strong customer engagement increases satisfaction, loyalty, and repeat purchases.',
+        topics: [
+          { title: 'Customer Service', description: 'Best practices for assisting and supporting customers' },
+          { title: 'Returns & Refunds', description: 'Efficiently handling returns and refunds to improve trust' },
+          { title: 'Reviews Management', description: 'Collecting, displaying, and responding to customer reviews' },
+          { title: 'Chatbots', description: 'Automating support using AI-powered chatbots' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Customer Service',
+        content: [
+          'Excellent customer service ensures customer satisfaction and encourages repeat purchases.'
+        ],
+        points: [
+          'Offer multiple support channels: email, phone, live chat',
+          'Respond promptly and professionally',
+          'Train staff on product knowledge',
+          'Use CRM tools to manage customer interactions',
+          'Monitor customer feedback to improve service'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Returns & Refunds',
+        content: [
+          'Handling returns and refunds efficiently builds trust and reduces customer complaints.'
+        ],
+        points: [
+          'Provide clear return policies',
+          'Automate refund processing when possible',
+          'Track returned items and reasons',
+          'Offer replacement, store credit, or cash refund',
+          'Ensure transparency and timely communication'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Reviews Management',
+        content: [
+          'Customer reviews influence purchasing decisions and improve SEO.'
+        ],
+        points: [
+          'Collect reviews via email or post-purchase prompts',
+          'Display positive and constructive reviews on product pages',
+          'Respond professionally to negative reviews',
+          'Encourage verified buyers to leave feedback',
+          'Analyze reviews for product improvements'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Chatbots',
+        content: [
+          'Chatbots provide automated support, improving response time and customer experience.'
+        ],
+        points: [
+          'Use AI-powered chatbots for FAQs and simple queries',
+          'Integrate chatbots with CRM and order management systems',
+          'Escalate complex queries to human agents',
+          'Collect user data and feedback for better personalization',
+          'Track chatbot performance metrics and improve responses'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Customer Service Example',
+        description: 'Using a CRM to track customer support tickets.',
+        code: `// Example pseudo-code
+CRM.createTicket(userId, issue)
+CRM.assignTicket(agentId)
+CRM.markResolved(ticketId)`,
+        output: 'Support tickets are tracked and resolved efficiently.',
+        explanation: 'A structured system ensures customers are helped promptly.'
+      },
+
+      {
+        type: 'example',
+        title: 'Returns & Refunds Example',
+        description: 'Automating refund processing in an e-commerce system.',
+        code: `// Example pseudo-code
+if(order.returnRequested) {
+  processRefund(orderId)
+  notifyCustomer(order.userEmail)
+}`,
+        output: 'Customers receive timely refunds and updates.',
+        explanation: 'Automation reduces errors and improves trust.'
+      },
+
+      {
+        type: 'example',
+        title: 'Reviews Management Example',
+        description: 'Displaying customer reviews on a product page.',
+        code: `<div class="reviews">
+  <p>"Great product!" - Alice</p>
+  <p>"Fast shipping and quality items." - Bob</p>
+</div>`,
+        output: 'Visitors can see customer feedback.',
+        explanation: 'Reviews increase trust and help SEO.'
+      },
+
+      {
+        type: 'example',
+        title: 'Chatbot Example',
+        description: 'A chatbot answering FAQs on the website.',
+        code: `// Example pseudo-code
+chatbot.onMessage(message) {
+  if(message.contains("shipping")) reply("Our shipping takes 3-5 days.")
+  else escalateToHuman()
+}`,
+        output: 'Provides instant answers to customer queries.',
+        explanation: 'Chatbots improve response time and reduce workload.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Customer Support & Engagement',
+        description: 'Test your knowledge of customer service, returns, reviews, and chatbots.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'Which channel is NOT a common customer support method?', options: ['Phone', 'Email', 'Live chat', 'SEO'], correctAnswer: 3 },
+          { id: 2, type: 'multiple-choice', question: 'Why are clear return policies important?', options: ['Build trust', 'Increase shipping costs', 'Improve SEO', 'Reduce product quality'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'Reviews management helps with?', options: ['Customer trust', 'SEO', 'Product improvement', 'All of the above'], correctAnswer: 3 },
+          { id: 4, type: 'multiple-choice', question: 'Chatbots are mainly used for?', options: ['Automating support', 'Processing payments', 'SEO optimization', 'Product photography'], correctAnswer: 0 },
+          { id: 5, type: 'true-false', question: 'Prompt responses improve customer satisfaction.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'Negative reviews should be ignored.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'Automation can improve returns processing.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Name one tool to manage customer support.', sampleAnswer: 'Zendesk', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Give one benefit of customer reviews.', sampleAnswer: 'Build trust', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Name one type of chatbot function.', sampleAnswer: 'FAQ responses', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Why is guest support important?', sampleAnswer: 'Improves satisfaction for first-time buyers', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which is an example of automated support?', options: ['Chatbot', 'Phone call', 'Email ticket', 'Return label'], correctAnswer: 0 },
+          { id: 13, type: 'true-false', question: 'Responding to customer complaints promptly increases loyalty.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Give one strategy to manage negative reviews.', sampleAnswer: 'Respond politely and resolve the issue', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Name one benefit of using chatbots.', sampleAnswer: 'Reduce workload for support agents', evaluation: 'manual' }
+        ]
+      }
+    ],
+    8: [
+      {
+        type: 'overview',
+        title: 'Analytics & Performance',
+        content:
+          'This module teaches students how to track and analyze e-commerce performance using analytics, improve conversion rates, run A/B tests, and monitor KPIs to optimize online store performance.',
+        topics: [
+          { title: 'Google Analytics', description: 'Track traffic, user behavior, and sales performance' },
+          { title: 'Conversion Rate Optimization', description: 'Improve the percentage of visitors who complete purchases' },
+          { title: 'A/B Testing', description: 'Compare different versions of pages to find the most effective one' },
+          { title: 'KPIs', description: 'Key Performance Indicators to monitor e-commerce success' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Google Analytics',
+        content: [
+          'Google Analytics provides insights into website traffic, user behavior, and conversion paths.'
+        ],
+        points: [
+          'Track number of visitors, sessions, and pageviews',
+          'Analyze user demographics and behavior flow',
+          'Monitor traffic sources (organic, paid, social)',
+          'Track e-commerce transactions and revenue',
+          'Set up goals and events for important actions'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Conversion Rate Optimization (CRO)',
+        content: [
+          'CRO focuses on increasing the percentage of website visitors who complete desired actions, such as making a purchase.'
+        ],
+        points: [
+          'Simplify checkout process',
+          'Improve website load speed',
+          'Use clear call-to-action buttons',
+          'Add trust signals like reviews and security badges',
+          'Analyze and reduce cart abandonment'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'A/B Testing',
+        content: [
+          'A/B testing compares two or more versions of a page or element to determine which performs better.'
+        ],
+        points: [
+          'Test headlines, product images, and CTA buttons',
+          'Randomly assign visitors to different versions',
+          'Measure performance metrics (CTR, conversion, bounce rate)',
+          'Implement changes based on results',
+          'Continuously iterate for optimization'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'KPIs',
+        content: [
+          'Key Performance Indicators (KPIs) measure e-commerce success and help make data-driven decisions.'
+        ],
+        points: [
+          'Conversion rate',
+          'Average order value (AOV)',
+          'Customer acquisition cost (CAC)',
+          'Customer lifetime value (CLV)',
+          'Cart abandonment rate',
+          'Traffic sources and revenue per source'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Google Analytics Example',
+        description: 'Tracking e-commerce sales and user behavior.',
+        code: `// Example steps:
+1. Set up GA account
+2. Add tracking code to website
+3. Track transactions and revenue
+4. Analyze user flow and traffic sources`,
+        output: 'Identify which pages drive sales and where visitors drop off.',
+        explanation: 'Data-driven insights help optimize store performance.'
+      },
+
+      {
+        type: 'example',
+        title: 'Conversion Rate Optimization Example',
+        description: 'Improving checkout conversion by simplifying steps.',
+        code: `// Example:
+1. Reduce checkout steps from 5 to 3
+2. Pre-fill customer info where possible
+3. Display total cost clearly`,
+        output: 'Higher percentage of visitors complete purchases.',
+        explanation: 'Simpler, clearer checkout reduces friction and increases conversions.'
+      },
+
+      {
+        type: 'example',
+        title: 'A/B Testing Example',
+        description: 'Testing two versions of a product page.',
+        code: `// Example:
+Version A: "Buy Now" button in red
+Version B: "Buy Now" button in green
+Measure clicks and conversions to decide which performs better`,
+        output: 'Select the page version with higher conversion rate.',
+        explanation: 'A/B testing allows evidence-based improvements.'
+      },
+
+      {
+        type: 'example',
+        title: 'KPIs Example',
+        description: 'Monitoring average order value and cart abandonment rate.',
+        code: `// Example:
+AOV = Total Revenue / Number of Orders
+Cart Abandonment Rate = (Abandoned Carts / Initiated Checkouts) * 100`,
+        output: 'Evaluate business performance and identify improvement areas.',
+        explanation: 'KPIs guide strategic decisions and optimizations.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Analytics & Performance',
+        description: 'Test your knowledge of analytics, CRO, A/B testing, and KPIs.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'What is the main use of Google Analytics?', options: ['Track website performance', 'Create email campaigns', 'Design product images', 'Process payments'], correctAnswer: 0 },
+          { id: 2, type: 'multiple-choice', question: 'Conversion rate measures?', options: ['Percentage of visitors completing actions', 'Number of website visits', 'Email open rate', 'Product stock'], correctAnswer: 0 },
+          { id: 3, type: 'multiple-choice', question: 'A/B testing is used to?', options: ['Compare different page versions', 'Track revenue', 'Manage inventory', 'Send ads'], correctAnswer: 0 },
+          { id: 4, type: 'multiple-choice', question: 'Which is NOT a KPI?', options: ['Customer lifetime value', 'Average order value', 'Cart abandonment rate', 'CTA button color'], correctAnswer: 3 },
+          { id: 5, type: 'true-false', question: 'Tracking user behavior helps optimize e-commerce performance.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'A/B testing should be done only once per website.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'Reducing checkout steps can improve conversion rate.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Give one metric tracked in Google Analytics.', sampleAnswer: 'Traffic source', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Name one CRO technique.', sampleAnswer: 'Simplify checkout', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Give one element you can A/B test.', sampleAnswer: 'CTA button', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Name one KPI for e-commerce.', sampleAnswer: 'Average order value', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which is an example of a CRO improvement?', options: ['Faster checkout', 'Change email subject', 'Increase ad spend', 'Add SEO keywords'], correctAnswer: 0 },
+          { id: 13, type: 'true-false', question: 'Monitoring KPIs helps make data-driven decisions.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Name one benefit of A/B testing.', sampleAnswer: 'Identify high-performing page version', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Why track cart abandonment?', sampleAnswer: 'To recover lost sales', evaluation: 'manual' }
+        ]
+      }
+    ],
+    9: [
+      {
+        type: 'overview',
+        title: 'Shipping & Fulfillment',
+        content:
+          'This module teaches students how to manage shipping options, order fulfillment, international logistics, and tracking systems. Efficient shipping and fulfillment improve customer satisfaction and operational efficiency.',
+        topics: [
+          { title: 'Shipping Options', description: 'Different methods to deliver products to customers' },
+          { title: 'Order Fulfillment', description: 'Managing inventory, packaging, and delivery' },
+          { title: 'International Shipping', description: 'Handling cross-border deliveries, duties, and regulations' },
+          { title: 'Tracking Systems', description: 'Monitoring shipments and providing updates to customers' },
+          { title: 'Module Exam', description: 'Test your knowledge' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Shipping Options',
+        content: [
+          'Offering flexible shipping options improves the customer experience and can increase conversion rates.'
+        ],
+        points: [
+          'Standard shipping: Economical, slower delivery',
+          'Express shipping: Faster delivery at higher cost',
+          'Same-day or next-day delivery for local customers',
+          'Free shipping incentives',
+          'Local pickup or in-store pickup options'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Order Fulfillment',
+        content: [
+          'Order fulfillment ensures that products are picked, packed, and delivered efficiently.'
+        ],
+        points: [
+          'Manage inventory to avoid stockouts',
+          'Use automated fulfillment systems when possible',
+          'Ensure proper packaging to prevent damage',
+          'Integrate with warehouses and logistics partners',
+          'Track orders from purchase to delivery'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'International Shipping',
+        content: [
+          'Selling globally requires understanding customs, duties, and shipping regulations.'
+        ],
+        points: [
+          'Calculate duties and taxes for different countries',
+          'Understand import/export regulations',
+          'Partner with international carriers (DHL, FedEx, UPS)',
+          'Offer international tracking and support',
+          'Consider delivery times and shipping costs'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Tracking Systems',
+        content: [
+          'Tracking systems allow customers to monitor their orders and reduce support inquiries.'
+        ],
+        points: [
+          'Integrate tracking numbers from carriers into the e-commerce system',
+          'Provide real-time tracking updates to customers',
+          'Notify customers of shipping status via email or SMS',
+          'Monitor delayed or lost shipments',
+          'Use tracking data to optimize logistics and delivery performance'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Shipping Options Example',
+        description: 'Offering multiple shipping methods at checkout.',
+        code: `// Example pseudo-code
+checkoutPage.showShippingOptions([
+  {type: "Standard", cost: 5, deliveryTime: "5-7 days"},
+  {type: "Express", cost: 15, deliveryTime: "2-3 days"},
+  {type: "Local Pickup", cost: 0, deliveryTime: "Same day"}
+])`,
+        output: 'Customers can select preferred shipping method during checkout.',
+        explanation: 'Multiple shipping options improve customer satisfaction.'
+      },
+
+      {
+        type: 'example',
+        title: 'Order Fulfillment Example',
+        description: 'Automating order processing and packaging.',
+        code: `// Example pseudo-code
+if(order.paid) {
+  inventory.decrement(order.items)
+  warehouse.pack(order.items)
+  logistics.schedulePickup(order.id)
+}`,
+        output: 'Orders are processed efficiently from payment to shipment.',
+        explanation: 'Automation reduces errors and speeds up delivery.'
+      },
+
+      {
+        type: 'example',
+        title: 'International Shipping Example',
+        description: 'Calculating duties for international orders.',
+        code: `// Example pseudo-code
+order.totalCost = order.subtotal + calculateDuties(order.destination, order.items)
+notifyCustomer(order.userEmail, "Total including duties: " + order.totalCost)`,
+        output: 'Customers are informed of total cost including taxes.',
+        explanation: 'Transparency improves trust and reduces disputes.'
+      },
+
+      {
+        type: 'example',
+        title: 'Tracking Systems Example',
+        description: 'Providing shipment tracking updates.',
+        code: `// Example pseudo-code
+trackingNumber = logistics.getTracking(order.id)
+sendEmail(order.userEmail, "Track your order: " + trackingNumber)`,
+        output: 'Customer can monitor the shipment in real time.',
+        explanation: 'Tracking improves experience and reduces inquiries.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: Shipping & Fulfillment',
+        description: 'Test your knowledge of shipping, fulfillment, international logistics, and tracking systems.',
+        duration: 45,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'Which shipping option is typically fastest?', options: ['Standard', 'Express', 'Local Pickup', 'Free Shipping'], correctAnswer: 1 },
+          { id: 2, type: 'multiple-choice', question: 'What is important in order fulfillment?', options: ['Inventory management', 'Packaging', 'Delivery tracking', 'All of the above'], correctAnswer: 3 },
+          { id: 3, type: 'multiple-choice', question: 'International shipping requires?', options: ['Customs compliance', 'Understanding duties', 'Partnering with carriers', 'All of the above'], correctAnswer: 3 },
+          { id: 4, type: 'multiple-choice', question: 'Tracking systems help?', options: ['Monitor shipments', 'Reduce support queries', 'Improve delivery performance', 'All of the above'], correctAnswer: 3 },
+          { id: 5, type: 'true-false', question: 'Offering multiple shipping options improves customer satisfaction.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'Order fulfillment only involves shipping the products.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'International shipping may involve taxes and duties.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Name one shipping method.', sampleAnswer: 'Express', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Give one benefit of tracking systems.', sampleAnswer: 'Customer can monitor order', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Name one aspect of order fulfillment.', sampleAnswer: 'Inventory management', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Why is international shipping challenging?', sampleAnswer: 'Customs and duties', evaluation: 'manual' },
+          { id: 12, type: 'multiple-choice', question: 'Which is an example of local shipping?', options: ['Standard', 'Express', 'Local Pickup', 'International'], correctAnswer: 2 },
+          { id: 13, type: 'true-false', question: 'Transparency in shipping costs builds customer trust.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Name one logistics partner for international shipping.', sampleAnswer: 'DHL', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Give one way to improve order fulfillment efficiency.', sampleAnswer: 'Automate packaging and processing', evaluation: 'manual' }
+        ]
+      }
+    ],
+    10: [
+      {
+        type: 'overview',
+        title: 'E-commerce Project & Launch',
+        content:
+          'This module guides students through setting up their own e-commerce store, launching products, creating a marketing plan, and presenting their final project. It combines all skills learned in previous modules into a practical application.',
+        topics: [
+          { title: 'Store Setup', description: 'Configuring an e-commerce platform and preparing the store for launch' },
+          { title: 'Product Launch', description: 'Adding products, setting prices, and going live' },
+          { title: 'Marketing Plan', description: 'Promoting the store and products to reach target customers' },
+          { title: 'Final Presentation', description: 'Showcasing the e-commerce project, analytics, and results' },
+          { title: 'Module Exam', description: 'Evaluate understanding through practical tasks and quizzes' }
+        ]
+      },
+
+      /* ===================== LESSONS ===================== */
+
+      {
+        type: 'lesson',
+        title: 'Store Setup',
+        content: [
+          'Students will configure their e-commerce platform, customize the design, and prepare store settings.'
+        ],
+        points: [
+          'Choose platform: Shopify, WooCommerce, Magento, or custom solution',
+          'Set up store domain, hosting, and SSL',
+          'Customize theme, layout, and navigation',
+          'Configure payment gateways and taxes',
+          'Set up shipping options and policies'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Product Launch',
+        content: [
+          'Adding and launching products effectively is key to a successful e-commerce store.'
+        ],
+        points: [
+          'Add products with titles, images, descriptions, and prices',
+          'Set inventory levels and SKU codes',
+          'Enable product categories and tags for better navigation',
+          'Test checkout and payment process',
+          'Go live with the store and announce launch'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Marketing Plan',
+        content: [
+          'Students will create a marketing plan to promote their e-commerce store and attract customers.'
+        ],
+        points: [
+          'Define target audience and buyer personas',
+          'Use social media, email campaigns, and ads',
+          'Optimize for SEO and Google Ads',
+          'Plan promotions, discounts, and launch events',
+          'Measure performance using analytics'
+        ]
+      },
+
+      {
+        type: 'lesson',
+        title: 'Final Presentation',
+        content: [
+          'Students will present their e-commerce project to demonstrate their learning and results.'
+        ],
+        points: [
+          'Show the fully functional store',
+          'Highlight product catalog and launch strategy',
+          'Explain marketing campaigns and results',
+          'Present analytics, KPIs, and lessons learned',
+          'Receive feedback for improvements'
+        ]
+      },
+
+      /* ===================== EXAMPLES ===================== */
+
+      {
+        type: 'example',
+        title: 'Store Setup Example',
+        description: 'Configuring Shopify store with theme customization.',
+        code: `// Example pseudo-code
+shopify.createStore("My Online Shop")
+shopify.setTheme("Minimal")
+shopify.addPaymentGateway("Stripe")
+shopify.configureShipping(["Standard", "Express"])`,
+        output: 'Store is ready with basic setup, theme, payments, and shipping.',
+        explanation: 'Proper setup ensures smooth operation from day one.'
+      },
+
+      {
+        type: 'example',
+        title: 'Product Launch Example',
+        description: 'Adding products to the store.',
+        code: `// Example pseudo-code
+store.addProduct({
+  name: "T-shirt",
+  price: 19.99,
+  description: "100% cotton",
+  images: ["img1.jpg","img2.jpg"],
+  stock: 50
+})`,
+        output: 'Product is visible on the store and ready for purchase.',
+        explanation: 'Accurate product info improves customer trust and conversions.'
+      },
+
+      {
+        type: 'example',
+        title: 'Marketing Plan Example',
+        description: 'Planning social media campaigns for launch.',
+        code: `// Example pseudo-code
+marketing.createCampaign({
+  channel: "Instagram",
+  targetAudience: "18-30, fashion lovers",
+  budget: 100,
+  content: "Launch promo post"
+})`,
+        output: 'Campaign reaches target audience and drives traffic to store.',
+        explanation: 'Marketing ensures customers know about the product and store.'
+      },
+
+      {
+        type: 'example',
+        title: 'Final Presentation Example',
+        description: 'Presenting analytics and KPIs from the launch.',
+        code: `// Example pseudo-code
+analytics.show({
+  conversionRate: 4.5,
+  totalRevenue: 1200,
+  topProducts: ["T-shirt", "Hat"]
+})`,
+        output: 'Demonstrates store performance and success metrics.',
+        explanation: 'Shows results of store launch and marketing efforts.'
+      },
+
+      /* ===================== MODULE EXAM ===================== */
+
+      {
+        type: 'exam',
+        title: 'Module Exam: E-commerce Project & Launch',
+        description: 'Test your practical knowledge and understanding of store setup, product launch, marketing, and presentation.',
+        duration: 60,
+        passingScore: 70,
+        questions: [
+          { id: 1, type: 'multiple-choice', question: 'Which platform can be used for e-commerce store setup?', options: ['Shopify', 'WooCommerce', 'Magento', 'All of the above'], correctAnswer: 3 },
+          { id: 2, type: 'multiple-choice', question: 'What should be included when adding a product?', options: ['Name', 'Price', 'Description', 'All of the above'], correctAnswer: 3 },
+          { id: 3, type: 'multiple-choice', question: 'Which channel is effective for launch marketing?', options: ['Social media', 'Email campaigns', 'Google Ads', 'All of the above'], correctAnswer: 3 },
+          { id: 4, type: 'multiple-choice', question: 'What is a KPI for measuring store success?', options: ['Conversion rate', 'Website color', 'Number of products', 'Theme layout'], correctAnswer: 0 },
+          { id: 5, type: 'true-false', question: 'Testing the checkout process before launch is important.', correctAnswer: true },
+          { id: 6, type: 'true-false', question: 'Marketing plans are optional for e-commerce launch.', correctAnswer: false },
+          { id: 7, type: 'true-false', question: 'Presenting analytics shows the impact of marketing campaigns.', correctAnswer: true },
+          { id: 8, type: 'short-answer', question: 'Name one platform for store setup.', sampleAnswer: 'Shopify', evaluation: 'manual' },
+          { id: 9, type: 'short-answer', question: 'Give one key element to include when launching a product.', sampleAnswer: 'Price', evaluation: 'manual' },
+          { id: 10, type: 'short-answer', question: 'Name one marketing channel.', sampleAnswer: 'Instagram', evaluation: 'manual' },
+          { id: 11, type: 'short-answer', question: 'Give one KPI to track store performance.', sampleAnswer: 'Conversion rate', evaluation: 'manual' },
+          { id: 12, type: 'short-answer', question: 'Why is testing the checkout process important?', sampleAnswer: 'To ensure smooth purchasing experience', evaluation: 'manual' },
+          { id: 13, type: 'true-false', question: 'Final presentation is used to showcase the project and results.', correctAnswer: true },
+          { id: 14, type: 'short-answer', question: 'Give one benefit of presenting analytics.', sampleAnswer: 'Show marketing performance', evaluation: 'manual' },
+          { id: 15, type: 'short-answer', question: 'Name one thing to prepare in store setup.', sampleAnswer: 'SSL certificate', evaluation: 'manual' }
+        ]
+      }
+    ]
+  },
+
   // Module 1: Software Project Management
   spm: {
     1: [
