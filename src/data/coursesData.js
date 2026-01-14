@@ -20,55 +20,55 @@ export const coursesData = {
                 module: 2,
                 title: "Project Initiation & Planning",
                 hours: 10,
-                topics: ["Project charter", "Requirements engineering", "Scope management", "Scheduling"]
+                topics: ["Project charter", "Requirements engineering", "Scope management", "Scheduling", "Module Exam"]
             },
             {
                 module: 3,
                 title: "Agile Project Management",
                 hours: 12,
-                topics: ["Agile principles", "Scrum framework", "Kanban method", "Agile estimation"]
+                topics: ["Agile principles", "Scrum framework", "Kanban method", "Agile estimation", "Module Exam"]
             },
             {
                 module: 4,
                 title: "Risk & Quality Management",
                 hours: 8,
-                topics: ["Risk identification", "Quality assurance", "Testing strategies"]
+                topics: ["Risk identification", "Quality assurance", "Testing strategies", "Module Exam"]
             },
             {
                 module: 5,
                 title: "Team Management & Communication",
                 hours: 6,
-                topics: ["Team development", "Communication planning", "Leadership skills"]
+                topics: ["Team development", "Communication planning", "Leadership skills", "Module Exam"]
             },
             {
                 module: 6,
                 title: "Cost & Resource Management",
                 hours: 6,
-                topics: ["Cost estimation", "Resource allocation", "Earned Value Management"]
+                topics: ["Cost estimation", "Resource allocation", "Earned Value Management", "Module Exam"]
             },
             {
                 module: 7,
                 title: "Project Monitoring & Control",
                 hours: 4,
-                topics: ["Progress tracking", "Change management", "Performance metrics"]
+                topics: ["Progress tracking", "Change management", "Performance metrics", "Module Exam"]
             },
             {
                 module: 8,
                 title: "Project Tools & Technologies",
                 hours: 4,
-                topics: ["Jira, Trello, MS Project", "Version control", "Collaboration tools"]
+                topics: ["Jira, Trello, MS Project", "Version control", "Collaboration tools", "Module Exam"]
             },
             {
                 module: 9,
                 title: "Project Closure & Lessons Learned",
                 hours: 2,
-                topics: ["Closure checklist", "Post-implementation review", "Documentation"]
+                topics: ["Closure checklist", "Post-implementation review", "Documentation", "Module Exam"]
             },
             {
                 module: 10,
                 title: "Case Studies & Practical Exercises",
                 hours: 2,
-                topics: ["Real-world cases", "Best practices", "Group discussions"]
+                topics: ["Real-world cases", "Best practices", "Group discussions", "Module Exam"]
             }
         ]
     },
@@ -85,55 +85,55 @@ export const coursesData = {
                 module: 1,
                 title: "Introduction to Web Design",
                 hours: 4,
-                topics: ["Web design principles", "Design thinking", "Current trends", "Career paths"]
+                topics: ["Web design principles", "Design thinking", "Current trends", "Career paths", "Module Exam"]
             },
             {
                 module: 2,
                 title: "HTML5 Fundamentals",
                 hours: 8,
-                topics: ["HTML structure", "Semantic HTML", "Forms & inputs", "HTML5 APIs"]
+                topics: ["HTML structure", "Semantic HTML", "Forms & inputs", "HTML5 APIs", "Module Exam"]
             },
             {
                 module: 3,
                 title: "CSS3 & Styling",
                 hours: 10,
-                topics: ["CSS selectors", "Box model", "Flexbox", "Grid layout", "Animations"]
+                topics: ["CSS selectors", "Box model", "Flexbox", "Grid layout", "Animations", "Module Exam"]
             },
             {
                 module: 4,
                 title: "Responsive Web Design",
                 hours: 6,
-                topics: ["Mobile-first design", "Media queries", "Responsive images", "Breakpoints"]
+                topics: ["Mobile-first design", "Media queries", "Responsive images", "Breakpoints", "Module Exam"]
             },
             {
                 module: 5,
                 title: "UI/UX Design Principles",
                 hours: 8,
-                topics: ["User research", "Wireframing", "Prototyping", "Usability testing", "Accessibility"]
+                topics: ["User research", "Wireframing", "Prototyping", "Usability testing", "Accessibility", "Module Exam"]
             },
             {
                 module: 6,
                 title: "JavaScript for Designers",
                 hours: 8,
-                topics: ["JavaScript basics", "DOM manipulation", "Events", "Form validation", "Animations"]
+                topics: ["JavaScript basics", "DOM manipulation", "Events", "Form validation", "Animations", "Module Exam"]
             },
             {
                 module: 7,
                 title: "CSS Frameworks",
                 hours: 6,
-                topics: ["Bootstrap 5", "Tailwind CSS", "Custom themes", "Component libraries"]
+                topics: ["Bootstrap 5", "Tailwind CSS", "Custom themes", "Component libraries", "Module Exam"]
             },
             {
                 module: 8,
                 title: "Design Tools & Workflow",
                 hours: 4,
-                topics: ["Figma", "Adobe XD", "Design systems", "Version control for designers"]
+                topics: ["Figma", "Adobe XD", "Design systems", "Version control for designers", "Module Exam"]
             },
             {
                 module: 9,
                 title: "Web Performance & SEO",
                 hours: 4,
-                topics: ["Page speed optimization", "SEO basics", "Meta tags", "Analytics"]
+                topics: ["Page speed optimization", "SEO basics", "Meta tags", "Analytics", "Module Exam"]
             },
             {
                 module: 10,
@@ -156,55 +156,55 @@ export const coursesData = {
                 module: 1,
                 title: "Introduction to E-commerce",
                 hours: 6,
-                topics: ["E-commerce overview", "Business models", "Market analysis", "Legal considerations"]
+                topics: ["E-commerce overview", "Business models", "Market analysis", "Legal considerations", "Module Exam"]
             },
             {
                 module: 2,
                 title: "E-commerce Platforms",
                 hours: 8,
-                topics: ["Shopify", "WooCommerce", "Magento", "Custom solutions", "Platform comparison"]
+                topics: ["Shopify", "WooCommerce", "Magento", "Custom solutions", "Platform comparison", "Module Exam"]
             },
             {
                 module: 3,
                 title: "Product Management",
                 hours: 6,
-                topics: ["Catalog management", "Product photography", "Descriptions", "Inventory systems"]
+                topics: ["Catalog management", "Product photography", "Descriptions", "Inventory systems", "Module Exam"]
             },
             {
                 module: 4,
                 title: "Payment Systems & Security",
                 hours: 8,
-                topics: ["Payment gateways", "SSL certificates", "PCI compliance", "Fraud prevention"]
+                topics: ["Payment gateways", "SSL certificates", "PCI compliance", "Fraud prevention", "Module Exam"]
             },
             {
                 module: 5,
                 title: "Shopping Cart & Checkout",
                 hours: 6,
-                topics: ["Cart functionality", "Checkout optimization", "Abandoned cart recovery", "Guest checkout"]
+                topics: ["Cart functionality", "Checkout optimization", "Abandoned cart recovery", "Guest checkout", "Module Exam"]
             },
             {
                 module: 6,
                 title: "Digital Marketing for E-commerce",
                 hours: 8,
-                topics: ["SEO for e-commerce", "Google Ads", "Social media marketing", "Email campaigns"]
+                topics: ["SEO for e-commerce", "Google Ads", "Social media marketing", "Email campaigns", "Module Exam"]
             },
             {
                 module: 7,
                 title: "Customer Experience & Support",
                 hours: 6,
-                topics: ["Customer service", "Returns & refunds", "Reviews management", "Chatbots"]
+                topics: ["Customer service", "Returns & refunds", "Reviews management", "Chatbots", "Module Exam"]
             },
             {
                 module: 8,
                 title: "Analytics & Optimization",
                 hours: 6,
-                topics: ["Google Analytics", "Conversion rate optimization", "A/B testing", "KPIs"]
+                topics: ["Google Analytics", "Conversion rate optimization", "A/B testing", "KPIs", "Module Exam"]
             },
             {
                 module: 9,
                 title: "Shipping & Logistics",
                 hours: 4,
-                topics: ["Shipping options", "Order fulfillment", "International shipping", "Tracking systems"]
+                topics: ["Shipping options", "Order fulfillment", "International shipping", "Tracking systems", "Module Exam"]
             },
             {
                 module: 10,
